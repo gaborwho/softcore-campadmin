@@ -1,0 +1,26 @@
+Projektalapító Okirat
+Megrendelõ: CampAdmin
+Kivitelezõ: SoftCore
+Projekt Tagjai: 	- Bedõ Márton
+	- Lovas István
+	- Balla Gábor
+	- Merényi Dániel
+A megvalósítandó szoftver:
+A szoftver célja, egy táborhely térkihasználtságának adminisztrálása, ennek grafikus megvalósítása, valamint statisztikai adatok generálása.
+A tábor hierarchiájában a gyerekek 3 szintre vannak osztva. 
+•	A legmagasabb szint az ország szerinti csoportosítás. 
+•	A második szint a korcsoport szerinti csoportosítás.
+•	A harmadik szint, a túl nagy csoportok optimális méretre (12 fõ) való darabolása. 
+Ez a feloszlás minden turnusban (SESSION) változik ezért a rendszernek kezelnie kell a turnusok közötti változást.
+A táborban a férõhelyek dinamikusan változnak. Szükség esetén pótágyakkal, lakókocsikkal bõvíthetõ a telep befogadóképessége. A rendszernek lehetõséget kell biztosítani, hogy újabb szobák, férõhelyek hozzáadásának, módosításának kezelésére.
+A helykiosztás átláthatóságának megkönnyítésére a gyerekeket a telep alaprajzán grafikusan ábrázoljuk. Kattintásra látjuk a szoba lakóit, a csoport és a korcsoport vezetõjét.
+A rendszer egyik fontos eleme az adatok külsõ forrásból történõ importálása (eddigi megállapodás: CSV import, kötött szemantikával).
+Speciális elemei a rendszernek az ifjúsági vezetõk, a korcsoportvezetõk, valamint az egyéb alkalmazottak, akik szintén a telepen laknak. Õk statisztikai és térkihasználási szempontból fontosak, de a csoportokat érintõ kérdésekben nem játszanak szerepet.
+
+
+
+
+
+			
+	megrendelõ	Bedõ Márton
+	projektvezetõ

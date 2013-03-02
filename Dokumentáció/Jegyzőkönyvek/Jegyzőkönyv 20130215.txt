@@ -1,0 +1,30 @@
+Jegyzõkönyv
+Idõpont: 2013. február. 15.
+Jelen vannak: 	- Bedõ Márton 
+	- Lovas István 
+	- Balla Gábor 
+	- Merényi Dániel
+Események:
+Megalakult a SoftCore projektcsapat. Megtörtént a csapattagok szerepköreinek kiosztása.
+Elkezdõdött a CampAdmin projekt elõzetes tervezése, és a követelmények meghatározása. 
+A csapattagok beosztása:
+•	Projektvezetõ: Bedõ Márton
+•	Kapcsolattartó: Lovas István
+•	Demonstrátor: Balla Gábor
+•	Projekt adminisztrátor: Merényi Dániel
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	Merényi Dániel	Bedõ Márton
+	jegyzõkönyvvezetõ	projektvezetõ

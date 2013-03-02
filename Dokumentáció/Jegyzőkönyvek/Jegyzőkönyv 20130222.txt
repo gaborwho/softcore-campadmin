@@ -1,0 +1,27 @@
+Jegyzõkönyv
+Idõpont: 2013. február. 22.
+Jelen vannak: 	- Bedõ Márton (Projektvezetõ)
+	- Lovas István (kapcsolattartó)
+	- Balla Gábor (demonstrátor)
+	- Merényi Dániel (Projekt adminisztrátor)
+Események:
+A megrendelõ elfogadta a CampAdmin projektre benyújtott elõzetes tervet, de kikötötte a dokumentum átdolgozását.
+Elkezdõdött a CampAdmin projekt használati eseteinek és forgatókönyveinek kidolgozása. A modell elõkészítését Balla Gábor végzi. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	Merényi Dániel	Bedõ Márton
+	jegyzõkönyvvezetõ	projektvezetõ

@@ -1,0 +1,123 @@
+Campadmin
+Elõkészítés
+A csapat
+Bedõ Márton – PROJEKTVEZETÕ
+Merényi Dániel – ADMINISZTRÁTOR
+Balla Gábor – DEMONSTRÁTOR
+Lovas István – KAPCSOLATTARTÓ
+ 
+A feladat
+A szoftver célja, egy táborhely térkihasználtságának adminisztrálása, ennek grafikus megvalósítása, valamint statisztikai adatok generálása.
+A tábor hierarchiájában a gyerekek 3 szintre vannak osztva. 
+•	A legmagasabb szint az ORSZÁG szerinti csoportosítás. 
+•	A második szint a KORCSOPORT szerinti csoportosítás.
+•	A harmadik szint, a túl nagy CSOPORTok optimális méretre (12 fõ) való darabolása. 
+Ez a feloszlás minden turnusban (SESSION) változik ezért a rendszernek kezelnie kell, a turnusok közötti változást.
+A táborban a férõhelyek dinamikusan változnak. Szükség esetén pótágyakkal, lakókocsikkal bõvíthetõ a telep befogadóképessége. A rendszernek lehetõséget kell biztosítani, hogy újabb szobák, férõhelyek hozzáadásának, módosításának kezelésére.
+A helykiosztás átláthatóságának megkönnyítésére a gyerekeket a telep alaprajzán grafikusan ábrázoljuk. Kattintásra látjuk a szoba lakóit, a csoport és a korcsoport vezetõjét.
+A rendszer egyik fontos eleme az adatok külsõ forrásból történõ importálása (eddigi megállapodás: CSV import, kötött szemantikával).
+Speciális elemei a rendszernek az ifjúsági vezetõk, a korcsoportvezetõk, valamint az egyéb alkalmazottak, akik szintén a telepen laknak. Õk statisztikai és térkihasználási szempontból fontosak, de a csoportokat érintõ kérdésekben nem játszanak szerepet.
+ 
+A szoftver
+	1. A rendszer felhasználói és funkciói
+Az elkészítendõ szoftverben a felhasználók három csoportba kerülnek: Táborvezetõ, Csoportvezetõ és Ifjúsági vezetõ. A különbözõ csoportok más jog-, és funkció-körrel rendelkeznek.
+A tábor vezetõi statisztikákat kérhetnek le egy megadott idõszakról, különbözõ (?elõre definiált?) szempontok szerint.
+[táborvezetõ diagram]
+1. ábra – Táborvezetõi funkciók
+
+2. A rendszer szerkezete
+stbstbstb
+ 
+1. melléklet – Kezelõfelület látványtervek
+ide jönnek a képek
+ 
+
+2. melléklet – Jegyzõkönyvek
+ 
+Jegyzõkönyv
+Idõpont: 2013. február. 15.
+Jelen vannak: 	- Bedõ Márton 
+	- Lovas István 
+	- Balla Gábor 
+	- Merényi Dániel
+Események:
+Megalakult a SoftCore projektcsapat. Megtörtént a csapattagok szerepköreinek kiosztása.
+Elkezdõdött a CampAdmin projekt elõzetes tervezése, és a követelmények meghatározása. 
+A csapattagok beosztása:
+•	Projektvezetõ: Bedõ Márton
+•	Kapcsolattartó: Lovas István
+•	Demonstrátor: Balla Gábor
+•	Projekt adminisztrátor: Merényi Dániel
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	Merényi Dániel	Bedõ Márton
+	jegyzõkönyvvezetõ	projektvezetõ 
+Jegyzõkönyv
+Idõpont: 2013. február. 22.
+Jelen vannak: 	- Bedõ Márton (Projektvezetõ)
+	- Lovas István (kapcsolattartó)
+	- Balla Gábor (demonstrátor)
+	- Merényi Dániel (Projekt adminisztrátor)
+Események:
+A megrendelõ elfogadta a CampAdmin projektre benyújtott elõzetes tervet, de kikötötte a dokumentum átdolgozását.
+Elkezdõdött a CampAdmin projekt használati eseteinek és forgatókönyveinek kidolgozása. A modellek elõkészítését Balla Gábor végzi. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	Merényi Dániel	Bedõ Márton
+	jegyzõkönyvvezetõ	projektvezetõ
+ 
+Jegyzõkönyv
+Idõpont: 2013. március. 1.
+Jelen vannak: 	- Bedõ Márton (Projektvezetõ)
+	- Lovas István (kapcsolattartó)
+	- Balla Gábor (demonstrátor)
+	- Merényi Dániel (Projekt adminisztrátor)
+Események:
+Befejezõdött a használati esetek és forgatókönyvek kidolgozása, és elkezdõdött az analízis modell osztálydiagramjainak létrehozása.
+A munka felosztása az alábbiak szerint történik:
+•	A használati esetek és forgatókönyvek véglegesítése – Bedõ Márton, Merényi Dániel
+•	A táborvezetõ funkciók osztálydiagramjai –
+•	A csoportvezetõ funkciók osztálydiagramjai –
+•	Az ifjúsági vezetõ funkciók osztálydiagramjai –
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	Merényi Dániel	Bedõ Márton
+	jegyzõkönyvvezetõ	projektvezetõ
