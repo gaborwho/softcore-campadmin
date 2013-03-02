@@ -1,0 +1,7 @@
+csoportvezető
+nagycsoport-vezető
+táborvezető
+
+táborozó
+csoport
+szoba

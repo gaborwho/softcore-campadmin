@@ -1,0 +1,72 @@
+Forgatókönyvek
+Táborvezetõ
+	Statisztikák lekérése
+		bejelentkezés
+		megfelelõ querry (lekérdezés?) kikeresése (legördülõ listából?)
+		querry futtatás
+		(exportálás)
+	Szoba bevitele
+		bejelentkezés
+		szobanyivántató megnyitása
+		új szoba adatainak meghat.(név, hely, férõhelyek)
+	Szoba törlése
+		bejelentkezés
+		szobanyivántató megnyitása
+		szoba törlése
+	Turnus bevitele
+		bejelentkezés
+		turnuskezelõ megnyitása
+		turnus adatainak bevitele (név, év, sorszám, idõtartam (tól-ig))
+	Turnus szerkesztése
+		bejelentkezés
+		turnuskezelõ megnyitása
+		turnus adatainak módosítása
+		Korcsoportvezetõ
+	??Táborozó törlése (Õ tud törölni, és a másik tud felvinni ?)
+		bejelentkezés
+		belépés a táborozók listájába (csak az aktuálisat látja)
+		gyerekek kiválasztása
+		gyerekek törlése
+	??Táborozók listázása (ilyet logikus lenne létrehozni, hogy az aktuálisat kiválaszthassa, aminél töröl)
+		
+		
+	Csoport bevitele
+		bejelentkezés
+		csoportkezelõ elindítása
+		új csoport meghatározása (név, korcsoport, ország, 2 ifivezetõ)
+		(gyerekek felvitele)
+		(gyerekek hozzárendelése)
+	Csoport módosítása
+		bejelentkezés
+		csoportkezelõ elindítása
+		csoport kiválasztása
+		adatok módosítása (név, korcsoport, ország, 2 ifivezetõ)
+		(gyerekek felvitele)
+		(gyerekek hozzárendelése)
+		
+		
+Ifjúsági vezetõ
+	Táborozó bevitele
+		bejelentkezés
+		táborozó-kezelõ megnyitása, új táborozó felvitele
+		táborozó adatainak bevitele (név, születési év, ország, elérhetõségek, betegségek, megjegyzések
+	Táborozó csoporthoz rendelése
+		bejelentkezés
+		csoportkezelõ elindítása
+		gyerekek hozzárendelése, szoba meghatározása
+	Táborozó módosítása
+		bejelentkezés
+		táborozó-kezelõ megnyitása
+		táborozó megnyitása
+		adatok módosítása
+	Táborozók importálása
+		bejelentkezés
+		táborozó-kezelõ megynyitása
+		táborozók importálása
+		fájl betöltése
+		adatok ellenõrzése
+	Táborozók listázása
+		bejelentkezés
+		táborozó-kezelõ megnyitása
+
+
