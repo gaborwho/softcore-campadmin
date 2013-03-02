@@ -1,72 +1,107 @@
 Forgatókönyvek
 Táborvezetõ
 	Statisztikák lekérése
-		bejelentkezés
-		megfelelõ querry (lekérdezés?) kikeresése (legördülõ listából?)
-		querry futtatás
+		Bejelentkezés
+		Megfelelõ lekérdezés kiválasztása (legördülõ listából?)
+		Lekérdezés futtatása
 		(exportálás)
 	Szoba bevitele
-		bejelentkezés
-		szobanyivántató megnyitása
-		új szoba adatainak meghat.(név, hely, férõhelyek)
+		Bejelentkezés
+		Szoba-kezelõ megnyitása
+		Új szoba adatainak bevitele.(név, hely, férõhelyek)
+	Szoba módosítása
+		Bejelentkezés
+		Szoba-kezelõ megnyitása
+		Szoba kiválasztása
+		Szoba adatinak módosítása
 	Szoba törlése
-		bejelentkezés
-		szobanyivántató megnyitása
-		szoba törlése
+		Bejelentkezés
+		Szoba-kezelõ megnyitása
+		Szoba törlése
 	Turnus bevitele
-		bejelentkezés
-		turnuskezelõ megnyitása
-		turnus adatainak bevitele (név, év, sorszám, idõtartam (tól-ig))
+		Bejelentkezés
+		Turnuskezelõ megnyitása
+		Turnus adatainak bevitele (név, év, sorszám, idõtartam (tól-ig))
 	Turnus szerkesztése
-		bejelentkezés
-		turnuskezelõ megnyitása
-		turnus adatainak módosítása
-		Korcsoportvezetõ
-	??Táborozó törlése (Õ tud törölni, és a másik tud felvinni ?)
-		bejelentkezés
-		belépés a táborozók listájába (csak az aktuálisat látja)
-		gyerekek kiválasztása
-		gyerekek törlése
-	??Táborozók listázása (ilyet logikus lenne létrehozni, hogy az aktuálisat kiválaszthassa, aminél töröl)
-		
-		
+		Bejelentkezés
+		Turnuskezelõ megnyitása
+		Turnus adatainak módosítása
+	Táborozó bevitele
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása, új táborozó felvitele
+		Táborozó adatainak bevitele (név, születési év, ország, elérhetõségek, betegségek, megjegyzések)
+	Táborozó módosítása
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása
+		Táborozó megnyitása
+		Adatok módosítása
+	Táborozó törlése 
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása (csak az aktuálisat látja)
+		Gyerekek kiválasztása
+		Gyerekek törlése
+	Táborozók listázása 
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása
+	
+Korcsoport vezetõ
+	Táborozó bevitele
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása, új táborozó felvitele
+		Táborozó adatainak bevitele (név, születési év, ország, elérhetõségek, betegségek, megjegyzések
+	Táborozó módosítása
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása
+		Táborozó megnyitása
+		Adatok módosítása
+	Táborozó törlése 
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása (csak az aktuálisat látja)
+		Gyerekek kiválasztása
+		Gyerekek törlése
+	Táborozók listázása 
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása
 	Csoport bevitele
-		bejelentkezés
-		csoportkezelõ elindítása
-		új csoport meghatározása (név, korcsoport, ország, 2 ifivezetõ)
-		(gyerekek felvitele)
-		(gyerekek hozzárendelése)
+		Bejelentkezés
+		Csoportkezelõ elindítása
+		Új csoport meghatározása (név, korcsoport, ország, 2 ifivezetõ)
+		(Gyerekek felvitele)
+		(Gyerekek hozzárendelése)
 	Csoport módosítása
-		bejelentkezés
-		csoportkezelõ elindítása
-		csoport kiválasztása
-		adatok módosítása (név, korcsoport, ország, 2 ifivezetõ)
+		Bejelentkezés
+		Csoportkezelõ elindítása
+		Csoport kiválasztása
+		Adatok módosítása (név, korcsoport, ország, 2 ifivezetõ)
 		(gyerekek felvitele)
 		(gyerekek hozzárendelése)
+	//Csoport törlése (statisztikák?)
 		
 		
 Ifjúsági vezetõ
 	Táborozó bevitele
-		bejelentkezés
-		táborozó-kezelõ megnyitása, új táborozó felvitele
-		táborozó adatainak bevitele (név, születési év, ország, elérhetõségek, betegségek, megjegyzések
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása
+		Új táborozó felvitele
+		Táborozó adatainak bevitele (név, születési év, ország, elérhetõségek, betegségek, megjegyzések)
 	Táborozó csoporthoz rendelése
-		bejelentkezés
-		csoportkezelõ elindítása
-		gyerekek hozzárendelése, szoba meghatározása
+		Bejelentkezés
+		Csoportkezelõ elindítása
+		Gyerekek hozzárendelése 
+		Szoba meghatározása
 	Táborozó módosítása
-		bejelentkezés
-		táborozó-kezelõ megnyitása
-		táborozó megnyitása
-		adatok módosítása
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása
+		Táborozó megnyitása
+		Adatok módosítása
 	Táborozók importálása
-		bejelentkezés
-		táborozó-kezelõ megynyitása
-		táborozók importálása
-		fájl betöltése
-		adatok ellenõrzése
+		Bejelentkezés
+		Táborozó-kezelõ megynyitása
+		Táborozók importálása
+		Fájl betöltése
+		Adatok ellenõrzése
 	Táborozók listázása
-		bejelentkezés
-		táborozó-kezelõ megnyitása
+		Bejelentkezés
+		Táborozó-kezelõ megnyitása
 
 
