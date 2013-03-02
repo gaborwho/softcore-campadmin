@@ -1,0 +1,37 @@
+A Skype megbeszélés vázlata:
+
+	1, Project alapító okiraton átfutottunk, és finomítottuk, egy két szót átírtunk...
+	2, forgatokönyv.txt:
+		Letisztáztuk
+		Felelõsségeket határoztunk meg az aktoroknak
+			Tábor vez: 
+				Statisztikák - elõre meghatározott statisztikákat készíthet
+				Szobákat kezel
+				Turnust kezel
+				és van joga bármihez, amihez az õ alatta elhelyezkedõ szinteken lévõknek
+			Korcsoport vezetõ 
+				hozzájut a táborozókról készült (aggregált) adatokhoz
+			Ifi vezetõ
+				õ kezeli fel a gyerekeket
+			Elvileg törölni nagyon senki sem tud, a statisztika miatt, ha minden igaz...
+				
+	3, Megbeszéltük, hogy milyen feladatok vannak hátra:
+		+Néhány döntést a tervezés késöbbi fázisában hozunk meg, de amit mindenképpen most kell:
+			-use-case javítása forgatokönyv.txt alapján (Dani)
+			-prototipizált class use alapján; (Pista)
+			-Package diagram (Pista)
+			-Dokumentáció (Dani)
+				De némi terhet leveszünk a válláról:
+					-Táborvezetõ Class, és Use-Case diagrammját Ledokumentálja (Pista)
+					-KCsV Class, és Use-Case diagrammját Ledokumentálja (Dani)
+					-CsV Class, és Use-Case diagrammját Ledokumentálja (Gábor)
+			-Képernyõ Tervek
+				-TáborV terve (Marci)
+				-KCsV terv  (Marci)
+				-CsV  terv  (Gábor)
+			megjegyzés:
+				-a képernyõterv, és a class terv az use case alapján párhuzamosan készíthetõ
+				-ha valaki elakad, vagy elúszik segítünk
+		MEGKÖTÉS:
+			Hétfó, legkésöbb Keddig ezeket el Kell végeznünk, hogy szerdán a doksit összeállítsa Dani, és Csütörtök éjfélig átbeszélhessük, letisztázhassuk...
+			
