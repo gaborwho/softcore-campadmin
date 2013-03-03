@@ -2,9 +2,19 @@ Forgatókönyvek
 Táborvezetõ
 	Statisztikák lekérése
 		Bejelentkezés
+		Statisztika-kezelõ megnyitása
 		Megfelelõ lekérdezés kiválasztása (legördülõ listából?)
 		Lekérdezés futtatása
 		(exportálás)
+	Ház bevitele
+		Bejelentkezés
+		Ház-kezelõ megnyitása
+		Új Ház adatainak bevitele (név, ház_szám)		
+	Ház törlése
+		Bejelentkezés
+		Ház-kezelõ megnyitása
+		Ház kiválasztása
+		Ház törlése
 	Szoba bevitele
 		Bejelentkezés
 		Szoba-kezelõ megnyitása
@@ -17,6 +27,7 @@ Táborvezetõ
 	Szoba törlése
 		Bejelentkezés
 		Szoba-kezelõ megnyitása
+		Szoba kiválasztása
 		Szoba törlése
 	Turnus bevitele
 		Bejelentkezés
