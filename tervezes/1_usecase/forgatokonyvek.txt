@@ -1,6 +1,6 @@
 Forgatókönyvek
 Táborvezetõ
-	Statisztikák lekérése
+	Statisztikák készítése
 		Bejelentkezés
 		Statisztika-kezelõ megnyitása
 		Megfelelõ lekérdezés kiválasztása (legördülõ listából?)
