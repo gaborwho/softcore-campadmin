@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C9F743F-0DF1-4AA6-9D16-1B443C2B9DA3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdminFelulet</RootNamespace>
+    <AssemblyName>AdminFelulet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ifivezeto\CamperEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ifivezeto\CamperEdit.Designer.cs">
+      <DependentUpon>CamperEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ifivezeto\CamperGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ifivezeto\CamperGroup.Designer.cs">
+      <DependentUpon>CamperGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ifivezeto\CamperImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ifivezeto\CamperImport.Designer.cs">
+      <DependentUpon>CamperImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korcsoportvezeto\GroupEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korcsoportvezeto\GroupEdit.designer.cs">
+      <DependentUpon>GroupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korcsoportvezeto\UnitEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korcsoportvezeto\UnitEdit.designer.cs">
+      <DependentUpon>UnitEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korcsoportvezeto\UnitGroupList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korcsoportvezeto\UnitGroupList.designer.cs">
+      <DependentUpon>UnitGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Taborvezeto\SessionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taborvezeto\SessionEdit.designer.cs">
+      <DependentUpon>SessionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taborvezeto\SessionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taborvezeto\SessionList.designer.cs">
+      <DependentUpon>SessionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taborvezeto\SessionUnitList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taborvezeto\SessionUnitList.designer.cs">
+      <DependentUpon>SessionUnitList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taborvezeto\UnitDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taborvezeto\UnitDetails.designer.cs">
+      <DependentUpon>UnitDetails.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ifivezeto\CamperEdit.resx">
+      <DependentUpon>CamperEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ifivezeto\CamperGroup.resx">
+      <DependentUpon>CamperGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ifivezeto\CamperImport.resx">
+      <DependentUpon>CamperImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korcsoportvezeto\GroupEdit.resx">
+      <DependentUpon>GroupEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korcsoportvezeto\UnitEdit.resx">
+      <DependentUpon>UnitEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korcsoportvezeto\UnitGroupList.resx">
+      <DependentUpon>UnitGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Taborvezeto\SessionEdit.resx">
+      <DependentUpon>SessionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taborvezeto\SessionList.resx">
+      <DependentUpon>SessionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taborvezeto\SessionUnitList.resx">
+      <DependentUpon>SessionUnitList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taborvezeto\UnitDetails.resx">
+      <DependentUpon>UnitDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
