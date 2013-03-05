@@ -1,0 +1,45 @@
+A tábor vezetõi statisztikákat kérhetnek egy megadott idõszakról,
+különbözõ, elõre definiált szempontok szerint. 
+A házak, szobák és turnusok kezelése is az õ hatáskörükbe tartozik.
+
+A statisztika készítés folyamata során, a Táborvezetõnek ki kell választania a 
+
+A táborvezetõk nek a szoftver lehetõséget biztosít
+
+-----------------------------
+
+Statisztikák lekérése során a táborvezetõnek 
+be kell lépnie a Statisztika-kezelõ rendszerbe, majd ki kell választania a
+készitendõ statisztika típusát, majd el kell indítania a statisztika készítését.
+A rendszer megjeleníti a statisztikát, melyet késõbb exportálhat,
+vagy akár ki is nyomtathat. // nem muszály belevennünk a nyomtatást
+
+
+Ház felvétele során a táborvezetõ
+megnyitja a Ház-kezelõ-t, ahol megadhatja 
+
+Ház törlése során a táborvezetõ
+megnyitja a Ház-kezelõ-t, ahol kiválasztja a 
+
+Szoba bevitele során a táborvezetõ
+
+
+Szoba adatainak módosítása során a táborvezetõ
+
+
+Szoba törlése során a táborvezetõ
+
+
+Turnus bevitele során a táborvezetõ
+
+
+Táborozó bevitele során a táborvezetõ
+
+
+Táborozó adatainak módosítása során a táborvezetõ
+
+
+Táborozó törlése során a táborvezetõ
+
+
+Táborozók listáztatása során a táborvezetõ

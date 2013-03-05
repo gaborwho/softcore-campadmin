@@ -1,0 +1,72 @@
+jelmagyarázat:
+{szöveg} - magyarázó
+[opcionális]
+// - komment hozzászólásom | kérdésem (a kérdés nektek, vagy nekem is szólhat, mint megjegyzés)
+----------- - részek elválasztása //ezek ne kerüljenek át a véglegesbe
+
+-----------------------------
+
+{használható formák}
+A statisztika készítés folyamata során, a Táborvezetõnek ki kell választania a 
+A táborvezetõk nek a szoftver lehetõséget biztosít
+
+-----------------------------
+
+{táborvezetõkrõl általánosságában}
+A tábor vezetõi statisztikákat kérhetnek egy megadott idõszakról,
+különbözõ, elõre definiált szempontok szerint. 
+A házak, szobák és turnusok kezelése is az õ hatáskörükbe tartozik.
+-----------------------------
+
+Statisztikák lekérése során a táborvezetõnek 
+be kell lépnie a Statisztika-kezelõ rendszerbe, majd ki kell választania a
+készitendõ statisztika típusát, majd el kell indítania a statisztika készítést.
+A rendszer megjeleníti a statisztikát, melyet késõbb exportálhat,
+[vagy akár ki is nyomtathat]. // nem muszály belevennünk a nyomtatást
+
+
+Ház felvétele során a táborvezetõ
+megnyitja a Ház-kezelõ-t, ahol megadhatja a ház nevét, házszámot,
+Majd a mentés gombbal elmentheti, azt.
+
+
+Ház törlése során a táborvezetõ Ház-kezelõ-ben,
+megnyitja a Ház-kezelõ-t, ahol kiválasztja a 
+megjelenõ listából kiválasztja a törlendõ házat, és törli azt.
+
+Szoba bevitele során a táborvezetõ Ház-kezelõ-ben,
+kiválasztja azt a házat, ahol szobát akar létrehozni, és ott a szobaszám, 
+és a férõhely megadása után menti, azt.
+
+
+Szoba adatainak módosítása során a táborvezetõ Ház-kezelõ-ben,
+kiválaszt egy házat, annak egy szobályát, amit módosítani akar. 
+Átírja a szobaszámot és/vagy a szoba férõhelyeinek számát, majd menti a változást.
+
+
+Szoba törlése során a táborvezetõ Ház-kezelõ-ben,
+kiválaszt egy házat, annak egy szobályát, amit törölni akar. 
+Törli a szobát.
+
+
+Turnus bevitele során a táborvezetõ, 
+belép a Turnus-kezelõ-be,
+ott  a turnus felvitele panelen megadja a turnus [dátumát] //ez tényleg kell?
+, nevét, kezdõ, és befelyezõ dátumát.
+
+//???Turnust akkor lehet listázni és szekeszteni? ez benne van a use-case-ba?
+
+
+Táborozó bevitele során a táborvezetõ
+a táborozó-kezelõben az új táborozó felvitele résznél megadja
+a táborozó nevét, Születési dátumát, származási országát, 
+elérhetõségeit, esetleges betegségeit, és egy megjegyzést is fûzhet az adott táborozóhoz.
+Miután ezt megtette, elmentheti a táborozót.
+
+Táborozó adatainak módosítása során a táborvezetõ,
+a táborozó-kezelõben, a listából kiválasztja a szerkesztendõ táborozót, majd
+
+Táborozó törlése során a táborvezetõ
+
+
+Táborozók listáztatása során a táborvezetõ
