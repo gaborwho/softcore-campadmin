@@ -70,24 +70,24 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(69, 6);
+            this.textBox1.Location = new System.Drawing.Point(83, 6);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 20);
             this.textBox1.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(11, 140);
+            this.button1.Location = new System.Drawing.Point(11, 141);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
-            this.button1.Text = "save";
+            this.button1.Text = "Mentés";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(69, 32);
+            this.comboBox1.Location = new System.Drawing.Point(83, 31);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(159, 21);
             this.comboBox1.TabIndex = 7;
@@ -95,7 +95,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(69, 59);
+            this.comboBox2.Location = new System.Drawing.Point(83, 58);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(159, 21);
             this.comboBox2.TabIndex = 8;
@@ -103,7 +103,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(69, 113);
+            this.comboBox3.Location = new System.Drawing.Point(83, 112);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(159, 21);
             this.comboBox3.TabIndex = 12;
@@ -111,7 +111,7 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(69, 86);
+            this.comboBox4.Location = new System.Drawing.Point(83, 85);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(159, 21);
             this.comboBox4.TabIndex = 11;
@@ -121,24 +121,24 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(8, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Korcs 2";
+            this.label4.Text = "Maximum kor";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(8, 93);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
+            this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Korcs 1";
+            this.label5.Text = "Minimum kor";
             // 
             // UnitDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(238, 176);
+            this.ClientSize = new System.Drawing.Size(256, 176);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.label4);
@@ -151,7 +151,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UnitDetails";
-            this.Text = "Unit - UnitDetails";
+            this.Text = "Korcsoport - Szerkesztés";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -42,9 +42,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 25);
+            this.label1.Size = new System.Drawing.Size(184, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Korcs neve";
+            this.label1.Text = "Korcsoport neve";
             // 
             // label2
             // 
@@ -53,7 +53,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "statusz / adatok";
+            this.label2.Text = "státusz / adatok";
             // 
             // listBox1
             // 
@@ -73,35 +73,35 @@
             // 
             this.button2.Location = new System.Drawing.Point(17, 320);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 23);
+            this.button2.Size = new System.Drawing.Size(110, 43);
             this.button2.TabIndex = 4;
-            this.button2.Text = "group edit";
+            this.button2.Text = "Korcsoport szerkesztése";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(103, 320);
+            this.button1.Location = new System.Drawing.Point(133, 320);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 23);
+            this.button1.Size = new System.Drawing.Size(110, 43);
             this.button1.TabIndex = 5;
-            this.button1.Text = "group upload";
+            this.button1.Text = "Korcsoport feltöltése";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
             this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(253, 320);
+            this.button3.Location = new System.Drawing.Point(249, 320);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 23);
+            this.button3.Size = new System.Drawing.Size(84, 43);
             this.button3.TabIndex = 6;
-            this.button3.Text = "add group";
+            this.button3.Text = "Új korcsoport";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // UnitGroupList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 358);
+            this.ClientSize = new System.Drawing.Size(354, 375);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -109,7 +109,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UnitGroupList";
-            this.Text = "UnitHead - Unitlist";
+            this.Text = "Korsoportok Listája";
             this.ResumeLayout(false);
             this.PerformLayout();
 

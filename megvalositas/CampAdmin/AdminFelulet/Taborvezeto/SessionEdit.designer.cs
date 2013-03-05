@@ -53,7 +53,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Datum";
+            this.label1.Text = "Dátum";
             // 
             // label2
             // 
@@ -62,7 +62,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Nev";
+            this.label2.Text = "Név";
             // 
             // textBox2
             // 
@@ -77,7 +77,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "save";
+            this.button1.Text = "Mentés";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -86,9 +86,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 13);
+            this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Tól";
+            this.label3.Text = "Kezdési Dátum";
             // 
             // dateTimePicker1
             // 
@@ -109,9 +109,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 99);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(16, 13);
+            this.label4.Size = new System.Drawing.Size(89, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Ig";
+            this.label4.Text = "Befejezési Dátum";
             // 
             // SessionEdit
             // 
@@ -128,7 +128,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Name = "SessionEdit";
-            this.Text = "Session";
+            this.Text = "Turnus szerkesztése";
             this.ResumeLayout(false);
             this.PerformLayout();
 
