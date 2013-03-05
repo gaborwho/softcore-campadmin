@@ -13,6 +13,21 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -32,6 +47,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AdminFelulet.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -84,23 +102,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Taborvezeto\SessionEdit.cs">
+    <Compile Include="Taborvezeto\TSessionEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\SessionEdit.designer.cs">
-      <DependentUpon>SessionEdit.cs</DependentUpon>
+    <Compile Include="Taborvezeto\TSessionEdit.designer.cs">
+      <DependentUpon>TSessionEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Taborvezeto\SessionList.cs">
+    <Compile Include="Taborvezeto\TSessionList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\SessionList.designer.cs">
-      <DependentUpon>SessionList.cs</DependentUpon>
+    <Compile Include="Taborvezeto\TSessionList.designer.cs">
+      <DependentUpon>TSessionList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Taborvezeto\SessionUnitList.cs">
+    <Compile Include="Taborvezeto\TSessionUnitList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\SessionUnitList.designer.cs">
-      <DependentUpon>SessionUnitList.cs</DependentUpon>
+    <Compile Include="Taborvezeto\TSessionUnitList.designer.cs">
+      <DependentUpon>TSessionUnitList.cs</DependentUpon>
     </Compile>
     <Compile Include="Taborvezeto\UnitDetails.cs">
       <SubType>Form</SubType>
@@ -120,6 +138,10 @@
     <EmbeddedResource Include="Korcsoportvezeto\GroupEdit.resx">
       <DependentUpon>GroupEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Korcsoportvezeto\SessionEdit.resx" />
+    <EmbeddedResource Include="Korcsoportvezeto\SessionList.resx" />
+    <EmbeddedResource Include="Korcsoportvezeto\SessionUnitList.resx" />
+    <EmbeddedResource Include="Korcsoportvezeto\UnitDetails.resx" />
     <EmbeddedResource Include="Korcsoportvezeto\UnitEdit.resx">
       <DependentUpon>UnitEdit.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,14 +157,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Taborvezeto\SessionEdit.resx">
-      <DependentUpon>SessionEdit.cs</DependentUpon>
+    <EmbeddedResource Include="Taborvezeto\TSessionEdit.resx">
+      <DependentUpon>TSessionEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Taborvezeto\SessionList.resx">
-      <DependentUpon>SessionList.cs</DependentUpon>
+    <EmbeddedResource Include="Taborvezeto\TSessionList.resx">
+      <DependentUpon>TSessionList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Taborvezeto\SessionUnitList.resx">
-      <DependentUpon>SessionUnitList.cs</DependentUpon>
+    <EmbeddedResource Include="Taborvezeto\TSessionUnitList.resx">
+      <DependentUpon>TSessionUnitList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Taborvezeto\UnitDetails.resx">
       <DependentUpon>UnitDetails.cs</DependentUpon>
@@ -156,6 +178,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
