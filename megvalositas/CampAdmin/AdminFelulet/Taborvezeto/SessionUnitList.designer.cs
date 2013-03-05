@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace WindowsFormsApplication2
 {
     partial class UnitGroupList
     {
