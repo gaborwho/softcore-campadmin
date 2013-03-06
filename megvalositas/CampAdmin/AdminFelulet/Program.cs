@@ -21,7 +21,7 @@ namespace AdminFelulet
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //CamperEdit ablak = new CamperEdit();
-            CamperGroup ablak = new CamperGroup();
+            //CamperGroup ablak = new CamperGroup();
             //CamperImport ablak = new CamperImport();
             //GroupEdit ablak = new GroupEdit();
             //UnitEdit ablak = new UnitEdit();
@@ -29,7 +29,7 @@ namespace AdminFelulet
             //WindowsFormsApplication1.UnitGroupList ablak = new WindowsFormsApplication1.UnitGroupList();
             //SessionEdit ablak = new SessionEdit();
             //SessionList ablak = new SessionList();
-            //UnitDetails ablak = new UnitDetails();
+            UnitDetails ablak = new UnitDetails();
             ablak.ShowDialog();
             //Application.Run(new Form1());
         }
