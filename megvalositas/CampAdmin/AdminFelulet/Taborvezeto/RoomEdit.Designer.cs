@@ -73,9 +73,9 @@
             // 
             this.button1.Location = new System.Drawing.Point(12, 85);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(188, 23);
             this.button1.TabIndex = 8;
-            this.button1.Text = "save";
+            this.button1.Text = "Mentés";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
@@ -91,9 +91,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 61);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Hauz";
+            this.label3.Text = "Szoba";
             // 
             // RoomEdit
             // 
