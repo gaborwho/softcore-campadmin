@@ -1,0 +1,5 @@
+[UseCase]
+Az ifjúsági vezetők feladata a táborozók bevitele a rendszerbe, illetve adataik karbantartása. Az ifjúsági vezetők számára elérhető a táborozók listája, az egyes műveleteket innen indítják. Adatok bevitele esetén az ifjúsági vezető szükség esetén a táborozókat egyesével vagy csoportosan is feltöltheti. Előbbi esetben a táborozók adatainak módosítására is szolgáló felületen keresztül adhatja meg az új táborozó adatait. Az importálás egy sablonnak megfelelő szemantikájú CSV fájlon keresztül történik. Az ifjúsági vezetők feladata a táborozók beosztása csoportokba, ezt a táborozók kijelölésével, majd adott csoport kijelölésével tehetik meg.
+
+[Class]
+Az ifjúsági vezető is rendelkezik saját interfésszel, a szintjén elérhető funkciókat a többiek számára is szükséges TáborozóKezelő, illetve a táborozók tömeges bevitelét lehetővé tévő TáborozóImportKezelő biztosítják. Az ezen kezelőkön keresztül elérhető adatokat a Táborozó, a Csoport, valamint a Szoba és Ház entitásokban tároljuk.
