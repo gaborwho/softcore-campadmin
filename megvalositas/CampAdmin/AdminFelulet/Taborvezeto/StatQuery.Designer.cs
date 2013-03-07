@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1.Stat
+﻿namespace AdminFelulet.TaborVezeto
 {
     partial class StatQuery
     {

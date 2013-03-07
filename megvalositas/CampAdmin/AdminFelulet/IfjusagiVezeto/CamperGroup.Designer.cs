@@ -1,4 +1,4 @@
-﻿namespace AdminFelulet.Ifivezeto
+﻿namespace AdminFelulet.IfjusagiVezeto
 {
     partial class CamperGroup
     {
@@ -110,7 +110,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 121);
+            this.button1.Location = new System.Drawing.Point(205, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 27;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Name = "CamperGroup";
-            this.Text = "Csoporthozrendelés";
+            this.Text = "Csoporthoz rendelés";
             this.ResumeLayout(false);
             this.PerformLayout();
 

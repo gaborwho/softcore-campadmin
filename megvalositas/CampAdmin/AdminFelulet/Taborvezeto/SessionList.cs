@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1.Dir
+namespace AdminFelulet.TaborVezeto
 {
     public partial class SessionList : Form
     {

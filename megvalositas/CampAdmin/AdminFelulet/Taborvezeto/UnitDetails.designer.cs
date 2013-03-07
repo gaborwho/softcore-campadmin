@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace AdminFelulet.TaborVezeto
 {
     partial class UnitDetails
     {

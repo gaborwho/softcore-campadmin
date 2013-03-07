@@ -65,108 +65,99 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ifivezeto\CamperEdit.cs">
+    <Compile Include="IfjusagiVezeto\CamperList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ifivezeto\CamperEdit.Designer.cs">
-      <DependentUpon>CamperEdit.cs</DependentUpon>
+    <Compile Include="IfjusagiVezeto\CamperList.Designer.cs">
+      <DependentUpon>CamperList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ifivezeto\CamperGroup.cs">
+    <Compile Include="IfjusagiVezeto\CamperGroup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ifivezeto\CamperGroup.Designer.cs">
+    <Compile Include="IfjusagiVezeto\CamperGroup.Designer.cs">
       <DependentUpon>CamperGroup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ifivezeto\CamperImport.cs">
+    <Compile Include="KorcsoportVezeto\GroupList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ifivezeto\CamperImport.Designer.cs">
-      <DependentUpon>CamperImport.cs</DependentUpon>
+    <Compile Include="KorcsoportVezeto\GroupList.designer.cs">
+      <DependentUpon>GroupList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Korcsoportvezeto\GroupEdit.cs">
+    <Compile Include="KorcsoportVezeto\UnitEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Korcsoportvezeto\GroupEdit.designer.cs">
-      <DependentUpon>GroupEdit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Korcsoportvezeto\UnitEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Korcsoportvezeto\UnitEdit.designer.cs">
+    <Compile Include="KorcsoportVezeto\UnitEdit.designer.cs">
       <DependentUpon>UnitEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Korcsoportvezeto\UnitGroupList.cs">
+    <Compile Include="KorcsoportVezeto\UnitGroupList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Korcsoportvezeto\UnitGroupList.designer.cs">
+    <Compile Include="KorcsoportVezeto\UnitGroupList.designer.cs">
       <DependentUpon>UnitGroupList.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Taborvezeto\StatQuery.cs">
+    <Compile Include="TaborVezeto\StatQuery.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\StatQuery.Designer.cs">
+    <Compile Include="TaborVezeto\StatQuery.Designer.cs">
       <DependentUpon>StatQuery.cs</DependentUpon>
     </Compile>
-    <Compile Include="Taborvezeto\HouseList.cs">
+    <Compile Include="TaborVezeto\HouseList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\HouseList.Designer.cs">
+    <Compile Include="TaborVezeto\HouseList.Designer.cs">
       <DependentUpon>HouseList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Taborvezeto\RoomEdit.cs">
+    <Compile Include="TaborVezeto\RoomEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\RoomEdit.Designer.cs">
+    <Compile Include="TaborVezeto\RoomEdit.Designer.cs">
       <DependentUpon>RoomEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Taborvezeto\RoomList.cs">
+    <Compile Include="TaborVezeto\RoomList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\RoomList.Designer.cs">
+    <Compile Include="TaborVezeto\RoomList.Designer.cs">
       <DependentUpon>RoomList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Taborvezeto\SessionEdit.cs">
+    <Compile Include="TaborVezeto\SessionEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\SessionEdit.designer.cs">
+    <Compile Include="TaborVezeto\SessionEdit.designer.cs">
       <DependentUpon>SessionEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Taborvezeto\SessionList.cs">
+    <Compile Include="TaborVezeto\SessionList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\SessionList.designer.cs">
+    <Compile Include="TaborVezeto\SessionList.designer.cs">
       <DependentUpon>SessionList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Taborvezeto\SessionUnitList.cs">
+    <Compile Include="TaborVezeto\SessionUnitList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\SessionUnitList.designer.cs">
+    <Compile Include="TaborVezeto\SessionUnitList.designer.cs">
       <DependentUpon>SessionUnitList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Taborvezeto\UnitDetails.cs">
+    <Compile Include="TaborVezeto\UnitDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taborvezeto\UnitDetails.designer.cs">
+    <Compile Include="TaborVezeto\UnitDetails.designer.cs">
       <DependentUpon>UnitDetails.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Ifivezeto\CamperEdit.resx">
-      <DependentUpon>CamperEdit.cs</DependentUpon>
+    <EmbeddedResource Include="IfjusagiVezeto\CamperList.resx">
+      <DependentUpon>CamperList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ifivezeto\CamperGroup.resx">
+    <EmbeddedResource Include="IfjusagiVezeto\CamperGroup.resx">
       <DependentUpon>CamperGroup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ifivezeto\CamperImport.resx">
-      <DependentUpon>CamperImport.cs</DependentUpon>
+    <EmbeddedResource Include="KorcsoportVezeto\GroupList.resx">
+      <DependentUpon>GroupList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Korcsoportvezeto\GroupEdit.resx">
-      <DependentUpon>GroupEdit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Korcsoportvezeto\UnitEdit.resx">
+    <EmbeddedResource Include="KorcsoportVezeto\UnitEdit.resx">
       <DependentUpon>UnitEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Korcsoportvezeto\UnitGroupList.resx">
+    <EmbeddedResource Include="KorcsoportVezeto\UnitGroupList.resx">
       <DependentUpon>UnitGroupList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -178,28 +169,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Taborvezeto\StatQuery.resx">
+    <EmbeddedResource Include="TaborVezeto\StatQuery.resx">
       <DependentUpon>StatQuery.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Taborvezeto\HouseList.resx">
+    <EmbeddedResource Include="TaborVezeto\HouseList.resx">
       <DependentUpon>HouseList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Taborvezeto\RoomEdit.resx">
+    <EmbeddedResource Include="TaborVezeto\RoomEdit.resx">
       <DependentUpon>RoomEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Taborvezeto\RoomList.resx">
+    <EmbeddedResource Include="TaborVezeto\RoomList.resx">
       <DependentUpon>RoomList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Taborvezeto\SessionEdit.resx">
+    <EmbeddedResource Include="TaborVezeto\SessionEdit.resx">
       <DependentUpon>SessionEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Taborvezeto\SessionList.resx">
+    <EmbeddedResource Include="TaborVezeto\SessionList.resx">
       <DependentUpon>SessionList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Taborvezeto\SessionUnitList.resx">
+    <EmbeddedResource Include="TaborVezeto\SessionUnitList.resx">
       <DependentUpon>SessionUnitList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Taborvezeto\UnitDetails.resx">
+    <EmbeddedResource Include="TaborVezeto\UnitDetails.resx">
       <DependentUpon>UnitDetails.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

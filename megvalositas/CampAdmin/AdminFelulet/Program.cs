@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using AdminFelulet.Ifivezeto;
-using WindowsFormsApplication1.Unit;
-using WindowsFormsApplication2;
-using WindowsFormsApplication1;
-using WindowsFormsApplication1.Dir;
+using AdminFelulet.IfjusagiVezeto;
+using AdminFelulet.KorcsoportVezeto;
+using AdminFelulet.TaborVezeto;
 
 namespace AdminFelulet
 {
@@ -20,17 +18,24 @@ namespace AdminFelulet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //CamperEdit ablak = new CamperEdit();
+
+            CamperList ablak = new CamperList();
             //CamperGroup ablak = new CamperGroup();
-            //CamperImport ablak = new CamperImport();
-            //GroupEdit ablak = new GroupEdit();
+
+            //GroupList ablak = new GroupList();
             //UnitEdit ablak = new UnitEdit();
-            //CamperEdit ablak = new CamperEdit();
-            //WindowsFormsApplication1.UnitGroupList ablak = new WindowsFormsApplication1.UnitGroupList();
+            //UnitGroupList ablak = new UnitGroupList();
+
+            //HouseList ablak = new HouseList();
+            //RoomEdit ablak = new RoomEdit();
+            //RoomList ablak = new RoomList();
             //SessionEdit ablak = new SessionEdit();
             //SessionList ablak = new SessionList();
-            UnitDetails ablak = new UnitDetails();
-            ablak.ShowDialog();
+            //SessionUnitList ablak = new SessionUnitList();
+            //StatQuery ablak = new StatQuery();
+            //UnitDetails ablak = new UnitDetails();
+
+            Application.Run(ablak);
             //Application.Run(new Form1());
         }
     }

@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AdminFelulet.TaborVezeto
+namespace AdminFelulet.IfjusagiVezeto
 {
-    public partial class RoomEdit : Form
+    public partial class CamperGroup : Form
     {
-        public RoomEdit()
+        public CamperGroup()
         {
             InitializeComponent();
         }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1
+namespace AdminFelulet.KorcsoportVezeto
 {
     public partial class UnitGroupList : Form
     {
@@ -15,11 +15,5 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

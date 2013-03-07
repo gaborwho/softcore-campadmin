@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1
+namespace AdminFelulet.TaborVezeto
 {
     public partial class UnitDetails : Form
     {

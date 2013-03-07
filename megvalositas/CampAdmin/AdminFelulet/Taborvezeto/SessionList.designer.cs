@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1.Dir
+﻿namespace AdminFelulet.TaborVezeto
 {
     partial class SessionList
     {

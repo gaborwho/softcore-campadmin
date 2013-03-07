@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AdminFelulet.Szallas
+namespace AdminFelulet.TaborVezeto
 {
     public partial class HouseList : Form
     {

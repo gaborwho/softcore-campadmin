@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AdminFelulet.TaborVezeto
+namespace AdminFelulet.KorcsoportVezeto
 {
-    public partial class RoomEdit : Form
+    public partial class GroupList : Form
     {
-        public RoomEdit()
+        public GroupList()
         {
             InitializeComponent();
         }

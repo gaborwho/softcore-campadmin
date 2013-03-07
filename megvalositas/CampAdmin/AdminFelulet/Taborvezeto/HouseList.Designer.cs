@@ -1,4 +1,4 @@
-﻿namespace AdminFelulet.Szallas
+﻿namespace AdminFelulet.TaborVezeto
 {
     partial class HouseList
     {
@@ -94,7 +94,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 12;
-            this.button1.Text = "szerkesztés";
+            this.button1.Text = "Szerkesztés";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // listBox1
@@ -111,7 +111,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 14;
-            this.button2.Text = "törlés";
+            this.button2.Text = "Törlés";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -120,7 +120,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 15;
-            this.button3.Text = "mentés";
+            this.button3.Text = "Mentés";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // HouseList
@@ -139,7 +139,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "HouseList";
-            this.Text = "HouseList";
+            this.Text = "Házak";
             this.ResumeLayout(false);
             this.PerformLayout();
 

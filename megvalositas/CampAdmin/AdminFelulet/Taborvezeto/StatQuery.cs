@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1.Stat
+namespace AdminFelulet.TaborVezeto
 {
     public partial class StatQuery : Form
     {

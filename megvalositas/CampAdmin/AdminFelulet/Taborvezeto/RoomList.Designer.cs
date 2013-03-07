@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1.accomodation
+﻿namespace AdminFelulet.TaborVezeto
 {
     partial class RoomList
     {
