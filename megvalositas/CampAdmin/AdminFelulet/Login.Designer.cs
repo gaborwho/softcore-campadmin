@@ -48,9 +48,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(45, 37);
+            this.textBox1.Location = new System.Drawing.Point(54, 37);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 20);
+            this.textBox1.Size = new System.Drawing.Size(205, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
