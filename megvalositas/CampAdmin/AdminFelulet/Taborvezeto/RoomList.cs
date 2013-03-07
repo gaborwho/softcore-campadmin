@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AdminFelulet.Szallas
+namespace WindowsFormsApplication1.accomodation
 {
-    public partial class editHouse : Form
+    public partial class RoomList : Form
     {
-        public editHouse()
+        public RoomList()
         {
             InitializeComponent();
         }

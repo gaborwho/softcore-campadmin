@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet.Szallas
 {
-    partial class editHouse
+    partial class HouseList
     {
         /// <summary>
         /// Required designer variable.
@@ -123,11 +123,11 @@
             this.button3.Text = "mentés";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // editHouse
+            // HouseList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 305);
+            this.ClientSize = new System.Drawing.Size(273, 305);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listBox1);
@@ -138,8 +138,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "editHouse";
-            this.Text = "editHouse";
+            this.Name = "HouseList";
+            this.Text = "HouseList";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -83,12 +83,6 @@
     <Compile Include="Ifivezeto\CamperImport.Designer.cs">
       <DependentUpon>CamperImport.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ifivezeto\CamperList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ifivezeto\CamperList.Designer.cs">
-      <DependentUpon>CamperList.cs</DependentUpon>
-    </Compile>
     <Compile Include="Korcsoportvezeto\GroupEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,23 +103,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Statisztika\StatQuery.cs">
+    <Compile Include="Taborvezeto\StatQuery.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statisztika\StatQuery.Designer.cs">
+    <Compile Include="Taborvezeto\StatQuery.Designer.cs">
       <DependentUpon>StatQuery.cs</DependentUpon>
     </Compile>
-    <Compile Include="Szallas\editRoom.cs">
+    <Compile Include="Taborvezeto\HouseList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Szallas\editRoom.Designer.cs">
-      <DependentUpon>editRoom.cs</DependentUpon>
+    <Compile Include="Taborvezeto\HouseList.Designer.cs">
+      <DependentUpon>HouseList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Szallas\roomList.cs">
+    <Compile Include="Taborvezeto\RoomEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Szallas\roomList.Designer.cs">
-      <DependentUpon>roomList.cs</DependentUpon>
+    <Compile Include="Taborvezeto\RoomEdit.Designer.cs">
+      <DependentUpon>RoomEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taborvezeto\RoomList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taborvezeto\RoomList.Designer.cs">
+      <DependentUpon>RoomList.cs</DependentUpon>
     </Compile>
     <Compile Include="Taborvezeto\SessionEdit.cs">
       <SubType>Form</SubType>
@@ -160,16 +160,9 @@
     <EmbeddedResource Include="Ifivezeto\CamperImport.resx">
       <DependentUpon>CamperImport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ifivezeto\CamperList.resx">
-      <DependentUpon>CamperList.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Korcsoportvezeto\GroupEdit.resx">
       <DependentUpon>GroupEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Korcsoportvezeto\SessionEdit.resx" />
-    <EmbeddedResource Include="Korcsoportvezeto\SessionList.resx" />
-    <EmbeddedResource Include="Korcsoportvezeto\SessionUnitList.resx" />
-    <EmbeddedResource Include="Korcsoportvezeto\UnitDetails.resx" />
     <EmbeddedResource Include="Korcsoportvezeto\UnitEdit.resx">
       <DependentUpon>UnitEdit.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,14 +178,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Statisztika\StatQuery.resx">
+    <EmbeddedResource Include="Taborvezeto\StatQuery.resx">
       <DependentUpon>StatQuery.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Szallas\editRoom.resx">
-      <DependentUpon>editRoom.cs</DependentUpon>
+    <EmbeddedResource Include="Taborvezeto\HouseList.resx">
+      <DependentUpon>HouseList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Szallas\roomList.resx">
-      <DependentUpon>roomList.cs</DependentUpon>
+    <EmbeddedResource Include="Taborvezeto\RoomEdit.resx">
+      <DependentUpon>RoomEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taborvezeto\RoomList.resx">
+      <DependentUpon>RoomList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Taborvezeto\SessionEdit.resx">
       <DependentUpon>SessionEdit.cs</DependentUpon>

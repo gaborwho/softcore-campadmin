@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1.accomodation
 {
-    public partial class editRoom : Form
+    public partial class RoomEdit : Form
     {
-        public editRoom()
+        public RoomEdit()
         {
             InitializeComponent();
         }

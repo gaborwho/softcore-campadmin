@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1.accomodation
 {
-    partial class roomList
+    partial class RoomList
     {
         /// <summary>
         /// Required designer variable.
@@ -49,7 +49,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(180, 290);
             this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -68,7 +67,6 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -78,9 +76,8 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Remove";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // roomList
+            // RoomList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,8 +86,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
-            this.Name = "roomList";
-            this.Text = "roomList";
+            this.Name = "RoomList";
+            this.Text = "RoomList";
             this.ResumeLayout(false);
 
         }

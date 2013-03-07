@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1.accomodation
 {
-    partial class editRoom
+    partial class RoomEdit
     {
         /// <summary>
         /// Required designer variable.
@@ -95,7 +95,7 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Hauz";
             // 
-            // editRoom
+            // RoomEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -107,8 +107,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "editRoom";
-            this.Text = "editRoom";
+            this.Name = "RoomEdit";
+            this.Text = "RoomEdit";
             this.ResumeLayout(false);
             this.PerformLayout();
 
