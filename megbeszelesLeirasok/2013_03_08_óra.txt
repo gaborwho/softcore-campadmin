@@ -1,0 +1,22 @@
+use casen; advanced extension point
+	; összeköttetésen jobb->attach
+
+Dynamic
+jobb->add Element 
+		type:Collaboration
+		név: az adott use case neve
+
+jobb->add:
+	interaction
+		normális mûködés
+		elutasított mûködés
+	kommunication-ok
+
+class-ból behúzzuk, 
+	de nem simple link-ként
+	As instance of element
+
+asszociációk behúzása
+	add message :tól :neki
+	checkbox: start new group, másik színezés
+	checkbox: IsReturn, ez egy régebbi üzenet visszatérési értéke.
