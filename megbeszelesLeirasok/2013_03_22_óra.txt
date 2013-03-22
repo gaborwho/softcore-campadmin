@@ -1,0 +1,117 @@
+Telepítés modell
+	ha hálózatunk gépeit mutatja
+
+eszközök: csomópont (node)
+	kapcsolat asszociációs
+
+
+Tervezési modell
+
+struktúra
+	class: végleges
+		összes attr
+		összes kapcsolattípus lehet
+		futási környezetet mutatja
+
+mûködés leírása
+	szekvencia d
+	állapot d
+	
+	pontosabban leírjuk a folyamatokat, sorrendiségüket
+
+Alrendszerek
+	interfészen keresztüli kommunikáció
+
+	-packagek egy-egy alrendszer
+	egy-egy alrendszer: hol (telepítési nódokon belül)
+
+Rétegek
+	köztes réteg (middleware)
+		pl .Net is itt van
+	op rendszer rétege nem túl sok, hisz .neten ker használjuk
+
+Interfész
+	mint c# ban
+
+Class diag
+	-név,tul, method, jelleg, láthatóság
+	-kapcs: asszoc, aggregáció, kompozíció, Spec/gen, Függõség (temporális kapcs; pl paraméter kapcs, addig él míg a metódus használja)
+
+	megvalósítási kapcsolat (realizáció) (olyan nyil mint a generalizációé, csak szaggatott a nyila)
+
+	generikus típus, kis téglalap (dia példán) 
+	amikor 1-csillag volt, akkor lehet (generic)lista
+
+	asszociációs nyil túl oldalán lévõ név, adattagnév lesz a vizsgált classban
+
+	Aktív osztály:
+		- minden csomóponton mindíg van egy aktív osztály
+		-pl main: ez mindíg fut...
+
+	névtér :: osztálya 
+
+//sites.google.com/site/haldoklikamoodle/ <- ideiglenesen innen is letölthetõ az órai
+
+Telepitési modell
+	add deploiment diagram (Környezet)
+
+	node:
+		stereotipia: pc; server;
+			//Properties fül: type is szerverre vált servernél
+	device:
+		-speciális munka eszköz, nem csak egy egyszerû gép, spec oprendszer, spec perifériák(mint egy kártyaolvasó)
+
+Tervezési modell
+	rétegek: Layer stereotípiákkal
+	
+	rendszerszoftver réteg
+		jelzés szinten: op rendszer (pl ha speciális)
+
+	Adatkezelõ
+		Lista szerepelhet, ha nagyon ki akarjuk emelni	
+	
+	Framework layer
+		.Net berántása
+		package->code eng->import binary; \.net\bin\corelib.dll (ellenjavalt)
+		de elég azokat megrajzolni, amiket használunk a .Net-bõl
+
+	Megjelenés:
+		//Page, és Window (mert itt wpf es a példa)	
+		nem kell ennyire túlspilázni mint pld-ben, csak a fontos adattagok kellenek, nem kell minden labell
+
+
+	Layer áttekitõ csomag / diagram 
+		-a nyilakhoz majd késöbb mind egy egy komm interface
+
+
+
+Gyak
+	jobb-> attributes
+		new -> és akkor egy újat szerkesztünk (amit még nem látunk)
+		megcsináltuk Save gomb!
+		close gomb
+
+
+	method
+		return type pl int; int[]
+		parametres: edit parameters
+			név; típus; kind(pl Out)
+		save
+
+	Jobb a classon/generate code
+
+	asszociációknál, target role
+		milyen néven legyen az adattag
+		member type: milyen típussal generálja
+			pl: List<tipus>
+
+	Realizáció
+		-behúzzuk
+		-kiválasztjuk, hogy mely metódusokat val meg (ha nem mindet akkor abstract)
+
+
+	Áttekintõ diagram:
+		Swimlanes and matrix
+			new->név (föl le mozgathatóak a sávok; a diagram elemei nem mozognak vele!)
+
+
