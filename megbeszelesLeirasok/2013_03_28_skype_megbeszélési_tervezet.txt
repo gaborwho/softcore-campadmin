@@ -1,0 +1,51 @@
+
+Szünetre összeszedtem némi teendõt...
+	-elsõ szüneti skype megbeszélés idõpontjának eldöntése
+	
+Esedékes döntések amiket a megbeszélésen meg kéne hoznunk:
+	-az EA file verziózása, a tervezés párhuzamosítása.
+	-feladatlista összeállítása, közös tisztázása
+	-feladatok emberekhez rendelése
+
+Feladataink, Teendõink a következõ leadásig (kidolgozási fázis lezárása):
+	-UseCase finomítás (Include[valami közös kiemelhetõ tevékenység pl], és Extends[valami ellenõrzés pl importált file?])
+	-egyszerûsített sztereotipikus classok átnézése (hisz módosult az use case, lehet az sem maradt jó, de pasz)
+	-Kommunikációs diagrammok szétosztása (párhuzamos készítése)
+	-Telepítési modell/diagram (valszeg 1 db doboz az egész:) )
+	-Tervezési modell
+		-Szerkezet:
+			Rendszer-szoftver réteg (elvileg semmi)
+			Megjelenítési réteg 
+				-kéne vadászni valami reverse engenreering funkciót EA-ban, és beolvastatni vele a megjelenés osztályainkat
+				-persze akkor már ténylegesen véglegesíteni kell a megjelenéseket, átfésülni újból, csak hogy biztos minden jó legyen
+			Köztes Réteg
+				-.Net
+					-Azon osztályokat amiket biztos használunk majd, belinkelni. (pl system.generics.list)
+			Alkalmazás Réteg
+				-Class Diagramok!!! Nagy munka!!! Ehez lehet össze is kéne ülnünk
+				-Interfészek meghatározása
+				-Állapot diagramok
+		-Mûködés:
+			-Szekvencia diagrammok dögivel (minden use casehoz kb 1-(ahol hiba lehet több))
+			
+		(Az állapotot, és a szekvenciákat még nem vettük, de lehet, hogy el kéne kezdeni még szünetben, mert melós azért ez is)
+Megbeszélés sikeressége:
+	-A megbeszélés sikeresnek tekinthetõ, ha az összes kitûzött pontot átbeszéltük.
+	-ezen megbeszélés célja az idõnk beosztása, teendõink átbeszélése.
+	-nem cél, hogy közben készítsük a project terméket, azt mindenki csinálja maga, és a következõ megbeszélésen, 
+		és a kommunikációs csatornáinkon megtárgyaljuk a haladását.
+	-cél továbbá a megbeszélés után esedékes haladást tisztázó megbeszélés idõpontjának és céljainak közös felvázolása.
+		(tipp: ott fogjuk megbeszélni, hogy ki mire jutott)
+	
+A megbeszélés hatékonysága:
+	-A megbeszélés hatékonyságának definíciója:
+		a legkevesebb idõ, és energiaráfordítással elérni a megbeszélés célkitûzéseit
+	-A magas hatékonyság elõfeltételei:
+		-a megbeszélésre minden tag felkészülten érkezzék:
+			-mindenki tudja, hogy hol áll a project, legyen tisztában a project célkitûzésekkel.
+			-mindenki tudja, hogy a megbeszélésen mirõl lesz szó, elõtte a rá vonatkozó részeken gondolkozzon, 
+				lehetõleg fussa át az õt annyira közelrõl nem érintõ pontokat is, 
+				hátha egyes észrevételeivel pont tud segíteni, és ezzel elõre mozdítani a csapatot.
+			-rendelkezzen az elvárható eszközökkel, senki se megbeszélés közben telepítse az EA-t mert az rontja a hatékonyságot ;)
+	-Ha mindenki tudja, hogy mit kell megbeszélni, és, hogy
+		hol áll a project, akkor hiszem, hogy egy sikeres, és hatékony megbeszélés elõtt állunk :)
