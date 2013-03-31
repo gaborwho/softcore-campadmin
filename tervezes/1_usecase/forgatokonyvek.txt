@@ -9,7 +9,8 @@ Táborvezetõ
 	Ház bevitele
 		Bejelentkezés
 		Ház-kezelõ megnyitása
-		Új Ház adatainak bevitele (név, ház_szám)		
+		Új Ház adatainak bevitele (név, ház_koord_X,ház_koord_Y)		
+		{ex} : ilyen nevû ház már létezik
 	Ház törlése
 		Bejelentkezés
 		Ház-kezelõ megnyitása
@@ -18,7 +19,8 @@ Táborvezetõ
 	Szoba bevitele
 		Bejelentkezés
 		Szoba-kezelõ megnyitása
-		Új szoba adatainak bevitele (név, hely, férõhelyek)
+		Új szoba adatainak bevitele (SzobaSzám, férõhelyek)
+		{ex} : ilyen szobaszám, az adott házban, már létezik
 	Szoba adatainak módosítása
 		Bejelentkezés
 		Szoba-kezelõ megnyitása
@@ -38,44 +40,8 @@ Táborvezetõ
 		Turnus-kezelõ megnyitása
 		Turnus kiválasztása
 		Turnus adatainak módosítása
-	Táborozó bevitele
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása 
-		Új táborozó felvitele
-		Táborozó adatainak bevitele (név, születési év, ország, elérhetõségek, betegségek, megjegyzések)
-	Táborozó adatainak módosítása
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása
-		Táborozó kiválasztása
-		Táborozó adatainak módosítása
-	Táborozó törlése 
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása (csak az aktuálisat látja)
-		Táborozó kiválasztása
-		Táborozó törlése
-	Táborozók listázása 
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása
-	
+
 Korcsoport vezetõ
-	Táborozó bevitele
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása 
-		Új táborozó felvitele
-		Táborozó adatainak bevitele (név, születési év, ország, elérhetõségek, betegségek, megjegyzések)
-	Táborozó adatainak módosítása
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása
-		Táborozó kiválasztása
-		Táborozó adatainak módosítása
-	Táborozó törlése 
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása (csak az aktuálisat látja)
-		Táborozó kiválasztása
-		Táborozó törlése
-	Táborozók listázása 
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása
 	Csoport bevitele
 		Bejelentkezés
 		Csoport-kezelõ megnyitása
@@ -89,9 +55,7 @@ Korcsoport vezetõ
 		Csoport adatainak módosítása (név, korcsoport, ország, 2 ifivezetõ)
 		(gyerekek felvitele)
 		(gyerekek hozzárendelése)
-	//Csoport törlése (statisztikák?)
-		
-		
+
 Ifjúsági vezetõ
 	Táborozó bevitele
 		Bejelentkezés
@@ -114,6 +78,7 @@ Ifjúsági vezetõ
 		Táborozók importálása
 		Fájl betöltése
 		Adatok ellenõrzése
+		{ex} : hiba az importálandó fájlban
 	Táborozók listázása
 		Bejelentkezés
 		Táborozó-kezelõ megnyitása
