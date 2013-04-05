@@ -1,5 +1,5 @@
 Forgatókönyvek
-Táborvezetõ
+
 	Statisztikák készítése
 		Bejelentkezés
 		Statisztika-kezelõ megnyitása
@@ -55,6 +55,22 @@ Korcsoport vezetõ
 		Csoport adatainak módosítása (név, korcsoport, ország, 2 ifivezetõ)
 		(gyerekek felvitele)
 		(gyerekek hozzárendelése)
+	Korcsoport bevitele
+		Bejelentkezés
+		Korcsoport-kezelõ megnyitása
+		Új korcsoport adatainak bevitele
+		(Csoportok hozzárendelése)
+	Korcsoport módosítása
+		Bejelentkezés
+		Korcsoport-kezelõ elindítása
+		Korcsoport kiválasztása
+		Korcsoport adatainak módosítása (név, korcsoport, ország, 2 ifivezetõ)
+		(csoportok hozzárendelése)
+	Korcsoport törlése
+		Bejelentkezés
+		Korcsoport-kezel¿ megnyitása
+		Korcsoport kiválasztása
+		Korcsoport törlése
 
 Ifjúsági vezetõ
 	Táborozó bevitele
