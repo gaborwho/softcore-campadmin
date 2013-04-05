@@ -1,102 +1,107 @@
-Forgatókönyvek
+Forgatï¿½kï¿½nyvek
 
-	Statisztikák készítése
-		Bejelentkezés
-		Statisztika-kezelõ megnyitása
-		Megfelelõ lekérdezés kiválasztása (legördülõ listából?)
-		Lekérdezés futtatása
-		(exportálás)
-	Ház bevitele
-		Bejelentkezés
-		Ház-kezelõ megnyitása
-		Új Ház adatainak bevitele (név, ház_koord_X,ház_koord_Y)		
-		{ex} : ilyen nevû ház már létezik
-	Ház törlése
-		Bejelentkezés
-		Ház-kezelõ megnyitása
-		Ház kiválasztása
-		Ház törlése
-	Szoba bevitele
-		Bejelentkezés
-		Szoba-kezelõ megnyitása
-		Új szoba adatainak bevitele (SzobaSzám, férõhelyek)
-		{ex} : ilyen szobaszám, az adott házban, már létezik
-	Szoba adatainak módosítása
-		Bejelentkezés
-		Szoba-kezelõ megnyitása
-		Szoba kiválasztása
-		Szoba adatinak módosítása
-	Szoba törlése
-		Bejelentkezés
-		Szoba-kezelõ megnyitása
-		Szoba kiválasztása
-		Szoba törlése
-	Turnus bevitele
-		Bejelentkezés
-		Turnus-kezelõ megnyitása
-		Turnus adatainak bevitele (név, év, sorszám, idõtartam (tól-ig))
-	Turnus adatainak módosítása
-		Bejelentkezés
-		Turnus-kezelõ megnyitása
-		Turnus kiválasztása
-		Turnus adatainak módosítása
+	*Statisztikï¿½k kï¿½szï¿½tï¿½se
+		Bejelentkezï¿½s
+		Statisztika-kezelï¿½ megnyitï¿½sa
+		Megfelelï¿½ lekï¿½rdezï¿½s kivï¿½lasztï¿½sa (legï¿½rdï¿½lï¿½ listï¿½bï¿½l?)
+		Lekï¿½rdezï¿½s futtatï¿½sa
+		(exportï¿½lï¿½s)
+	*Hï¿½z felvitele
+		Bejelentkezï¿½s
+		Hï¿½z-kezelï¿½ megnyitï¿½sa
+		ï¿½j Hï¿½z adatainak bevitele (nï¿½v, hï¿½z_koord_X,hï¿½z_koord_Y)		
+		{ex} : ilyen nevï¿½ hï¿½z mï¿½r lï¿½tezik
+	*Hï¿½z tï¿½rlï¿½se
+		Bejelentkezï¿½s
+		Hï¿½z-kezelï¿½ megnyitï¿½sa
+		Hï¿½z kivï¿½lasztï¿½sa
+		Hï¿½z tï¿½rlï¿½se
+	*Szoba felvitele
+		Bejelentkezï¿½s
+		Szoba-kezelï¿½ megnyitï¿½sa
+		ï¿½j szoba adatainak bevitele (SzobaSzï¿½m, fï¿½rï¿½helyek)
+		{ex} : ilyen szobaszï¿½m, az adott hï¿½zban, mï¿½r lï¿½tezik
+	*Szoba adatainak mï¿½dosï¿½tï¿½sa
+		Bejelentkezï¿½s
+		Szoba-kezelï¿½ megnyitï¿½sa
+		Szoba kivï¿½lasztï¿½sa
+		Szoba adatinak mï¿½dosï¿½tï¿½sa
+	*Szoba tï¿½rlï¿½se
+		Bejelentkezï¿½s
+		Szoba-kezelï¿½ megnyitï¿½sa
+		Szoba kivï¿½lasztï¿½sa
+		Szoba tï¿½rlï¿½se
+	*Turnus felvitele
+		Bejelentkezï¿½s
+		Turnus-kezelï¿½ megnyitï¿½sa
+		Turnus adatainak bevitele (nï¿½v, ï¿½v, sorszï¿½m, idï¿½tartam (tï¿½l-ig))
+	*Turnus adatainak mï¿½dosï¿½tï¿½sa
+		Bejelentkezï¿½s
+		Turnus-kezelï¿½ megnyitï¿½sa
+		Turnus kivï¿½lasztï¿½sa
+		Turnus adatainak mï¿½dosï¿½tï¿½sa
 
-Korcsoport vezetõ
-	Csoport bevitele
-		Bejelentkezés
-		Csoport-kezelõ megnyitása
-		Új csoport adatainak bevitele (név, korcsoport, ország, 2 ifivezetõ)
+Korcsoport vezetï¿½
+	*Csoport felvitele
+		Bejelentkezï¿½s
+		Csoport-kezelï¿½ megnyitï¿½sa
+		ï¿½j csoport adatainak bevitele (nï¿½v, korcsoport, orszï¿½g, 2 ifivezetï¿½)
 		(Gyerekek felvitele)
-		(Gyerekek hozzárendelése)
-	Csoport adatainak módosítása
-		Bejelentkezés
-		Csoport-kezelõ elindítása
-		Csoport kiválasztása
-		Csoport adatainak módosítása (név, korcsoport, ország, 2 ifivezetõ)
+		(Gyerekek hozzï¿½rendelï¿½se)
+	*Csoport adatainak mï¿½dosï¿½tï¿½sa
+		Bejelentkezï¿½s
+		Csoport-kezelï¿½ elindï¿½tï¿½sa
+		Csoport kivï¿½lasztï¿½sa
+		Csoport adatainak mï¿½dosï¿½tï¿½sa (nï¿½v, korcsoport, orszï¿½g, 2 ifivezetï¿½)
 		(gyerekek felvitele)
-		(gyerekek hozzárendelése)
-	Korcsoport bevitele
-		Bejelentkezés
-		Korcsoport-kezelõ megnyitása
-		Új korcsoport adatainak bevitele
-		(Csoportok hozzárendelése)
-	Korcsoport módosítása
-		Bejelentkezés
-		Korcsoport-kezelõ elindítása
-		Korcsoport kiválasztása
-		Korcsoport adatainak módosítása (név, korcsoport, ország, 2 ifivezetõ)
-		(csoportok hozzárendelése)
-	Korcsoport törlése
-		Bejelentkezés
-		Korcsoport-kezel¿ megnyitása
-		Korcsoport kiválasztása
-		Korcsoport törlése
+		(gyerekek hozzï¿½rendelï¿½se)
+	*Csoport tÃ¶rlÃ©se
+		BejelentkezÃ©s
+		Csoport-kezelÅ‘ elindÃ­tÃ¡sa
+		Csoport kivÃ¡lasztÃ¡sa
+		Csoport tÃ¶rlÃ©se
+	*Korcsoport felvitele
+		Bejelentkezï¿½s
+		Korcsoport-kezelï¿½ megnyitï¿½sa
+		ï¿½j korcsoport adatainak bevitele
+		(Csoportok hozzï¿½rendelï¿½se)
+	*Korcsoport mï¿½dosï¿½tï¿½sa
+		Bejelentkezï¿½s
+		Korcsoport-kezelï¿½ elindï¿½tï¿½sa
+		Korcsoport kivï¿½lasztï¿½sa
+		Korcsoport adatainak mï¿½dosï¿½tï¿½sa (nï¿½v, korcsoport, orszï¿½g, 2 ifivezetï¿½)
+		(csoportok hozzï¿½rendelï¿½se)
+	*Korcsoport tï¿½rlï¿½se
+		Bejelentkezï¿½s
+		Korcsoport-kezelï¿½ megnyitï¿½sa
+		Korcsoport kivï¿½lasztï¿½sa
+		Korcsoport tï¿½rlï¿½se
 
-Ifjúsági vezetõ
-	Táborozó bevitele
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása
-		Új táborozó felvitele
-		Táborozó adatainak bevitele (név, születési év, ország, elérhetõségek, betegségek, megjegyzések)
-	Táborozó csoporthoz rendelése
-		Bejelentkezés
-		Csoport-kezelõ megynyitása
-		Táborozók csoporthoz rendelése 
-		Táborozók Szobához rendelése
-	Táborozó adatainak módosítása
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása
-		Táborozó megnyitása
-		Adatok módosítása
-	Táborozók importálása
-		Bejelentkezés
-		Táborozó-kezelõ megynyitása
-		Táborozók importálása
-		Fájl betöltése
-		Adatok ellenõrzése
-		{ex} : hiba az importálandó fájlban
-	Táborozók listázása
-		Bejelentkezés
-		Táborozó-kezelõ megnyitása
+Ifjï¿½sï¿½gi vezetï¿½
+	*Tï¿½borozï¿½ bevitele
+		Bejelentkezï¿½s
+		Tï¿½borozï¿½-kezelï¿½ megnyitï¿½sa
+		ï¿½j tï¿½borozï¿½ felvitele
+		Tï¿½borozï¿½ adatainak bevitele (nï¿½v, szï¿½letï¿½si ï¿½v, orszï¿½g, elï¿½rhetï¿½sï¿½gek, betegsï¿½gek, megjegyzï¿½sek)
+	*Tï¿½borozï¿½ csoporthoz rendelï¿½se
+		Bejelentkezï¿½s
+		Csoport-kezelï¿½ megynyitï¿½sa
+		Tï¿½borozï¿½k csoporthoz rendelï¿½se 
+		Tï¿½borozï¿½k Szobï¿½hoz rendelï¿½se
+	*Tï¿½borozï¿½ adatainak mï¿½dosï¿½tï¿½sa
+		Bejelentkezï¿½s
+		Tï¿½borozï¿½-kezelï¿½ megnyitï¿½sa
+		Tï¿½borozï¿½ megnyitï¿½sa
+		Adatok mï¿½dosï¿½tï¿½sa
+	*Tï¿½borozï¿½k importï¿½lï¿½sa
+		Bejelentkezï¿½s
+		Tï¿½borozï¿½-kezelï¿½ megynyitï¿½sa
+		Tï¿½borozï¿½k importï¿½lï¿½sa
+		Fï¿½jl betï¿½ltï¿½se
+		Adatok ellenï¿½rzï¿½se
+		{ex} : hiba az importï¿½landï¿½ fï¿½jlban
+	*Tï¿½borozï¿½k listï¿½zï¿½sa
+		Bejelentkezï¿½s
+		Tï¿½borozï¿½-kezelï¿½ megnyitï¿½sa
 
 
