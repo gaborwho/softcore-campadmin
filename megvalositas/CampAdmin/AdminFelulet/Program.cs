@@ -19,7 +19,7 @@ namespace AdminFelulet
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            CamperList ablak = new CamperList();
+            //CamperList ablak = new CamperList();
             //CamperGroup ablak = new CamperGroup();
 
             //GroupList ablak = new GroupList();
@@ -32,7 +32,7 @@ namespace AdminFelulet
             //SessionEdit ablak = new SessionEdit();
             //SessionList ablak = new SessionList();
             //SessionUnitList ablak = new SessionUnitList();
-            //StatQuery ablak = new StatQuery();
+            StatQuery ablak = new StatQuery();
             //UnitDetails ablak = new UnitDetails();
 
             Application.Run(ablak);

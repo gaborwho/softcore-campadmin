@@ -44,6 +44,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.buttonUjTaborozo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -170,9 +171,9 @@
             // 
             // listBox1
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.IntegralHeight = false;
             this.listBox1.Location = new System.Drawing.Point(12, 12);
@@ -200,11 +201,22 @@
             this.button2.Text = "Importálás";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // buttonUjTaborozo
+            // 
+            this.buttonUjTaborozo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonUjTaborozo.Location = new System.Drawing.Point(280, 281);
+            this.buttonUjTaborozo.Name = "buttonUjTaborozo";
+            this.buttonUjTaborozo.Size = new System.Drawing.Size(75, 23);
+            this.buttonUjTaborozo.TabIndex = 34;
+            this.buttonUjTaborozo.Text = "Új";
+            this.buttonUjTaborozo.UseVisualStyleBackColor = true;
+            // 
             // CamperList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 345);
+            this.Controls.Add(this.buttonUjTaborozo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.listBox1);
@@ -246,6 +258,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonUjTaborozo;
 
     }
 }
