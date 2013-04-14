@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet.TaborVezeto
 {
-    partial class SessionList
+    partial class TurnusLista
     {
         /// <summary>
         /// Required designer variable.

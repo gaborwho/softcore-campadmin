@@ -55,20 +55,21 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(103, 320);
+            this.button2.Location = new System.Drawing.Point(113, 320);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 23);
+            this.button2.Size = new System.Drawing.Size(90, 23);
             this.button2.TabIndex = 4;
-            this.button2.Text = "unit edit";
+            this.button2.Text = "Korcsop. szerk.";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(189, 320);
+            this.button1.Location = new System.Drawing.Point(209, 320);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 23);
+            this.button1.Size = new System.Drawing.Size(124, 23);
             this.button1.TabIndex = 5;
-            this.button1.Text = "unit upload";
+            this.button1.Text = "Korcsop. hozzáadása";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -76,9 +77,9 @@
             this.button3.Enabled = false;
             this.button3.Location = new System.Drawing.Point(17, 320);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 23);
+            this.button3.Size = new System.Drawing.Size(90, 23);
             this.button3.TabIndex = 6;
-            this.button3.Text = "add unit";
+            this.button3.Text = "Új korcsop.";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // label2
@@ -88,7 +89,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "statusz / adatok";
+            this.label2.Text = "státusz / adatok";
             // 
             // label1
             // 
@@ -112,7 +113,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UnitGroupList";
-            this.Text = "UnitHead - Unitlist";
+            this.Text = "Korcsoport hozzárendelés";
             this.ResumeLayout(false);
             this.PerformLayout();
 

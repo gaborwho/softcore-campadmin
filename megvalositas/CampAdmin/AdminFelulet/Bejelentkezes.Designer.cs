@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet
 {
-    partial class Login
+    partial class Bejelentkezes
     {
         /// <summary>
         /// Required designer variable.
@@ -87,7 +87,7 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Jelszó";
             // 
-            // Login
+            // Bejelentkezes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,8 +99,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Login";
-            this.Text = "Login";
+            this.Name = "Bejelentkezes";
+            this.Text = "Bejelentkezés";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AdminFelulet.IfjusagiVezeto
+namespace AdminFelulet.KorcsoportVezeto
 {
-    public partial class IfjusagiHome : Form
+    public partial class KorcsoportLista : Form
     {
-        public IfjusagiHome()
+        public KorcsoportLista()
         {
             InitializeComponent();
         }

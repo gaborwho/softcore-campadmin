@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet.TaborVezeto
 {
-    partial class TaborVezetoHome
+    partial class TaborVezetoMenu
     {
         /// <summary>
         /// Required designer variable.

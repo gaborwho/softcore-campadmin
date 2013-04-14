@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet.IfjusagiVezeto
 {
-    partial class CamperGroup
+    partial class TaborozoCsoporthozSzobahozRendeles
     {
         /// <summary>
         /// Required designer variable.

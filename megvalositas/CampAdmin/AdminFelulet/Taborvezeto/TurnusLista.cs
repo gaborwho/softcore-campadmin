@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace AdminFelulet.TaborVezeto
 {
-    public partial class RoomEdit : Form
+    public partial class TurnusLista : Form
     {
-        public RoomEdit()
+        public TurnusLista()
         {
             InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

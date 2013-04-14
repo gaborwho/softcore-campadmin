@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet.TaborVezeto
 {
-    partial class RoomList
+    partial class SzobaLista
     {
         /// <summary>
         /// Required designer variable.
@@ -52,29 +52,29 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(58, 12);
+            this.button1.Location = new System.Drawing.Point(63, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 23);
+            this.button1.Size = new System.Drawing.Size(78, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Edit";
+            this.button1.Text = "Szerkesztés";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(12, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 23);
+            this.button2.Size = new System.Drawing.Size(45, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Add";
+            this.button2.Text = "Új";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(101, 12);
+            this.button3.Location = new System.Drawing.Point(147, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 23);
+            this.button3.Size = new System.Drawing.Size(45, 23);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Remove";
+            this.button3.Text = "Törlés";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // RoomList
@@ -87,7 +87,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Name = "RoomList";
-            this.Text = "RoomList";
+            this.Text = "Szobák";
             this.ResumeLayout(false);
 
         }

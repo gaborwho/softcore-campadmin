@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AdminFelulet.TaborVezeto
+namespace AdminFelulet.IfjusagiVezeto
 {
-    public partial class TaborVezetoHome : Form
+    public partial class TaborozoCsoporthozSzobahozRendeles : Form
     {
-        public TaborVezetoHome()
+        public TaborozoCsoporthozSzobahozRendeles()
         {
             InitializeComponent();
         }

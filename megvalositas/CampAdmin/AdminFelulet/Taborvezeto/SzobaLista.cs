@@ -9,17 +9,11 @@ using System.Windows.Forms;
 
 namespace AdminFelulet.TaborVezeto
 {
-    public partial class UnitGroupList : Form
+    public partial class SzobaLista : Form
     {
-        public UnitGroupList()
+        public SzobaLista()
         {
             InitializeComponent();
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

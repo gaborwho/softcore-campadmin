@@ -9,11 +9,22 @@ using System.Windows.Forms;
 
 namespace AdminFelulet.TaborVezeto
 {
-    public partial class RoomList : Form
+    public partial class UnitGroupList : Form
     {
-        public RoomList()
+        public UnitGroupList()
         {
             InitializeComponent();
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

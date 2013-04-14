@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet.KorcsoportVezeto
 {
-    partial class GroupList
+    partial class CsoportLista
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet.TaborVezeto
 {
-    partial class RoomEdit
+    partial class SzobaSzerkesztes
     {
         /// <summary>
         /// Required designer variable.
@@ -109,7 +109,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "RoomEdit";
-            this.Text = "RoomEdit";
+            this.Text = "Szoba szerkesztés";
             this.ResumeLayout(false);
             this.PerformLayout();
 

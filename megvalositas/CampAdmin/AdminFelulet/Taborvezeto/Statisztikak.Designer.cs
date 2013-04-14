@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet.TaborVezeto
 {
-    partial class StatQuery
+    partial class Statisztikak
     {
         /// <summary>
         /// Required designer variable.

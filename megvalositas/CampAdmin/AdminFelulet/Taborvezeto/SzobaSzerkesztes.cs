@@ -9,24 +9,14 @@ using System.Windows.Forms;
 
 namespace AdminFelulet.TaborVezeto
 {
-    public partial class StatQuery : Form
+    public partial class SzobaSzerkesztes : Form
     {
-        public StatQuery()
+        public SzobaSzerkesztes()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

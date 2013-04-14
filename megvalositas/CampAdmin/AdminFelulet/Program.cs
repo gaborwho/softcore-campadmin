@@ -32,7 +32,7 @@ namespace AdminFelulet
             //SessionEdit ablak = new SessionEdit();
             //SessionList ablak = new SessionList();
             //SessionUnitList ablak = new SessionUnitList();
-            StatQuery ablak = new StatQuery();
+            Statisztikak ablak = new Statisztikak();
             //UnitDetails ablak = new UnitDetails();
 
             Application.Run(ablak);

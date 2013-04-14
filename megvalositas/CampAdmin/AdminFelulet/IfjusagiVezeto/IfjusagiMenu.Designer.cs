@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet.IfjusagiVezeto
 {
-    partial class IfjusagiHome
+    partial class IfjusagiMenu
     {
         /// <summary>
         /// Required designer variable.
