@@ -45,6 +45,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.buttonUjTaborozo = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -97,9 +98,9 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(442, 310);
+            this.button1.Location = new System.Drawing.Point(439, 314);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(78, 23);
             this.button1.TabIndex = 15;
             this.button1.Text = "Mentés";
             this.button1.UseVisualStyleBackColor = true;
@@ -146,7 +147,7 @@
             this.textBox5.Location = new System.Drawing.Point(358, 225);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(159, 61);
+            this.textBox5.Size = new System.Drawing.Size(159, 50);
             this.textBox5.TabIndex = 27;
             // 
             // label5
@@ -178,13 +179,13 @@
             this.listBox1.IntegralHeight = false;
             this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(259, 321);
+            this.listBox1.Size = new System.Drawing.Size(259, 325);
             this.listBox1.TabIndex = 30;
             // 
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(361, 310);
+            this.button3.Location = new System.Drawing.Point(358, 314);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 32;
@@ -194,9 +195,9 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(280, 310);
+            this.button2.Location = new System.Drawing.Point(280, 314);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(72, 23);
             this.button2.TabIndex = 33;
             this.button2.Text = "Importálás";
             this.button2.UseVisualStyleBackColor = true;
@@ -204,18 +205,29 @@
             // buttonUjTaborozo
             // 
             this.buttonUjTaborozo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUjTaborozo.Location = new System.Drawing.Point(280, 281);
+            this.buttonUjTaborozo.Location = new System.Drawing.Point(280, 285);
             this.buttonUjTaborozo.Name = "buttonUjTaborozo";
-            this.buttonUjTaborozo.Size = new System.Drawing.Size(75, 23);
+            this.buttonUjTaborozo.Size = new System.Drawing.Size(72, 23);
             this.buttonUjTaborozo.TabIndex = 34;
             this.buttonUjTaborozo.Text = "Új";
             this.buttonUjTaborozo.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Location = new System.Drawing.Point(358, 285);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(159, 23);
+            this.button4.TabIndex = 35;
+            this.button4.Text = "Csoporhoz/házhoz rendelés";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // CamperList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 345);
+            this.ClientSize = new System.Drawing.Size(529, 349);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.buttonUjTaborozo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -235,6 +247,7 @@
             this.Controls.Add(this.button1);
             this.Name = "CamperList";
             this.Text = "Táborozók";
+            this.Load += new System.EventHandler(this.CamperList_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,6 +272,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonUjTaborozo;
+        private System.Windows.Forms.Button button4;
 
     }
 }

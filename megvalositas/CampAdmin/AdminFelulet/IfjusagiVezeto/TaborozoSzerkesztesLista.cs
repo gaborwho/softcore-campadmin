@@ -15,5 +15,15 @@ namespace AdminFelulet.IfjusagiVezeto
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CamperList_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
