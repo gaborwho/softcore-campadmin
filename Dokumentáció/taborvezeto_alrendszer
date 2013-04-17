@@ -1,30 +1,42 @@
 TáborvezetőFunkciók alrendszer:
 Ez az alrendszer felelős a táborvezető a többi vezető funkcióján felüli, rendszeren belüli tevékenységeinek ellátásáért, mint a szobák, házak felvitele, a statisztikák lekérdezése vagy a turnusok meghatározása és indítása. Ezen funkciók elérését a „borders” csomagban található „ITáborVezetőiKezelő” interfész biztosítja.
-19.ábra – TáborVezetőFunkciók alrendszer osztályai
+.ábra – TáborVezetőFunkciók alrendszer osztályai
+
 Turnus osztály
 A „Turnus” osztály objektumai tárolják a turnusok rendszer szempontjából fontos adatait.
-20. ábra – Turnus osztály
+. ábra – Turnus osztály
 A „Korcsoportok”, „Nev”, „Sorszam”, „Sorszam” tulajdonságok tárolják a korcsoport megfelelő adatait.
 A „Kezdes” és „Befejezes” tulajdonságok tárolják a turnusok időtartamát.
 A „Korcsoportok” tulajdonság tárolja a turnusban induló korcsoportokat.
 A „TurnusId” az adatbázisban való navigációhoz szükséges azonosító.
+
+TurnusKezelő osztály
+A „TurnusKezelő” osztály felelős a turnusokkal kapcsolatos műveletekért. A „TurnusLetrehozas()” új turnusok létrehozására szolgál. A „TurnusListazas()” a turnusok listázására, a „TurnusModositas()” pedig a módosításukra szolgál.
+
 Ház osztály
 A „Ház” osztály objektumai tárolják a házak a rendszer szempontjából fontos adatait.
-21. ábra – Ház osztály
+. ábra – Ház osztály
 A „Nev” tulajdonság tárolja a ház nevét.
 A „MapX”, „MapY” tulajdonságok tárolják a ház pozícióját a tábor területén belül.
 A „Szobák” tulajdonság tárolja a házban található szobákat.
-A „HázId” az adatbázisban való navigációhoz szükséges azonosítók.
-22.ábra – ICsoportKezelő interfész
-A „Letrehoz()” metódus felel az adott ház rendszerben való létrehozásáért.
-A „Listaz()” művelettel kérhetőek le rendszerben tárolt csoportok.
-A „Modosit()”, „Torol ()” műveletekkel lehet az adott csoportot szerkeszteni, illetve törölni.
-KorcsoportKezelő oszály:
-Ez az osztály felel, a korcsoportok az ICsoportKezelő interfészben meghatározott funkciók ellátásáért.
+A „HázId” az adatbázisban való navigációhoz szükséges azonosító.
 
-17.ábra – KorcsoportKezelő osztály
-CsoportKezelő osztály:
-Ez az osztály felel, a csoportok az ICsoportKezelő interfészben meghatározott funkciók ellátásáért.
+HázKezelő osztály
+A „HázKezelő” osztály felelő a házakkal kapcsolatos műveletekért. A „HázLétrehozás()”, „HázListázás()”, „HázMódosítás()” és „HázTörlés()” metódusok szolgálnak a ház objektumok létrehozására, listázására, módosítására és törlésére.
 
-18.ábra – CsoportKezelő osztály
-A „Listaz()” metódusnak van egy korcsoportot váró felüldefiniálása, ami egy meghatározott korcsoport csoportjait adja vissza.
+Szoba osztály
+.ábra – Szoba osztály
+A „Ferohely” tárolja a szobában elhelyezhető táborozók számát.
+A „Szobaszám” tulajdonság tárolja a szoba számát a házon belül.
+A „SzobaId” az adatbázisban való navigációhoz szükséges azonosító.
+
+SzobaKezelő oszály:
+.ábra – SzobaKezelő osztály
+A „SzobaKezelő” osztály felelő a szobákkal kapcsolatos műveletekért. A „SzobaLétrehozás()”, „SzobaListázás()”, „SzobaMódosítás()” és „SzobaTörlés()” metódusok szolgálnak a szoba objektumok létrehozására, listázására, módosítására és törlésére.
+
+Statisztika osztály
+.ábra – Statisztika osztály
+A „Oszlopnevek” tulajdonság tárolja a statisztikában található oszlopok számát, a „Sorok” pedig a statisztika sorait.
+
+StatisztikaKezelő oszály:
+A „StatisztikaKezelő” osztály felelő a statisztikák lekérdezésével kapcsolatos műveletekért. A „HányOrszágPerTurnus()” metódussal az egyes turnusok során megjelent országok számát, A „HányTáborozóPerTurnus()” metódussal pedig a turnusokon megjelent táborozók számát lehet lekérdezni
