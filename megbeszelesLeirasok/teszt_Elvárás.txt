@@ -1,0 +1,3 @@
+10 teszteset
+	táblázat
+	-Mit	|	Elvárt kimenet	|	tényleges eredmény	|	értékelés / teendő

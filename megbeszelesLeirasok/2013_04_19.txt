@@ -1,0 +1,55 @@
+﻿Tesztelés:
+	tesztesetek
+	vs: 
+		v-an egy class - ennek a metódusait akarjuk tesztelni.
+		-tesztelési folyamat első lépése, programozó készíti, kis részeket tesztel
+		-milyen bemenet -> milyen kimenetet várunk
+		-amint kész a metódus, megnézzük, hogy a bemenetre, 
+			a kimenet megegyezik-e az elvárt kimenettel.
+		-egységtesztek automatizálása.
+			- solution -> teszt project
+				[TesztClass] - attr
+				[TesztMethod]
+				
+			+ pr add Unit Test
+				megadni a tesztelendő classt.
+				legenerálja a vázát.
+			Assert - értékvizsgálat metódusok, igazságértéket néznek
+			Assert.Inconclusive("") - még nem vizsgáltuk a teszt helyességét.
+			
+		futtatás run all test in solution / környezetbeni futtatás
+	
+		Assert
+			.IsNotNull
+			.InstanceOf
+			.AreEqual(a,b)
+
+		Ha adott bemenetre, a kivétel az elfogadott kimenetel.
+		[ExpectedException(typeof(InvalidoperationException))]
+		
+		[ClassInitialise]	-összes teszt előtt végrehajtódik
+		[TestInitialise]	-minden egyes teszt előtt, pl minden teszt eset elött lenullázandó dolgok
+		
+		[ClassCleanup]	-	az összes teszt után
+		[TestCleanup]	-	minden egyes teszt végén végrehajtódik
+		
+		test Add ordered teszt, ha a tesztek egymásra hatnak, 
+			és adott sorrendben kell, hogy végrehajtódjanak.
+			sorban hajtódjanak végre, ha az egyik elbukik tovább sem megy
+			continue after failure checkbox : ha az egyik elbukik azért lefut a többi.
+		
+		Test Result - az összetettebeknél.
+	
+		private metódus tesztelése
+			create private accessor -> teszt project
+			a teszt classban a classnév_Accessor -t initializáljuk
+			
+		Tesztlisták készíthetők.
+			Teszt -> list
+			run checked teszts.
+			
+	
+Kódgen:
+	
+	
+Doku készítés
