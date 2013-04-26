@@ -6,6 +6,8 @@ using AdminFelulet.IfjusagiVezeto;
 using AdminFelulet.KorcsoportVezeto;
 using AdminFelulet.TaborVezeto;
 
+using Borders;
+
 namespace AdminFelulet
 {
     static class Program
@@ -16,27 +18,41 @@ namespace AdminFelulet
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
 
-            //CamperList ablak = new CamperList();
-            //CamperGroup ablak = new CamperGroup();
+            var bej = new Bejelentkezes();
+            Application.Run(bej);
 
-            //GroupList ablak = new GroupList();
-            //UnitEdit ablak = new UnitEdit();
-            //UnitGroupList ablak = new UnitGroupList();
+            Vezető vezető = bej.Vezető;
+            if (vezető == null)
+            {
+                return;
+            }
+    
+            
+            IfjusagiMenu ifm;
+            KorcsoportHome kcsm;
+            TaborVezetoMenu tvm;
 
-            //HouseList ablak = new HouseList();
-            //RoomEdit ablak = new RoomEdit();
-            //RoomList ablak = new RoomList();
-            //SessionEdit ablak = new SessionEdit();
-            //SessionList ablak = new SessionList();
-            //SessionUnitList ablak = new SessionUnitList();
-            Statisztikak ablak = new Statisztikak();
-            //UnitDetails ablak = new UnitDetails();
 
-            Application.Run(ablak);
-            //Application.Run(new Form1());
+            if ((int)vezető.Tipus >= 0)
+            {
+                ifm = new IfjusagiMenu();
+                ifm.Show();
+            }
+
+
+            if ((int)vezető.Tipus >= 1)
+            {
+                kcsm = new KorcsoportHome();
+                kcsm.Show();
+            }
+
+            if ((int)vezető.Tipus >= 2)
+            {
+                tvm = new TaborVezetoMenu();
+                tvm.Show();
+            }
+
         }
     }
 }

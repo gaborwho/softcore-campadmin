@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3F87547-9A09-4A51-84D0-2807D7CDBC66}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CampLogic</RootNamespace>
+    <AssemblyName>CampLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Borders\IfjúságiVezetőiKezelőFelület.cs" />
+    <Compile Include="Borders\IIfjúságiVezetőiKezelő.cs" />
+    <Compile Include="Borders\IKorcsoportVezetőiKezelő.cs" />
+    <Compile Include="Borders\ITáborvezetőiKezelő.cs" />
+    <Compile Include="Borders\IVezető.cs" />
+    <Compile Include="Borders\KorcsoportVezetőiKezelőFelület.cs" />
+    <Compile Include="Borders\TáborvezetőiKezelőFelület.cs" />
+    <Compile Include="Borders\Vezető.cs" />
+    <Compile Include="Borders\VezetőTípus.cs" />
+    <Compile Include="Db\DbConnection.cs" />
+    <Compile Include="Db\VezetőModell.cs" />
+    <Compile Include="IfjúságiVezetőFunkciók\Táborozó.cs" />
+    <Compile Include="IfjúságiVezetőFunkciók\TáborozóImportKezelő.cs" />
+    <Compile Include="IfjúságiVezetőFunkciók\TáborozóKezelő.cs" />
+    <Compile Include="KorcsoportVezetőFunkciók\Csoport.cs" />
+    <Compile Include="KorcsoportVezetőFunkciók\CsoportKezelő.cs" />
+    <Compile Include="KorcsoportVezetőFunkciók\ICsoportKezelő.cs" />
+    <Compile Include="KorcsoportVezetőFunkciók\Korcsoport.cs" />
+    <Compile Include="KorcsoportVezetőFunkciók\KorcsoportKezelő.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TáborvezetőFunkciók\Ház.cs" />
+    <Compile Include="TáborvezetőFunkciók\HázKezelő.cs" />
+    <Compile Include="TáborvezetőFunkciók\Statisztika.cs" />
+    <Compile Include="TáborvezetőFunkciók\StatisztikaKazelő.cs" />
+    <Compile Include="TáborvezetőFunkciók\Szoba.cs" />
+    <Compile Include="TáborvezetőFunkciók\SzobaKezelő.cs" />
+    <Compile Include="TáborvezetőFunkciók\Turnus.cs" />
+    <Compile Include="TáborvezetőFunkciók\TurnusKezelő.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
