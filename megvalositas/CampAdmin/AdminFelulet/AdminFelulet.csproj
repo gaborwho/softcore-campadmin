@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FőMenű.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FőMenű.Designer.cs">
+      <DependentUpon>FőMenű.cs</DependentUpon>
+    </Compile>
     <Compile Include="IfjusagiVezeto\TaborozoSzerkesztesLista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     <Compile Include="KorcsoportVezeto\KorcsoportSzerkesztes.designer.cs">
       <DependentUpon>KorcsoportSzerkesztes.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FőMenű.resx">
+      <DependentUpon>FőMenű.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IfjusagiVezeto\CamperList.resx">
       <DependentUpon>TaborozoSzerkesztesLista.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,9 +190,6 @@
     <EmbeddedResource Include="KorcsoportVezeto\CsoportLista.resx">
       <DependentUpon>CsoportLista.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KorcsoportVezeto\KorcsoportHome.resx">
-      <DependentUpon>KorcsoportMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="KorcsoportVezeto\KorcsoporthozCsoportRendeles.resx">
       <DependentUpon>KorcsoporthozCsoportRendeles.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IfjusagiVezeto\Bejelentkezes.resx">
       <DependentUpon>Bejelentkezes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KorcsoportVezeto\KorcsoportMenu.resx">
+      <DependentUpon>KorcsoportMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

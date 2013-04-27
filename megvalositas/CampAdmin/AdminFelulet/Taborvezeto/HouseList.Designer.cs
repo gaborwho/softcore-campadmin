@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet.TaborVezeto
 {
-    partial class HouseList
+    partial class HazSzerkesztoLista
     {
         /// <summary>
         /// Required designer variable.

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace AdminFelulet.TaborVezeto
 {
-    public partial class HouseList : Form
+    public partial class HazSzerkesztoLista : Form
     {
-        public HouseList()
+        public HazSzerkesztoLista()
         {
             InitializeComponent();
         }

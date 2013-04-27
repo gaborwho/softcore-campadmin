@@ -15,5 +15,29 @@ namespace AdminFelulet.TaborVezeto
         {
             InitializeComponent();
         }
+
+        private void btHázak_Click(object sender, EventArgs e)
+        {
+            HazSzerkesztoLista ablak = new HazSzerkesztoLista();
+            ablak.ShowDialog();
+        }
+
+        private void btSzobák_Click(object sender, EventArgs e)
+        {
+            SzobaLista ablak = new SzobaLista();
+            ablak.ShowDialog();
+        }
+
+        private void btTurnusok_Click(object sender, EventArgs e)
+        {
+            TurnusLista ablak = new TurnusLista();
+            ablak.ShowDialog();
+        }
+
+        private void btStatisztikák_Click(object sender, EventArgs e)
+        {
+            Statisztikak ablak = new Statisztikak();
+            ablak.ShowDialog();
+        }
     }
 }

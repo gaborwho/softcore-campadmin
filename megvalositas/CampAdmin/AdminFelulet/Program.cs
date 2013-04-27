@@ -23,35 +23,15 @@ namespace AdminFelulet
             Application.Run(bej);
 
             Vezető vezető = bej.Vezető;
+
+
             if (vezető == null)
             {
+                MessageBox.Show("Hitelesítés meghiúsult, viszlát");
                 return;
             }
-    
-            
-            IfjusagiMenu ifm;
-            KorcsoportHome kcsm;
-            TaborVezetoMenu tvm;
 
-
-            if ((int)vezető.Tipus >= 0)
-            {
-                ifm = new IfjusagiMenu();
-                ifm.Show();
-            }
-
-
-            if ((int)vezető.Tipus >= 1)
-            {
-                kcsm = new KorcsoportHome();
-                kcsm.Show();
-            }
-
-            if ((int)vezető.Tipus >= 2)
-            {
-                tvm = new TaborVezetoMenu();
-                tvm.Show();
-            }
+            Application.Run(new FőMenű(vezető));
 
         }
     }

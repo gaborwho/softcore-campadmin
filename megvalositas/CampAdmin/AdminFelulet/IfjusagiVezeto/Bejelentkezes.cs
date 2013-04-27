@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 
 using Db;
+using Borders;
+using System.Diagnostics;
 
 namespace AdminFelulet
 {
@@ -16,12 +18,13 @@ namespace AdminFelulet
         public Bejelentkezes()
         {
             InitializeComponent();
+            TesztVezetők();
         }
 
 
-        Borders.Vezető vezető;
+        Vezető vezető;
 
-        public Borders.Vezető Vezető
+        public Vezető Vezető
         {
             get { return vezető; }
             private set { vezető = value; }
@@ -40,5 +43,39 @@ namespace AdminFelulet
 
             Close();
         }
+
+        //Feltételes, csak a debug verzióba fordítja a JIT
+        [Conditional("DEBUG")]
+        private void TesztVezetők() {
+
+            
+            Vezető vIfi = new Vezető
+            {
+                Nev = "IfiTeszt",
+                Jelszo = "teszt",
+                Tipus = VezetőTípus.IfjúságiVezető
+            };
+
+            Vezető vKcs = new Vezető
+            {
+                Nev = "KcsTeszt",
+                Jelszo = "teszt",
+                Tipus = VezetőTípus.KorcsoportVezető
+            };
+
+            Vezető vTb = new Vezető
+            {
+                Nev = "TbTeszt",
+                Jelszo = "teszt",
+                Tipus = VezetőTípus.TáborVezető
+            };
+
+            vm.TesztCreateVezetőIfDontExists(vIfi);
+            vm.TesztCreateVezetőIfDontExists(vKcs);
+            vm.TesztCreateVezetőIfDontExists(vTb);
+
+            MessageBox.Show("Tesztfelhasználók:\n IfiTeszt/teszt \n KcsTeszt/teszt \n TbTeszt/teszt");
+        }
+
     }
 }

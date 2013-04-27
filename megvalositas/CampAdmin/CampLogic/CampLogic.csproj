@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Borders\FelületHozzáférő.cs" />
     <Compile Include="Borders\IfjúságiVezetőiKezelőFelület.cs" />
     <Compile Include="Borders\IIfjúságiVezetőiKezelő.cs" />
     <Compile Include="Borders\IKorcsoportVezetőiKezelő.cs" />
@@ -64,6 +65,15 @@
     <Compile Include="KorcsoportVezetőFunkciók\ICsoportKezelő.cs" />
     <Compile Include="KorcsoportVezetőFunkciók\Korcsoport.cs" />
     <Compile Include="KorcsoportVezetőFunkciók\KorcsoportKezelő.cs" />
+    <Compile Include="Migrations\201304262228372_InitialCreate.cs" />
+    <Compile Include="Migrations\201304262228372_InitialCreate.Designer.cs">
+      <DependentUpon>201304262228372_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304272220560_vezeto1.cs" />
+    <Compile Include="Migrations\201304272220560_vezeto1.Designer.cs">
+      <DependentUpon>201304272220560_vezeto1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TáborvezetőFunkciók\Ház.cs" />
     <Compile Include="TáborvezetőFunkciók\HázKezelő.cs" />
@@ -77,6 +87,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201304262228372_InitialCreate.resx">
+      <DependentUpon>201304262228372_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304272220560_vezeto1.resx">
+      <DependentUpon>201304272220560_vezeto1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -43,6 +43,11 @@ namespace Db
 
         public DbSet<Vezetõ> Vezetök { get; set; }
 
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Vezetõ>()
+        //        .Property
+        //}
 
     }//end DbConnection
 

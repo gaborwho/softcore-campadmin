@@ -28,116 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btHázak = new System.Windows.Forms.Button();
+            this.btSzobák = new System.Windows.Forms.Button();
+            this.btTurnusok = new System.Windows.Forms.Button();
+            this.btStatisztikák = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btHázak
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 46);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Táborozók";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btHázak.Location = new System.Drawing.Point(21, 12);
+            this.btHázak.Name = "btHázak";
+            this.btHázak.Size = new System.Drawing.Size(168, 46);
+            this.btHázak.TabIndex = 4;
+            this.btHázak.Text = "Házak";
+            this.btHázak.UseVisualStyleBackColor = true;
+            this.btHázak.Click += new System.EventHandler(this.btHázak_Click);
             // 
-            // button2
+            // btSzobák
             // 
-            this.button2.Location = new System.Drawing.Point(12, 64);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 46);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Táborozó csoporthoz rendelése";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btSzobák.Location = new System.Drawing.Point(21, 64);
+            this.btSzobák.Name = "btSzobák";
+            this.btSzobák.Size = new System.Drawing.Size(168, 46);
+            this.btSzobák.TabIndex = 5;
+            this.btSzobák.Text = "Szobák";
+            this.btSzobák.UseVisualStyleBackColor = true;
+            this.btSzobák.Click += new System.EventHandler(this.btSzobák_Click);
             // 
-            // button3
+            // btTurnusok
             // 
-            this.button3.Location = new System.Drawing.Point(12, 116);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(168, 46);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Csoportok";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btTurnusok.Location = new System.Drawing.Point(21, 116);
+            this.btTurnusok.Name = "btTurnusok";
+            this.btTurnusok.Size = new System.Drawing.Size(168, 46);
+            this.btTurnusok.TabIndex = 6;
+            this.btTurnusok.Text = "Turnusok";
+            this.btTurnusok.UseVisualStyleBackColor = true;
+            this.btTurnusok.Click += new System.EventHandler(this.btTurnusok_Click);
             // 
-            // button4
+            // btStatisztikák
             // 
-            this.button4.Location = new System.Drawing.Point(12, 168);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(168, 46);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Korcsoportok";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btStatisztikák.Location = new System.Drawing.Point(21, 168);
+            this.btStatisztikák.Name = "btStatisztikák";
+            this.btStatisztikák.Size = new System.Drawing.Size(168, 46);
+            this.btStatisztikák.TabIndex = 7;
+            this.btStatisztikák.Text = "Statisztikák";
+            this.btStatisztikák.UseVisualStyleBackColor = true;
+            this.btStatisztikák.Click += new System.EventHandler(this.btStatisztikák_Click);
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(12, 220);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(168, 46);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Házak";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(12, 272);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(168, 46);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Szobák";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(12, 324);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(168, 46);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Turnusok";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(12, 376);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(168, 46);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Statisztikák";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // TaborVezetoHome
+            // TaborVezetoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(192, 433);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "TaborVezetoHome";
-            this.Text = "Indítás";
+            this.ClientSize = new System.Drawing.Size(210, 227);
+            this.Controls.Add(this.btStatisztikák);
+            this.Controls.Add(this.btTurnusok);
+            this.Controls.Add(this.btSzobák);
+            this.Controls.Add(this.btHázak);
+            this.Name = "TaborVezetoMenu";
+            this.Text = "Táborvezetés";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btHázak;
+        private System.Windows.Forms.Button btSzobák;
+        private System.Windows.Forms.Button btTurnusok;
+        private System.Windows.Forms.Button btStatisztikák;
     }
 }

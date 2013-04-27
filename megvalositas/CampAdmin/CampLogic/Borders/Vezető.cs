@@ -14,32 +14,51 @@ using System.Text;
 
 
 using Borders;
-namespace Borders {
-	public class Vezetõ : IVezetõ {
+using System.ComponentModel.DataAnnotations;
+namespace Borders
+{
+    public class Vezetõ : IVezetõ
+    {
 
-		public Vezetõ(){
+        public Vezetõ()
+        {
 
-		}
+        }
 
-		~Vezetõ(){
 
-		}
+        #region Adat kapcsolati tulajdonságok
 
-		public string Jelszo{ get; set; }
+        [Key]
+        public int VezetõId { get; set; }
 
-		public string Nev{ get; set; }
+        #endregion
 
-		public VezetõTípus Tipus{
-			get{
-				return Tipus;
-			}
-			set{
-				Tipus = value;
-			}
-		}
 
-		public int VezetõId{ get; set; }
+        public string Jelszo { get; set; }
 
-	}//end Vezetõ
+        public string Nev { get; set; }
+
+
+        public int TipusSzam { get; set; }
+
+        public VezetõTípus Tipus
+        {
+            get
+            {
+                return (VezetõTípus)TipusSzam;
+            }
+            set
+            {
+                TipusSzam = (int)value;
+            }
+        }
+
+
+        public override string ToString()
+        {
+            return Nev;
+        }
+
+    }//end Vezetõ
 
 }//end namespace Borders
