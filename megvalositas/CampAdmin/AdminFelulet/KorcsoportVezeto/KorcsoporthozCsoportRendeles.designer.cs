@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet
 {
-    partial class UnitEdit
+    partial class KorcsoporthozCsoportRendeles
     {
         /// <summary>
         /// Required designer variable.

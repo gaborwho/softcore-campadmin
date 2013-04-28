@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using AdminFelulet.IfjusagiVezeto;
 using AdminFelulet.KorcsoportVezeto;
 using AdminFelulet.TaborVezeto;
-using Borders;
+using CampLogic.Borders;
 
 namespace AdminFelulet
 {
@@ -22,7 +22,7 @@ namespace AdminFelulet
             InitializeComponent();
         }
 
-        public FőMenű(Borders.Vezető vezető) :this()
+        public FőMenű(CampLogic.Borders.Vezető vezető) :this()
         {
             this.vezető = vezető;
             Text = "Főprogram SoftCoreCampAdmin - Üdvözöljük:" + vezető.ToString();

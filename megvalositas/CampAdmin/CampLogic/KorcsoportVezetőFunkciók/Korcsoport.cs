@@ -13,10 +13,10 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 
 
-using TáborvezetõFunkciók;
-using KorcsoportVezetõFunkciók;
+using CampLogic.TáborvezetõFunkciók;
+using CampLogic.KorcsoportVezetõFunkciók;
 
-namespace KorcsoportVezetõFunkciók
+namespace CampLogic.KorcsoportVezetõFunkciók
 {
     public class Korcsoport
     {

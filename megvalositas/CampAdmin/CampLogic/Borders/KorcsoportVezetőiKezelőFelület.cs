@@ -13,12 +13,12 @@ using System.Text;
 
 
 
-using KorcsoportVezetõFunkciók;
-using Borders;
-namespace Borders {
+using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.Borders;
+namespace CampLogic.Borders {
 	public class KorcsoportVezetõiKezelõFelület : IfjúságiVezetõiKezelõFelület, IKorcsoportVezetõiKezelõ {
 
-		public KorcsoportKezelõ m_KorcsoportKezelõ;
+		public KorcsoportKezelo m_KorcsoportKezelõ;
 		public CsoportKezelõ m_CsoportKezelõ;
 
 		public KorcsoportVezetõiKezelõFelület(){

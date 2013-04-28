@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace AdminFelulet
 {
-    public partial class UnitEdit : Form
+    public partial class KorcsoporthozCsoportRendeles : Form
     {
-        public UnitEdit()
+        public KorcsoporthozCsoportRendeles()
         {
             InitializeComponent();
         }

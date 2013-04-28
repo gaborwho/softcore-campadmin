@@ -13,7 +13,7 @@ using System.Text;
 
 
 
-namespace Borders {
+namespace CampLogic.Borders {
 	public enum VezetõTípus : int {
 
 		IfjúságiVezetõ,

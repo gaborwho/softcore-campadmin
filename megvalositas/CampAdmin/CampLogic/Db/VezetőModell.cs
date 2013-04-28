@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Borders;
+using CampLogic.Borders;
 using System.Diagnostics;
 
 
 
-namespace Db
+namespace CampLogic.Db
 {
     public class VezetőModell
     {
-        DbConnection conn = new DbConnection();
+        MyDbConnection conn = new MyDbConnection();
 
         public Vezető VezetőUserPassz(string user, string pass)
         {

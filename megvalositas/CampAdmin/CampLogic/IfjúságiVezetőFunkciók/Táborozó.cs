@@ -13,9 +13,9 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 
 
-using KorcsoportVezetõFunkciók;
-using TáborvezetõFunkciók;
-namespace IfjúságiVezetõFunkciók {
+using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.TáborvezetõFunkciók;
+namespace CampLogic.IfjúságiVezetõFunkciók {
 	public class Táborozó {
 
 

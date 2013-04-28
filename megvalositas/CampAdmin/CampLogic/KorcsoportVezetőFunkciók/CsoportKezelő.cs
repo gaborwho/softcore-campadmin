@@ -13,14 +13,14 @@ using System.Text;
 
 
 
-using KorcsoportVezetõFunkciók;
-using Db;
-namespace KorcsoportVezetõFunkciók
+using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.Db;
+namespace CampLogic.KorcsoportVezetõFunkciók
 {
     public class CsoportKezelõ : ICsoportKezelõ<Csoport>
     {
 
-        public DbConnection conn;
+        public MyDbConnection conn;
 
         public CsoportKezelõ()
         {
@@ -47,6 +47,7 @@ namespace KorcsoportVezetõFunkciók
         public bool Torol(Csoport csoport)
         {
             conn.Csoportok.Remove(csoport);
+            conn.SaveChanges();
             return true;
         }
     }//end CsoportKezelõ

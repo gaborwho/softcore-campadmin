@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-using TáborvezetőFunkciók;
-using Borders;
+using CampLogic.TáborvezetőFunkciók;
+using CampLogic.Borders;
 
 namespace AdminFelulet.TaborVezeto
 {

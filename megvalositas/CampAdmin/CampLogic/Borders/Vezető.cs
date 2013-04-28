@@ -13,9 +13,9 @@ using System.Text;
 
 
 
-using Borders;
+using CampLogic.Borders;
 using System.ComponentModel.DataAnnotations;
-namespace Borders
+namespace CampLogic.Borders
 {
     public class Vezetõ : IVezetõ
     {

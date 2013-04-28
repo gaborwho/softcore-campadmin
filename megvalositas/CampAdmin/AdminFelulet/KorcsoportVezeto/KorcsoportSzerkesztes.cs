@@ -6,14 +6,16 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using KorcsoportVezetõFunkciók;
-using Db;
+
+
+using CampLogic.KorcsoportVezetőFunkciók;
+using CampLogic.Db;
 
 namespace AdminFelulet.TaborVezeto
 {
     public partial class UnitDetails : Form
     {
-        DbConnection conn = new DbConnection();
+        CampLogic.Db.MyDbConnection conn = new MyDbConnection();
         
         public Korcsoport korcs = new Korcsoport();
         bool edit = false;

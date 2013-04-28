@@ -13,9 +13,9 @@ using System.Text;
 
 
 
-using KorcsoportVezetõFunkciók;
-using Borders;
-namespace Borders {
+using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.Borders;
+namespace CampLogic.Borders {
 	public interface IKorcsoportVezetõiKezelõ : IIfjúságiVezetõiKezelõ {
 
 		/// 

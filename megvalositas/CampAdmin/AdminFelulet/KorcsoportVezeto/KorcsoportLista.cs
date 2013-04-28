@@ -6,14 +6,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using KorcsoportVezetõFunkciók;
+using CampLogic.KorcsoportVezetőFunkciók;
 using AdminFelulet.TaborVezeto;
 
 namespace AdminFelulet.KorcsoportVezeto
 {
     public partial class KorcsoportLista : Form
     {
-        KorcsoportKezelõ korcsKezelo = new KorcsoportKezelõ();
+        KorcsoportKezelo korcsKezelo = new KorcsoportKezelo();
 
         UnitDetails korcsSzerkeszto;
         public KorcsoportLista()

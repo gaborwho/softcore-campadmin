@@ -13,9 +13,9 @@ using System.Text;
 
 
 
-using TáborvezetõFunkciók;
-using Borders;
-namespace Borders
+using CampLogic.TáborvezetõFunkciók;
+using CampLogic.Borders;
+namespace CampLogic.Borders
 {
     public class TáborvezetõiKezelõFelület : KorcsoportVezetõiKezelõFelület, ITáborvezetõiKezelõ
     {

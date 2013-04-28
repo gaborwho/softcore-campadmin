@@ -5,14 +5,14 @@ namespace CampLogic.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Db.DbConnection>
+    internal sealed class Configuration : DbMigrationsConfiguration<CampLogic.Db.MyDbConnection>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Db.DbConnection context)
+        protected override void Seed(CampLogic.Db.MyDbConnection context)
         {
             //  This method will be called after migrating to the latest version.
 

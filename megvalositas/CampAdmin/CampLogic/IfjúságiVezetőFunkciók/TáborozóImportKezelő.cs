@@ -13,8 +13,8 @@ using System.Text;
 
 
 
-using IfjúságiVezetõFunkciók;
-namespace IfjúságiVezetõFunkciók {
+using CampLogic.IfjúságiVezetõFunkciók;
+namespace CampLogic.IfjúságiVezetõFunkciók {
 	public class TáborozóImportKezelõ {
 
 		public Táborozó m_Táborozó;

@@ -13,49 +13,50 @@ using System.Text;
 
 
 
-using KorcsoportVezetõFunkciók;
-using Db;
-namespace KorcsoportVezetõFunkciók {
-	public class KorcsoportKezelõ : ICsoportKezelõ<Korcsoport> {
-
-		public DbConnection conn = new DbConnection();
-
-		public KorcsoportKezelõ(){
-
-		}
-       
-
-
-
-    
-public bool  Letrehoz(Korcsoport csoport)
+using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.Db;
+namespace CampLogic.KorcsoportVezetõFunkciók
 {
- 	        conn.Korcsoportok.Add(csoport);
+
+    public class KorcsoportKezelo : ICsoportKezelõ<Korcsoport>
+    {
+
+        public MyDbConnection conn = new MyDbConnection();
+
+        public KorcsoportKezelo()
+        {
+
+        }
+
+
+        public bool Letrehoz(Korcsoport csoport)
+        {
+            conn.Korcsoportok.Add(csoport);
             conn.SaveChanges();
 
             return true;
-}
+        }
 
 
 
-public List<Korcsoport>  Listaz()
-{
- 	return (from k in conn.Korcsoportok select k).ToList<Korcsoport>();
-}
+        public List<Korcsoport> Listaz()
+        {
+            return (from k in conn.Korcsoportok select k).ToList<Korcsoport>();
+        }
 
-public bool  Modosit(Korcsoport csoport)
-{
- 	 conn.SaveChanges();
-     return true;
-}
+        public bool Modosit(Korcsoport csoport)
+        {
+            conn.SaveChanges();
+            return true;
+        }
 
-public bool  Torol(Korcsoport csoport)
-{
- 	conn.Korcsoportok.Remove(csoport);
-     	 conn.SaveChanges();
-     return true;
-}
-}
+        public bool Torol(Korcsoport csoport)
+        {
+            conn.Korcsoportok.Remove(csoport);
+            conn.SaveChanges();
+            return true;
+        }
+
     }//end KorcsoportKezelõ
 
 }//end namespace KorcsoportVezetõFunkciók

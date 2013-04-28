@@ -6,17 +6,25 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using KorcsoportVezetõFunkciók;
+
+using CampLogic.KorcsoportVezetőFunkciók;
 
 namespace AdminFelulet.KorcsoportVezeto
 {
     public partial class CsoportLista : Form
     {
         Korcsoport korcs;
-        public CsoportLista(Korcsoport korcs)
+
+        public CsoportLista()
         {
             InitializeComponent();
+        }
+
+        public CsoportLista(Korcsoport korcs)
+        {
             this.korcs = korcs;
         }
+
+
     }
 }

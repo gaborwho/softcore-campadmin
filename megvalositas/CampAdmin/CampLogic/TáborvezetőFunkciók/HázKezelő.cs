@@ -13,8 +13,8 @@ using System.Text;
 
 
 
-using Db;
-namespace TáborvezetõFunkciók
+using CampLogic.Db;
+namespace CampLogic.TáborvezetõFunkciók
 {
     public class HázKezelõ
     {
@@ -25,7 +25,7 @@ namespace TáborvezetõFunkciók
 
         }
 
-        DbConnection conn = new DbConnection();
+        MyDbConnection conn = new MyDbConnection();
 
         /// 
         /// <param name="ház"></param>

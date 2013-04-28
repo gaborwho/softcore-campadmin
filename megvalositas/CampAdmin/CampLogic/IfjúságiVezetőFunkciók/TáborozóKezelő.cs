@@ -13,14 +13,14 @@ using System.Text;
 
 
 
-using KorcsoportVezetõFunkciók;
-using TáborvezetõFunkciók;
-using IfjúságiVezetõFunkciók;
-using Db;
-namespace IfjúságiVezetõFunkciók {
+using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.TáborvezetõFunkciók;
+using CampLogic.IfjúságiVezetõFunkciók;
+using CampLogic.Db;
+namespace CampLogic.IfjúságiVezetõFunkciók {
 	public class TáborozóKezelõ {
 
-		public DbConnection conn = new DbConnection();
+		public MyDbConnection conn = new MyDbConnection();
 
 		public TáborozóKezelõ(){
 

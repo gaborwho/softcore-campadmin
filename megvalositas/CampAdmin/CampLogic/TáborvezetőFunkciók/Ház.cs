@@ -13,8 +13,7 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 
 
-using TáborvezetõFunkciók;
-namespace TáborvezetõFunkciók
+namespace CampLogic.TáborvezetõFunkciók
 {
     public class Ház
     {

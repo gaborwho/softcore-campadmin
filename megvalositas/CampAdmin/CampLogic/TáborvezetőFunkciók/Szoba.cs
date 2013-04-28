@@ -13,9 +13,9 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 
 
-using TáborvezetõFunkciók;
-using IfjúságiVezetõFunkciók;
-namespace TáborvezetõFunkciók
+using CampLogic.TáborvezetõFunkciók;
+using CampLogic.IfjúságiVezetõFunkciók;
+namespace CampLogic.TáborvezetõFunkciók
 {
     public class Szoba
     {

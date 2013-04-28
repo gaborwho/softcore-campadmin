@@ -15,5 +15,23 @@ namespace AdminFelulet.KorcsoportVezeto
         {
             InitializeComponent();
         }
+
+        private void btTCsRendel_Click(object sender, EventArgs e)
+        {
+            KorcsoporthozCsoportRendeles ablak = new KorcsoporthozCsoportRendeles();
+            ablak.ShowDialog();
+        }
+
+        private void btCsoportok_Click(object sender, EventArgs e)
+        {
+            CsoportLista ablak = new CsoportLista();
+            ablak.ShowDialog();
+        }
+
+        private void btKorcsoportok_Click(object sender, EventArgs e)
+        {
+            KorcsoportLista ablak = new KorcsoportLista();
+            ablak.ShowDialog();
+        }
     }
 }

@@ -13,8 +13,8 @@ using System.Text;
 
 
 
-using Borders;
-namespace Borders {
+using CampLogic.Borders;
+namespace CampLogic.Borders {
 	public interface IVezetõ {
 
 		string Jelszo{

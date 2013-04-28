@@ -13,11 +13,10 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 
-using Borders;
-using KorcsoportVezetõFunkciók;
-using IfjúságiVezetõFunkciók;
+using CampLogic.Borders;
+using CampLogic.IfjúságiVezetõFunkciók;
 
-namespace KorcsoportVezetõFunkciók {
+namespace CampLogic.KorcsoportVezetõFunkciók {
 	public class Csoport {
 
 		public Csoport(){

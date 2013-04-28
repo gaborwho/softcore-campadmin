@@ -6,7 +6,7 @@ using AdminFelulet.IfjusagiVezeto;
 using AdminFelulet.KorcsoportVezeto;
 using AdminFelulet.TaborVezeto;
 
-using Borders;
+using CampLogic.Borders;
 
 namespace AdminFelulet
 {

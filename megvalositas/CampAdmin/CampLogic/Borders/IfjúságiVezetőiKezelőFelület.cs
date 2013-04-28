@@ -11,14 +11,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.IfjúságiVezetõFunkciók;
+using CampLogic.TáborvezetõFunkciók;
 
 
-using KorcsoportVezetõFunkciók;
-using IfjúságiVezetõFunkciók;
-using TáborvezetõFunkciók;
-using Borders;
-
-namespace Borders {
+namespace CampLogic.Borders {
 	public class IfjúságiVezetõiKezelõFelület : IIfjúságiVezetõiKezelõ {
 
 		public TáborozóImportKezelõ m_TáborozóImportKezelõ;

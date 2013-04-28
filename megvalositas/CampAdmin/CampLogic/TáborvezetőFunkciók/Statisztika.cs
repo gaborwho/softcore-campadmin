@@ -13,7 +13,7 @@ using System.Text;
 
 
 
-namespace TáborvezetõFunkciók
+namespace CampLogic.TáborvezetõFunkciók
 {
     public class Statisztika
     {

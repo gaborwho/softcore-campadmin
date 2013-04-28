@@ -12,18 +12,18 @@ using System.Linq;
 using System.Text;
 using System.Data.Entity;
 
-using KorcsoportVezetõFunkciók;
-using TáborvezetõFunkciók;
-using IfjúságiVezetõFunkciók;
-using Borders;
+using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.TáborvezetõFunkciók;
+using CampLogic.IfjúságiVezetõFunkciók;
+using CampLogic.Borders;
 
 
-namespace Db
+namespace CampLogic.Db
 {
-    public class DbConnection : DbContext
+    public class MyDbConnection : DbContext
     {
 
-        public DbConnection()
+        public MyDbConnection()
         {
 
         }

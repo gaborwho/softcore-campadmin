@@ -13,14 +13,14 @@ using System.Text;
 
 
 
-using TáborvezetõFunkciók;
-using Db;
-namespace TáborvezetõFunkciók
+using CampLogic.TáborvezetõFunkciók;
+using CampLogic.Db;
+namespace CampLogic.TáborvezetõFunkciók
 {
     public class TurnusKezelõ
     {
 
-        DbConnection conn = new DbConnection();
+        MyDbConnection conn = new MyDbConnection();
 
         public TurnusKezelõ()
         {
