@@ -28,75 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lbSzobak = new System.Windows.Forms.ListBox();
+            this.btSzerkeszt = new System.Windows.Forms.Button();
+            this.btUj = new System.Windows.Forms.Button();
+            this.btTorol = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lbSzobak
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "101 (6)",
-            "102 (6)",
-            "103 (8)",
-            "201 (6)",
-            "202 (6)",
-            "203 (8)",
-            "27(4)"});
-            this.listBox1.Location = new System.Drawing.Point(12, 41);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(180, 290);
-            this.listBox1.TabIndex = 0;
+            this.lbSzobak.FormattingEnabled = true;
+            this.lbSzobak.Location = new System.Drawing.Point(12, 41);
+            this.lbSzobak.Name = "lbSzobak";
+            this.lbSzobak.Size = new System.Drawing.Size(180, 290);
+            this.lbSzobak.TabIndex = 0;
             // 
-            // button1
+            // btSzerkeszt
             // 
-            this.button1.Location = new System.Drawing.Point(63, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Szerkesztés";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btSzerkeszt.Location = new System.Drawing.Point(63, 12);
+            this.btSzerkeszt.Name = "btSzerkeszt";
+            this.btSzerkeszt.Size = new System.Drawing.Size(78, 23);
+            this.btSzerkeszt.TabIndex = 1;
+            this.btSzerkeszt.Text = "Szerkesztés";
+            this.btSzerkeszt.UseVisualStyleBackColor = true;
+            this.btSzerkeszt.Click += new System.EventHandler(this.btSzerkeszt_Click);
             // 
-            // button2
+            // btUj
             // 
-            this.button2.Location = new System.Drawing.Point(12, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Új";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btUj.Location = new System.Drawing.Point(12, 12);
+            this.btUj.Name = "btUj";
+            this.btUj.Size = new System.Drawing.Size(45, 23);
+            this.btUj.TabIndex = 2;
+            this.btUj.Text = "Új";
+            this.btUj.UseVisualStyleBackColor = true;
+            this.btUj.Click += new System.EventHandler(this.btUj_Click);
             // 
-            // button3
+            // btTorol
             // 
-            this.button3.Location = new System.Drawing.Point(147, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Törlés";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btTorol.Location = new System.Drawing.Point(147, 12);
+            this.btTorol.Name = "btTorol";
+            this.btTorol.Size = new System.Drawing.Size(45, 23);
+            this.btTorol.TabIndex = 3;
+            this.btTorol.Text = "Törlés";
+            this.btTorol.UseVisualStyleBackColor = true;
+            this.btTorol.Click += new System.EventHandler(this.btTorol_Click);
             // 
-            // RoomList
+            // SzobaLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(209, 346);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
-            this.Name = "RoomList";
+            this.Controls.Add(this.btTorol);
+            this.Controls.Add(this.btUj);
+            this.Controls.Add(this.btSzerkeszt);
+            this.Controls.Add(this.lbSzobak);
+            this.Name = "SzobaLista";
             this.Text = "Szobák";
+            this.Load += new System.EventHandler(this.SzobaLista_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListBox lbSzobak;
+        private System.Windows.Forms.Button btSzerkeszt;
+        private System.Windows.Forms.Button btUj;
+        private System.Windows.Forms.Button btTorol;
     }
 }

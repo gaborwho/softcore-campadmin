@@ -43,6 +43,11 @@ namespace TáborvezetõFunkciók
 
         public virtual List<Táborozó> Táborozók { get; set; }
 
+        public override string ToString()
+        {
+            return Szobaszam + " ( " + Ferohely + " ) Szoba: "+ Ház.Név;
+        }
+
     }//end Szoba
 
 }//end namespace TáborvezetõFunkciók

@@ -82,9 +82,19 @@ namespace TáborvezetõFunkciók
             /*
              * Olyan házat nem lehet törölni, melynek vannak még szobái, hisz 
              * a szobában Reference constraint van a ház-ra.
+             * A szobák nem létezhetnek ház nélkül, mert szobakezelõ igényli
              */
-            haz.Szobák.Clear();
-            conn.SaveChanges();
+            for (int i = 0; i < haz.Szobák.Count; i++)
+            {
+                conn.Szobák.Remove(haz.Szobák[i]);
+            }
+
+            // kivételt dobna, ha egy olyan házat próbálnánk törölni, amihez még nem adtunk szobát
+            if (haz.Szobák != null)
+            {
+                haz.Szobák.Clear();
+                conn.SaveChanges();
+            }
 
 
             conn.Házak.Remove(haz);

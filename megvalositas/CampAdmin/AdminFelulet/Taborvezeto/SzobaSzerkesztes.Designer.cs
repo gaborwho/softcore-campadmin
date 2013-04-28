@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbSzobaSzam = new System.Windows.Forms.TextBox();
+            this.tbFerohely = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btMentes = new System.Windows.Forms.Button();
+            this.cbHazak = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -46,19 +46,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Szobaszám";
             // 
-            // textBox1
+            // tbSzobaSzam
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbSzobaSzam.Location = new System.Drawing.Point(79, 6);
+            this.tbSzobaSzam.Name = "tbSzobaSzam";
+            this.tbSzobaSzam.Size = new System.Drawing.Size(121, 20);
+            this.tbSzobaSzam.TabIndex = 1;
             // 
-            // textBox2
+            // tbFerohely
             // 
-            this.textBox2.Location = new System.Drawing.Point(79, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 3;
+            this.tbFerohely.Location = new System.Drawing.Point(79, 32);
+            this.tbFerohely.Name = "tbFerohely";
+            this.tbFerohely.Size = new System.Drawing.Size(121, 20);
+            this.tbFerohely.TabIndex = 3;
             // 
             // label2
             // 
@@ -69,22 +69,23 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Férőhely";
             // 
-            // button1
+            // btMentes
             // 
-            this.button1.Location = new System.Drawing.Point(12, 85);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Mentés";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btMentes.Location = new System.Drawing.Point(12, 85);
+            this.btMentes.Name = "btMentes";
+            this.btMentes.Size = new System.Drawing.Size(188, 23);
+            this.btMentes.TabIndex = 8;
+            this.btMentes.Text = "Mentés";
+            this.btMentes.UseVisualStyleBackColor = true;
+            this.btMentes.Click += new System.EventHandler(this.btMentes_Click);
             // 
-            // comboBox1
+            // cbHazak
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(79, 58);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 9;
+            this.cbHazak.FormattingEnabled = true;
+            this.cbHazak.Location = new System.Drawing.Point(79, 58);
+            this.cbHazak.Name = "cbHazak";
+            this.cbHazak.Size = new System.Drawing.Size(121, 21);
+            this.cbHazak.TabIndex = 9;
             // 
             // label3
             // 
@@ -94,21 +95,20 @@
             this.label3.Size = new System.Drawing.Size(26, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "Ház";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // RoomEdit
+            // SzobaSzerkesztes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(212, 119);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.cbHazak);
+            this.Controls.Add(this.btMentes);
+            this.Controls.Add(this.tbFerohely);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbSzobaSzam);
             this.Controls.Add(this.label1);
-            this.Name = "RoomEdit";
+            this.Name = "SzobaSzerkesztes";
             this.Text = "Szoba szerkesztés";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,11 +118,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbSzobaSzam;
+        private System.Windows.Forms.TextBox tbFerohely;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btMentes;
+        private System.Windows.Forms.ComboBox cbHazak;
         private System.Windows.Forms.Label label3;
     }
 }

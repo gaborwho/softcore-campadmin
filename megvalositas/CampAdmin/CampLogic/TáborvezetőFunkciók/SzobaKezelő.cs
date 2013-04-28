@@ -42,7 +42,8 @@ namespace TáborvezetõFunkciók
                 return false;
             }
 
-            szoba.Ház = haz;
+           
+            szoba.Ház = conn.Házak.Find(haz.HázId);
 
             conn.Szobák.Add(szoba);
 
