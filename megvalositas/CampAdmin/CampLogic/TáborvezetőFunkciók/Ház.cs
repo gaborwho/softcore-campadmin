@@ -41,7 +41,10 @@ namespace TáborvezetõFunkciók
 
         public string Név { get; set; }
 
-
+        public override string ToString()
+        {
+            return Név + " { " + MapX + "; " + MapY + " } (" + HázId + ")";
+        }
 
     }//end Ház
 

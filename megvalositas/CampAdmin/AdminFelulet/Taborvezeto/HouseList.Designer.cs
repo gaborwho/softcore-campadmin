@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbNeve = new System.Windows.Forms.TextBox();
+            this.tbMapY = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbMapX = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btUj = new System.Windows.Forms.Button();
+            this.lbHazak = new System.Windows.Forms.ListBox();
+            this.btTorol = new System.Windows.Forms.Button();
+            this.btSzerkeszt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,19 +49,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ház neve";
             // 
-            // textBox1
+            // tbNeve
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbNeve.Location = new System.Drawing.Point(79, 12);
+            this.tbNeve.Name = "tbNeve";
+            this.tbNeve.Size = new System.Drawing.Size(100, 20);
+            this.tbNeve.TabIndex = 1;
             // 
-            // textBox3
+            // tbMapY
             // 
-            this.textBox3.Location = new System.Drawing.Point(79, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 11;
+            this.tbMapY.Location = new System.Drawing.Point(79, 64);
+            this.tbMapY.Name = "tbMapY";
+            this.tbMapY.Size = new System.Drawing.Size(100, 20);
+            this.tbMapY.TabIndex = 11;
             // 
             // label3
             // 
@@ -72,12 +72,12 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "MapY";
             // 
-            // textBox4
+            // tbMapX
             // 
-            this.textBox4.Location = new System.Drawing.Point(79, 38);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 9;
+            this.tbMapX.Location = new System.Drawing.Point(79, 38);
+            this.tbMapX.Name = "tbMapX";
+            this.tbMapX.Size = new System.Drawing.Size(100, 20);
+            this.tbMapX.TabIndex = 9;
             // 
             // label4
             // 
@@ -88,58 +88,63 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "MapX";
             // 
-            // button1
+            // btUj
             // 
-            this.button1.Location = new System.Drawing.Point(185, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Szerkesztés";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btUj.Location = new System.Drawing.Point(185, 10);
+            this.btUj.Name = "btUj";
+            this.btUj.Size = new System.Drawing.Size(75, 23);
+            this.btUj.TabIndex = 12;
+            this.btUj.Text = "Új Felvétele";
+            this.btUj.UseVisualStyleBackColor = true;
+            this.btUj.Click += new System.EventHandler(this.btUj_Click);
             // 
-            // listBox1
+            // lbHazak
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 96);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(248, 238);
-            this.listBox1.TabIndex = 13;
+            this.lbHazak.FormattingEnabled = true;
+            this.lbHazak.Location = new System.Drawing.Point(12, 96);
+            this.lbHazak.Name = "lbHazak";
+            this.lbHazak.Size = new System.Drawing.Size(248, 238);
+            this.lbHazak.TabIndex = 13;
+            this.lbHazak.SelectedIndexChanged += new System.EventHandler(this.lbHazak_SelectedIndexChanged);
             // 
-            // button2
+            // btTorol
             // 
-            this.button2.Location = new System.Drawing.Point(185, 36);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Törlés";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btTorol.Location = new System.Drawing.Point(185, 36);
+            this.btTorol.Name = "btTorol";
+            this.btTorol.Size = new System.Drawing.Size(75, 23);
+            this.btTorol.TabIndex = 14;
+            this.btTorol.Text = "Törlés";
+            this.btTorol.UseVisualStyleBackColor = true;
+            this.btTorol.Click += new System.EventHandler(this.btTorol_Click);
             // 
-            // button3
+            // btSzerkeszt
             // 
-            this.button3.Location = new System.Drawing.Point(185, 62);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Mentés";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btSzerkeszt.Location = new System.Drawing.Point(185, 62);
+            this.btSzerkeszt.Name = "btSzerkeszt";
+            this.btSzerkeszt.Size = new System.Drawing.Size(75, 23);
+            this.btSzerkeszt.TabIndex = 15;
+            this.btSzerkeszt.Text = "Szerkeszt";
+            this.btSzerkeszt.UseVisualStyleBackColor = true;
+            this.btSzerkeszt.Click += new System.EventHandler(this.btSzerkeszt_Click);
             // 
-            // HouseList
+            // HazSzerkesztoLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(273, 346);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.btSzerkeszt);
+            this.Controls.Add(this.btTorol);
+            this.Controls.Add(this.lbHazak);
+            this.Controls.Add(this.btUj);
+            this.Controls.Add(this.tbMapY);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbMapX);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNeve);
             this.Controls.Add(this.label1);
-            this.Name = "HouseList";
+            this.Name = "HazSzerkesztoLista";
             this.Text = "Házak";
+            this.Load += new System.EventHandler(this.HazSzerkesztoLista_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,14 +153,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbNeve;
+        private System.Windows.Forms.TextBox tbMapY;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbMapX;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btUj;
+        private System.Windows.Forms.ListBox lbHazak;
+        private System.Windows.Forms.Button btTorol;
+        private System.Windows.Forms.Button btSzerkeszt;
     }
 }

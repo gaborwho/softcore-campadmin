@@ -211,14 +211,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TaborVezeto\HazSzerkesztoLista.resx">
+      <DependentUpon>HazSzerkesztoLista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaborVezeto\TaborVezetoMenu.resx">
       <DependentUpon>TaborVezetoMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TaborVezeto\Statisztikak.resx">
       <DependentUpon>Statisztikak.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TaborVezeto\HouseList.resx">
-      <DependentUpon>HazSzerkesztoLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TaborVezeto\SzobaSzerkesztes.resx">
       <DependentUpon>SzobaSzerkesztes.cs</DependentUpon>
