@@ -30,10 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.listBoxKorcsoportlista = new System.Windows.Forms.ListBox();
+            this.buttonKorcsSzerk = new System.Windows.Forms.Button();
+            this.buttonKorcsFeltolt = new System.Windows.Forms.Button();
+            this.buttonUjKorcs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,59 +55,62 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "státusz / adatok";
             // 
-            // listBox1
+            // listBoxKorcsoportlista
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
+            this.listBoxKorcsoportlista.FormattingEnabled = true;
+            this.listBoxKorcsoportlista.Items.AddRange(new object[] {
             "2008/1 - HU - Kicsik",
             "2008/2 - HU - Közepes",
             "2009/3 - SK - Nagyok",
             "2012/1- US - Nagyok"});
-            this.listBox1.Location = new System.Drawing.Point(17, 50);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(316, 264);
-            this.listBox1.TabIndex = 2;
+            this.listBoxKorcsoportlista.Location = new System.Drawing.Point(17, 50);
+            this.listBoxKorcsoportlista.Name = "listBoxKorcsoportlista";
+            this.listBoxKorcsoportlista.Size = new System.Drawing.Size(316, 264);
+            this.listBoxKorcsoportlista.TabIndex = 2;
             // 
-            // button2
+            // buttonKorcsSzerk
             // 
-            this.button2.Location = new System.Drawing.Point(17, 320);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 43);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Korcsoport szerkesztése";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonKorcsSzerk.Location = new System.Drawing.Point(17, 320);
+            this.buttonKorcsSzerk.Name = "buttonKorcsSzerk";
+            this.buttonKorcsSzerk.Size = new System.Drawing.Size(110, 43);
+            this.buttonKorcsSzerk.TabIndex = 4;
+            this.buttonKorcsSzerk.Text = "Korcsoport szerkesztése";
+            this.buttonKorcsSzerk.UseVisualStyleBackColor = true;
+            this.buttonKorcsSzerk.Click += new System.EventHandler(this.buttonKorcsSzerk_Click);
             // 
-            // button1
+            // buttonKorcsFeltolt
             // 
-            this.button1.Location = new System.Drawing.Point(133, 320);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 43);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Korcsoport feltöltése";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonKorcsFeltolt.Location = new System.Drawing.Point(133, 320);
+            this.buttonKorcsFeltolt.Name = "buttonKorcsFeltolt";
+            this.buttonKorcsFeltolt.Size = new System.Drawing.Size(110, 43);
+            this.buttonKorcsFeltolt.TabIndex = 5;
+            this.buttonKorcsFeltolt.Text = "Korcsoport feltöltése";
+            this.buttonKorcsFeltolt.UseVisualStyleBackColor = true;
+            this.buttonKorcsFeltolt.Click += new System.EventHandler(this.buttonKorcsFeltolt_Click);
             // 
-            // button3
+            // buttonUjKorcs
             // 
-            this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(249, 320);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 43);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Új korcsoport";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonUjKorcs.Enabled = false;
+            this.buttonUjKorcs.Location = new System.Drawing.Point(249, 320);
+            this.buttonUjKorcs.Name = "buttonUjKorcs";
+            this.buttonUjKorcs.Size = new System.Drawing.Size(84, 43);
+            this.buttonUjKorcs.TabIndex = 6;
+            this.buttonUjKorcs.Text = "Új korcsoport";
+            this.buttonUjKorcs.UseVisualStyleBackColor = true;
+            this.buttonUjKorcs.Click += new System.EventHandler(this.buttonUjKorcs_Click);
             // 
-            // UnitGroupList
+            // KorcsoportLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 375);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.buttonUjKorcs);
+            this.Controls.Add(this.buttonKorcsFeltolt);
+            this.Controls.Add(this.buttonKorcsSzerk);
+            this.Controls.Add(this.listBoxKorcsoportlista);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "UnitGroupList";
+            this.Name = "KorcsoportLista";
             this.Text = "Korsoportok Listája";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,10 +121,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListBox listBoxKorcsoportlista;
+        private System.Windows.Forms.Button buttonKorcsSzerk;
+        private System.Windows.Forms.Button buttonKorcsFeltolt;
+        private System.Windows.Forms.Button buttonUjKorcs;
     }
 }
 

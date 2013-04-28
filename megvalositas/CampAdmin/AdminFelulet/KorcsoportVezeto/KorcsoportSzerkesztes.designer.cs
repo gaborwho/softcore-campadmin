@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNev = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxAlsoKor = new System.Windows.Forms.TextBox();
+            this.textBoxFelsoKor = new System.Windows.Forms.TextBox();
+            this.textBoxOrszag = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -66,12 +66,12 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Név";
             // 
-            // textBox1
+            // textBoxNev
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 20);
-            this.textBox1.TabIndex = 3;
+            this.textBoxNev.Location = new System.Drawing.Point(116, 6);
+            this.textBoxNev.Name = "textBoxNev";
+            this.textBoxNev.Size = new System.Drawing.Size(159, 20);
+            this.textBoxNev.TabIndex = 3;
             // 
             // button1
             // 
@@ -81,14 +81,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Mentés";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(116, 31);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 21);
-            this.comboBox1.TabIndex = 7;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -99,32 +92,38 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Alsó korhatár";
             // 
-            // textBox2
+            // textBoxAlsoKor
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 20);
-            this.textBox2.TabIndex = 14;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBoxAlsoKor.Location = new System.Drawing.Point(116, 59);
+            this.textBoxAlsoKor.Name = "textBoxAlsoKor";
+            this.textBoxAlsoKor.Size = new System.Drawing.Size(159, 20);
+            this.textBoxAlsoKor.TabIndex = 14;
             // 
-            // textBox3
+            // textBoxFelsoKor
             // 
-            this.textBox3.Location = new System.Drawing.Point(116, 85);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(159, 20);
-            this.textBox3.TabIndex = 15;
+            this.textBoxFelsoKor.Location = new System.Drawing.Point(116, 85);
+            this.textBoxFelsoKor.Name = "textBoxFelsoKor";
+            this.textBoxFelsoKor.Size = new System.Drawing.Size(159, 20);
+            this.textBoxFelsoKor.TabIndex = 15;
+            // 
+            // textBoxOrszag
+            // 
+            this.textBoxOrszag.Location = new System.Drawing.Point(116, 32);
+            this.textBoxOrszag.Name = "textBoxOrszag";
+            this.textBoxOrszag.Size = new System.Drawing.Size(159, 20);
+            this.textBoxOrszag.TabIndex = 16;
             // 
             // UnitDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(280, 156);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxOrszag);
+            this.Controls.Add(this.textBoxFelsoKor);
+            this.Controls.Add(this.textBoxAlsoKor);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxNev);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -140,11 +139,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxNev;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxAlsoKor;
+        private System.Windows.Forms.TextBox textBoxFelsoKor;
+        private System.Windows.Forms.TextBox textBoxOrszag;
     }
 }

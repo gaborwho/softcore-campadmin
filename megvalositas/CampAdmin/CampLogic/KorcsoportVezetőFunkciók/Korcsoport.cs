@@ -48,7 +48,10 @@ namespace KorcsoportVezetõFunkciók
 
         public string Orszag { get; set; }
 
-
+        public override string ToString()
+        {
+            return Nev + " (" + Orszag + "/" + KorosztalyAlsoKorlat + "-" + KorosztalyFelsoKorlat + ")";
+        }
 
 
 
