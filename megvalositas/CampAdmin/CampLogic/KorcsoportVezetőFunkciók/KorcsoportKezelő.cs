@@ -16,46 +16,46 @@ using System.Text;
 using KorcsoportVezetõFunkciók;
 using Db;
 namespace KorcsoportVezetõFunkciók {
-	public class KorcsoportKezelõ : ICsoportKezelõ<KorcsoportKezelõ> {
+	public class KorcsoportKezelõ : ICsoportKezelõ<Korcsoport> {
 
 		public DbConnection conn = new DbConnection();
 
 		public KorcsoportKezelõ(){
 
 		}
+       
 
 
-        #region ICsoportKezelõ<KorcsoportKezelõ> Members
+
+    
+public bool  Letrehoz(Korcsoport csoport)
+{
+ 	        conn.Korcsoportok.Add(csoport);
+            conn.SaveChanges();
+
+            return true;
+}
 
 
-        /// 
-        /// <param name="csoport"></param>
-        public bool Letrehoz(KorcsoportKezelõ csoport)
-        {
-            throw new NotImplementedException();
-        }
 
-        List<KorcsoportKezelõ> ICsoportKezelõ<KorcsoportKezelõ>.Listaz()
-        {
-            throw new NotImplementedException();
-        }
+public List<Korcsoport>  Listaz()
+{
+ 	return (from k in conn.Korcsoportok select k).ToList<Korcsoport>();
+}
 
+public bool  Modosit(Korcsoport csoport)
+{
+ 	 conn.SaveChanges();
+     return true;
+}
 
-        /// 
-        /// <param name="csoport"></param>
-        public bool Modosit(KorcsoportKezelõ csoport)
-        {
-            throw new NotImplementedException();
-        }
-
-        /// 
-        /// <param name="csoport"></param>
-        public bool Torol(KorcsoportKezelõ csoport)
-        {
-            throw new NotImplementedException();
-        }
-
-        #endregion
+public bool  Torol(Korcsoport csoport)
+{
+ 	conn.Korcsoportok.Remove(csoport);
+     	 conn.SaveChanges();
+     return true;
+}
+}
     }//end KorcsoportKezelõ
 
 }//end namespace KorcsoportVezetõFunkciók

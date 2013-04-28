@@ -17,7 +17,7 @@ using KorcsoportVezetõFunkciók;
 using Db;
 namespace KorcsoportVezetõFunkciók
 {
-    public class CsoportKezelõ : ICsoportKezelõ<CsoportKezelõ>
+    public class CsoportKezelõ : ICsoportKezelõ<Csoport>
     {
 
         public DbConnection conn;
@@ -26,45 +26,29 @@ namespace KorcsoportVezetõFunkciók
         {
 
         }
-
-
-        /// 
-        /// <param name="korcsoport"></param>
-        public List<Csoport> Listaz(Korcsoport korcsoport)
+        public bool Letrehoz(Csoport csoport)
         {
-
-            return null;
+            conn.Csoportok.Add(csoport);
+            conn.SaveChanges();
+            return true;
         }
 
-        #region ICsoportKezelõ<CsoportKezelõ> Members
-
-        /// 
-        /// <param name="csoport"></param>
-        public bool Letrehoz(CsoportKezelõ csoport)
+        public List<Csoport> Listaz()
         {
-            throw new NotImplementedException();
+            return (from k in conn.Csoportok select k).ToList<Csoport>();
         }
 
-        List<CsoportKezelõ> ICsoportKezelõ<CsoportKezelõ>.Listaz()
+        public bool Modosit(Csoport csoport)
         {
-            throw new NotImplementedException();
+            conn.SaveChanges();
+            return true;
         }
 
-        /// 
-        /// <param name="csoport"></param>
-        public bool Modosit(CsoportKezelõ csoport)
+        public bool Torol(Csoport csoport)
         {
-            throw new NotImplementedException();
+            conn.Csoportok.Remove(csoport);
+            return true;
         }
-
-        /// 
-        /// <param name="csoport"></param>
-        public bool Torol(CsoportKezelõ csoport)
-        {
-            throw new NotImplementedException();
-        }
-
-        #endregion
     }//end CsoportKezelõ
 
 }//end namespace KorcsoportVezetõFunkciók
