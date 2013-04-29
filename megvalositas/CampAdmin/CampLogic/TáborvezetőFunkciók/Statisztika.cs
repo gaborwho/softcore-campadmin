@@ -20,7 +20,8 @@ namespace CampLogic.TáborvezetõFunkciók
 
         public Statisztika()
         {
-
+            Oszlopnevek = new List<string>();
+            Sorok = new List<List<string>>();
         }
 
 

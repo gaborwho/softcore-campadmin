@@ -48,7 +48,11 @@ namespace CampLogic.TáborvezetõFunkciók
 
         public int Sorszam { get; set; }
 
-
+        public override string ToString()
+        {
+            return Sorszam + "; " + Nev +
+                " { " + Kezdes.ToString("yyyy.MM.dd") + " - " + Befejezes.ToString("yyyy.MM.dd") + " }";
+        }
 
     }//end Turnus
 

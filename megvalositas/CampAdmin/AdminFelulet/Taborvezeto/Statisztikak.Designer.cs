@@ -28,56 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridViewEredmeny = new System.Windows.Forms.DataGridView();
+            this.comboStatisztikaTipus = new System.Windows.Forms.ComboBox();
+            this.btStatlek = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEredmeny)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewEredmeny
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 41);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(600, 315);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewEredmeny.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEredmeny.Enabled = false;
+            this.dataGridViewEredmeny.Location = new System.Drawing.Point(12, 41);
+            this.dataGridViewEredmeny.Name = "dataGridViewEredmeny";
+            this.dataGridViewEredmeny.Size = new System.Drawing.Size(600, 315);
+            this.dataGridViewEredmeny.TabIndex = 0;
             // 
-            // comboBox1
+            // comboStatisztikaTipus
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(419, 21);
-            this.comboBox1.TabIndex = 1;
+            this.comboStatisztikaTipus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboStatisztikaTipus.FormattingEnabled = true;
+            this.comboStatisztikaTipus.Location = new System.Drawing.Point(12, 12);
+            this.comboStatisztikaTipus.Name = "comboStatisztikaTipus";
+            this.comboStatisztikaTipus.Size = new System.Drawing.Size(419, 21);
+            this.comboStatisztikaTipus.TabIndex = 1;
             // 
-            // button1
+            // btStatlek
             // 
-            this.button1.Location = new System.Drawing.Point(437, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Lekérdezés";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btStatlek.Location = new System.Drawing.Point(437, 12);
+            this.btStatlek.Name = "btStatlek";
+            this.btStatlek.Size = new System.Drawing.Size(175, 23);
+            this.btStatlek.TabIndex = 2;
+            this.btStatlek.Text = "Lekérdezés";
+            this.btStatlek.UseVisualStyleBackColor = true;
+            this.btStatlek.Click += new System.EventHandler(this.btStatlek_Click);
             // 
-            // StatQuery
+            // Statisztikak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 368);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "StatQuery";
+            this.Controls.Add(this.btStatlek);
+            this.Controls.Add(this.comboStatisztikaTipus);
+            this.Controls.Add(this.dataGridViewEredmeny);
+            this.Name = "Statisztikak";
             this.Text = "Statisztikák";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Statisztikak_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEredmeny)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridViewEredmeny;
+        private System.Windows.Forms.ComboBox comboStatisztikaTipus;
+        private System.Windows.Forms.Button btStatlek;
     }
 }

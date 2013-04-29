@@ -19,14 +19,15 @@ namespace AdminFelulet.TaborVezeto
             InitializeComponent();
         }
 
-        
+
+
 
         private void btUj_Click(object sender, EventArgs e)
         {
             SzobaSzerkesztes SzerkesztoAblak = new SzobaSzerkesztes();
             SzerkesztoAblak.ShowDialog();
-            lbSzobak.Items.Clear();
-            lbSzobak.Items.AddRange((FelületHozzáférő.Instance as ITáborvezetőiKezelő).SzobaListazas().ToArray());
+
+            ResetListFromDb();
         }
 
         private void btSzerkeszt_Click(object sender, EventArgs e)
@@ -42,13 +43,18 @@ namespace AdminFelulet.TaborVezeto
             sz = lbSzobak.SelectedItem as Szoba;
             SzobaSzerkesztes SzerkesztoAblak = new SzobaSzerkesztes(sz);
             SzerkesztoAblak.ShowDialog();
+
+            ResetListFromDb();
+        }
+
+        private void ResetListFromDb(){
             lbSzobak.Items.Clear();
             lbSzobak.Items.AddRange((FelületHozzáférő.Instance as ITáborvezetőiKezelő).SzobaListazas().ToArray());
         }
 
         private void SzobaLista_Load(object sender, EventArgs e)
         {
-            lbSzobak.Items.AddRange((FelületHozzáférő.Instance as ITáborvezetőiKezelő).SzobaListazas().ToArray());
+            ResetListFromDb();
         }
 
         private void btTorol_Click(object sender, EventArgs e)

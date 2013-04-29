@@ -1,0 +1,26 @@
+tools -> source code engineering -> c#
+	letiltani a destruktor gent...
+
+settings -> generation template
+	class body
+
+VS multi line replace
+1) Select text you want to find.
+2) Press "Alt+F8" or open "Tools -> Macros -> Macro Explorer"
+3) Double click "Sample -> Utilities -> FindLine". (It will open Find box with your selection loaded in "Find" field. Don't worry about truncated text shown in "Find" field. Trust me, field has it all..MS way of showing it may be... :) )
+4) Click on "Quick Replace" button on "Find And Replace" dialog box. Enter your replace with text.
+5) And Click any of 3 buttons as per your requirement...and its done. :)
+
+
+
+Leadás:
+	5 file a korlát (~500Mb)
+	-teljes doksi (összes fázisból)
+	-felhasználói doksi... (rövid használati leírás a tanárnak)
+	-forráskód, +futtatható (binben) [zip]
+	-eap fájl
+
+Prezi:
+	10-15 perc
+	kész produktum jellegét bemutatni...
+	

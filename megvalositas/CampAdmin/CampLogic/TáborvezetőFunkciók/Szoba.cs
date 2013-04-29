@@ -45,7 +45,7 @@ namespace CampLogic.TáborvezetõFunkciók
 
         public override string ToString()
         {
-            return Szobaszam + " ( " + Ferohely + " ) Szoba: "+ Ház.Név;
+            return Szobaszam + " ( " + Ferohely + " ) Ház: "+ Ház.Név;
         }
 
     }//end Szoba

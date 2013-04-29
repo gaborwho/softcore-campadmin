@@ -52,12 +52,14 @@ namespace AdminFelulet.TaborVezeto
                     {
                         (FelületHozzáférő.Instance as ITáborvezetőiKezelő).SzobaLetrehozas(cbHazak.SelectedItem as Ház, sz);
                     }
+
+                    Close();
                 }
                 catch (FormatException)
                 {
-                    MessageBox.Show("MapX; MapY egész számok legyenek");
+                    MessageBox.Show("Férőhelyek száma szám kell, hogy legyen");
                 }
-                Close();
+                
         }
     }
 }

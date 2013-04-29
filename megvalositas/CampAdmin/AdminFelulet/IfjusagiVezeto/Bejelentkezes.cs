@@ -70,9 +70,17 @@ namespace AdminFelulet
                 Tipus = VezetőTípus.TáborVezető
             };
 
+            Vezető t = new Vezető
+            {
+                Nev = "t",
+                Jelszo = "t",
+                Tipus = VezetőTípus.TáborVezető
+            };
+
             vm.TesztCreateVezetőIfDontExists(vIfi);
             vm.TesztCreateVezetőIfDontExists(vKcs);
             vm.TesztCreateVezetőIfDontExists(vTb);
+            vm.TesztCreateVezetőIfDontExists(t);
 
             MessageBox.Show("Tesztfelhasználók:\n IfiTeszt/teszt \n KcsTeszt/teszt \n TbTeszt/teszt");
         }

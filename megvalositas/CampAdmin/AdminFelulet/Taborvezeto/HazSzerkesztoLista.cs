@@ -32,8 +32,16 @@ namespace AdminFelulet.TaborVezeto
                     Név = tbNeve.Text
                 };
 
-                (FelületHozzáférő.Instance as ITáborvezetőiKezelő).HazLetrehozas(h);
-                lbHazak.Items.Add(h);
+                if ((FelületHozzáférő.Instance as ITáborvezetőiKezelő).HazLetrehozas(h))
+                {
+                    lbHazak.Items.Add(h);
+                }
+                else
+                {
+                    MessageBox.Show("Ilyen nevű ház már létezik");
+                }
+                
+                
             }
             catch (FormatException)
             {
