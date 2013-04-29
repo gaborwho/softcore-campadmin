@@ -37,7 +37,7 @@ namespace CampLogic.TáborvezetõFunkciók
             /*
              *  Hibakezelés új szoba szobaszáma nem lehet azonos, egy az adott házban korábban felvett szobáéval
              */
-            if (haz.Szobák.Exists(m => m.Szobaszam == szoba.Szobaszam))
+            if (haz.Szobák!=null && haz.Szobák.Exists(m => m.Szobaszam == szoba.Szobaszam))
             {
                 return false;
             }
@@ -57,16 +57,17 @@ namespace CampLogic.TáborvezetõFunkciók
             return (from k in conn.Szobák select k).ToList<Szoba>();
         }
 
-        public List<Szoba> SzobaListazas(Ház ház)
+        public List<Szoba> SzobaListazas(Ház haz)
         {
-            return (from k in conn.Szobák where k.Ház == ház select k).ToList<Szoba>();
+            return (from k in conn.Szobák where k.Ház == haz select k).ToList<Szoba>();
         }
 
         /// 
         /// <param name="ház"></param>
         /// <param name="szoba"></param>
-        public bool SzobaModositas(Ház ház, Szoba szoba)
+        public bool SzobaModositas(Ház haz, Szoba szoba)
         {
+            szoba.Ház = conn.Házak.Find(haz.HázId);
             conn.SaveChanges();
             return true;
         }

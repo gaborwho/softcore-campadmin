@@ -48,7 +48,15 @@ namespace CampLogic.TáborvezetõFunkciók
 
         public int Sorszam { get; set; }
 
-
+        public override string ToString()
+        {
+            string aktiv;
+            if (Aktív==true)
+                aktiv="Aktív";
+            else
+                aktiv="Inaktív";
+            return Sorszam + " " + Nev + "( " + Kezdes.Date.ToShortDateString() + " - " + Befejezes.Date.ToShortDateString() + "), " + aktiv;
+        }
 
     }//end Turnus
 

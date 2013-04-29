@@ -16,6 +16,7 @@ namespace AdminFelulet.TaborVezeto
     {
         bool Modosit;
         Szoba sz;
+
         public SzobaSzerkesztes()
         {
             InitializeComponent();
@@ -37,7 +38,11 @@ namespace AdminFelulet.TaborVezeto
 
         private void btMentes_Click(object sender, EventArgs e)
         {
-            
+            if (sz == null)
+            {
+                MessageBox.Show("Válasszon egy házat a listából");
+                return;
+            }
                 try
                 {
 
@@ -55,7 +60,7 @@ namespace AdminFelulet.TaborVezeto
                 }
                 catch (FormatException)
                 {
-                    MessageBox.Show("MapX; MapY egész számok legyenek");
+                    MessageBox.Show("A férőhelynek egész számnak kell lennie");
                 }
                 Close();
         }

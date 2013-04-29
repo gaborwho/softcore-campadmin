@@ -28,63 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lbTurnusok = new System.Windows.Forms.ListBox();
+            this.btUjTurnus = new System.Windows.Forms.Button();
+            this.btModosit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lbTurnusok
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "2008 - I. turnus",
-            "2008 - II. turnus",
-            "2008 - III. turnus",
-            "2009 - I. turnus",
-            "2009 - Öregtábor",
-            "2009 - Sportolótábor",
-            "2010 - Drámatábor "});
-            this.listBox1.Location = new System.Drawing.Point(12, 14);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(260, 238);
-            this.listBox1.TabIndex = 0;
+            this.lbTurnusok.FormattingEnabled = true;
+            this.lbTurnusok.Location = new System.Drawing.Point(12, 14);
+            this.lbTurnusok.Name = "lbTurnusok";
+            this.lbTurnusok.Size = new System.Drawing.Size(410, 238);
+            this.lbTurnusok.TabIndex = 0;
             // 
-            // button1
+            // btUjTurnus
             // 
-            this.button1.Location = new System.Drawing.Point(12, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Új turnus";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btUjTurnus.Location = new System.Drawing.Point(12, 258);
+            this.btUjTurnus.Name = "btUjTurnus";
+            this.btUjTurnus.Size = new System.Drawing.Size(110, 23);
+            this.btUjTurnus.TabIndex = 1;
+            this.btUjTurnus.Text = "Új turnus";
+            this.btUjTurnus.UseVisualStyleBackColor = true;
+            this.btUjTurnus.Click += new System.EventHandler(this.btUjTurnus_Click);
             // 
-            // button2
+            // btModosit
             // 
-            this.button2.Location = new System.Drawing.Point(162, 258);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Turnus módosítása";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btModosit.Location = new System.Drawing.Point(312, 258);
+            this.btModosit.Name = "btModosit";
+            this.btModosit.Size = new System.Drawing.Size(110, 23);
+            this.btModosit.TabIndex = 2;
+            this.btModosit.Text = "Turnus módosítása";
+            this.btModosit.UseVisualStyleBackColor = true;
+            this.btModosit.Click += new System.EventHandler(this.btModosit_Click);
             // 
-            // SessionList
+            // TurnusLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 313);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
-            this.Name = "SessionList";
+            this.ClientSize = new System.Drawing.Size(434, 301);
+            this.Controls.Add(this.btModosit);
+            this.Controls.Add(this.btUjTurnus);
+            this.Controls.Add(this.lbTurnusok);
+            this.Name = "TurnusLista";
             this.Text = "Turnusok Listája";
+            this.Load += new System.EventHandler(this.TurnusLista_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListBox lbTurnusok;
+        private System.Windows.Forms.Button btUjTurnus;
+        private System.Windows.Forms.Button btModosit;
     }
 }
