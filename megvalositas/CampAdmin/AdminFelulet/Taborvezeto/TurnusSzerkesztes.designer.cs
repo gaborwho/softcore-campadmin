@@ -32,10 +32,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbNev = new System.Windows.Forms.TextBox();
-            this.btMent = new System.Windows.Forms.Button();
+            this.btMentes = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.dtpKezd = new System.Windows.Forms.DateTimePicker();
-            this.dtBef = new System.Windows.Forms.DateTimePicker();
+            this.dateKezdes = new System.Windows.Forms.DateTimePicker();
+            this.dateBefejezes = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -71,15 +71,15 @@
             this.tbNev.Size = new System.Drawing.Size(200, 20);
             this.tbNev.TabIndex = 2;
             // 
-            // btMent
+            // btMentes
             // 
-            this.btMent.Location = new System.Drawing.Point(15, 125);
-            this.btMent.Name = "btMent";
-            this.btMent.Size = new System.Drawing.Size(75, 23);
-            this.btMent.TabIndex = 4;
-            this.btMent.Text = "Mentés";
-            this.btMent.UseVisualStyleBackColor = true;
-            this.btMent.Click += new System.EventHandler(this.btMent_Click);
+            this.btMentes.Location = new System.Drawing.Point(15, 125);
+            this.btMentes.Name = "btMentes";
+            this.btMentes.Size = new System.Drawing.Size(75, 23);
+            this.btMentes.TabIndex = 4;
+            this.btMentes.Text = "Mentés";
+            this.btMentes.UseVisualStyleBackColor = true;
+            this.btMentes.Click += new System.EventHandler(this.btMentes_Click);
             // 
             // label3
             // 
@@ -90,19 +90,19 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Kezdési Dátum";
             // 
-            // dtpKezd
+            // dateKezdes
             // 
-            this.dtpKezd.Location = new System.Drawing.Point(109, 67);
-            this.dtpKezd.Name = "dtpKezd";
-            this.dtpKezd.Size = new System.Drawing.Size(200, 20);
-            this.dtpKezd.TabIndex = 7;
+            this.dateKezdes.Location = new System.Drawing.Point(109, 67);
+            this.dateKezdes.Name = "dateKezdes";
+            this.dateKezdes.Size = new System.Drawing.Size(200, 20);
+            this.dateKezdes.TabIndex = 7;
             // 
-            // dtBef
+            // dateBefejezes
             // 
-            this.dtBef.Location = new System.Drawing.Point(109, 93);
-            this.dtBef.Name = "dtBef";
-            this.dtBef.Size = new System.Drawing.Size(200, 20);
-            this.dtBef.TabIndex = 9;
+            this.dateBefejezes.Location = new System.Drawing.Point(109, 93);
+            this.dateBefejezes.Name = "dateBefejezes";
+            this.dateBefejezes.Size = new System.Drawing.Size(200, 20);
+            this.dateBefejezes.TabIndex = 9;
             // 
             // label4
             // 
@@ -118,18 +118,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(332, 170);
-            this.Controls.Add(this.dtBef);
+            this.Controls.Add(this.dateBefejezes);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dtpKezd);
+            this.Controls.Add(this.dateKezdes);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btMent);
+            this.Controls.Add(this.btMentes);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbNev);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbSorszam);
             this.Name = "TurnusSzerkesztes";
             this.Text = "Turnus szerkesztése";
-            this.Load += new System.EventHandler(this.TurnusSzerkesztes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,10 +140,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbNev;
-        private System.Windows.Forms.Button btMent;
+        private System.Windows.Forms.Button btMentes;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dtpKezd;
-        private System.Windows.Forms.DateTimePicker dtBef;
+        private System.Windows.Forms.DateTimePicker dateKezdes;
+        private System.Windows.Forms.DateTimePicker dateBefejezes;
         private System.Windows.Forms.Label label4;
     }
 }

@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+
+
 using CampLogic.TáborvezetőFunkciók;
 using CampLogic.Borders;
 
@@ -13,67 +15,65 @@ namespace AdminFelulet.TaborVezeto
 {
     public partial class TurnusSzerkesztes : Form
     {
-        bool Szerkeszt = false;
-
-        private Turnus turnus;
+        bool Modosit;
+        Turnus t;
 
         public TurnusSzerkesztes()
         {
             InitializeComponent();
+            t = new Turnus();
+            Modosit = false;
         }
 
-        public TurnusSzerkesztes(CampLogic.TáborvezetőFunkciók.Turnus turnus):this()
+        public TurnusSzerkesztes(Turnus turnus)
         {
-            // TODO: Complete member initialization
-            Szerkeszt = true;
-            this.turnus = turnus;
+            InitializeComponent();
+            t = turnus;
+            tbNev.Text = t.Nev;
+            tbSorszam.Text = t.Sorszam.ToString();
+            dateKezdes.Value = t.Kezdes;
+            dateBefejezes.Value = t.Befejezes;
+            Modosit = true;
         }
 
-        private void btMent_Click(object sender, EventArgs e)
+        private void btMentes_Click(object sender, EventArgs e)
         {
+            if (dateKezdes.Value > dateBefejezes.Value)
+            {
+                MessageBox.Show("A turnus befejezése nem lehet a kezdés előtt");
+                return;
+            }
+
             try
             {
-                turnus.Nev = tbNev.Text;
-                turnus.Sorszam = int.Parse(tbSorszam.Text);
 
-                turnus.Kezdes = dtpKezd.Value;
-                turnus.Befejezes = dtBef.Value;
-
-                if (Szerkeszt)
+                t.Nev = tbNev.Text;
+                t.Sorszam = int.Parse(tbSorszam.Text);
+                t.Kezdes = dateKezdes.Value;
+                t.Befejezes = dateBefejezes.Value;
+                if (t.Kezdes < DateTime.Today && t.Befejezes > DateTime.Today)
                 {
-                    (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusModositas(turnus);
+                    t.Aktív = true;
                 }
                 else
                 {
-                    (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusLetrehozas(turnus);
+                    t.Aktív = false;
                 }
-
-                Close();
+                
+                if (Modosit)
+                {
+                    (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusModositas(t);
+                }
+                else
+                {
+                    (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusLetrehozas(t);
+                }
             }
             catch (FormatException)
             {
-                MessageBox.Show("Sorszám legyen szám");
+                MessageBox.Show("A sorszámnak egész számnak kell lennie");
             }
-            
-        }
-
-        private void TurnusSzerkesztes_Load(object sender, EventArgs e)
-        {
-            if (turnus!=null)
-            {
-                tbNev.Text = turnus.Nev;
-                tbSorszam.Text = turnus.Sorszam.ToString();
-
-                dtpKezd.Value = turnus.Kezdes;
-                dtBef.Value = turnus.Befejezes;
-
-            }
-            else
-            {
-                turnus = new Turnus();
-            }
-
-
+            Close();
         }
     }
 }

@@ -30,7 +30,7 @@
         {
             this.lbTurnusok = new System.Windows.Forms.ListBox();
             this.btUjTurnus = new System.Windows.Forms.Button();
-            this.btTurnusModosit = new System.Windows.Forms.Button();
+            this.btModosit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbTurnusok
@@ -38,9 +38,8 @@
             this.lbTurnusok.FormattingEnabled = true;
             this.lbTurnusok.Location = new System.Drawing.Point(12, 14);
             this.lbTurnusok.Name = "lbTurnusok";
-            this.lbTurnusok.Size = new System.Drawing.Size(260, 238);
+            this.lbTurnusok.Size = new System.Drawing.Size(410, 238);
             this.lbTurnusok.TabIndex = 0;
-            this.lbTurnusok.SelectedIndexChanged += new System.EventHandler(this.lbTurnusok_SelectedIndexChanged);
             // 
             // btUjTurnus
             // 
@@ -52,22 +51,22 @@
             this.btUjTurnus.UseVisualStyleBackColor = true;
             this.btUjTurnus.Click += new System.EventHandler(this.btUjTurnus_Click);
             // 
-            // btTurnusModosit
+            // btModosit
             // 
-            this.btTurnusModosit.Location = new System.Drawing.Point(162, 258);
-            this.btTurnusModosit.Name = "btTurnusModosit";
-            this.btTurnusModosit.Size = new System.Drawing.Size(110, 23);
-            this.btTurnusModosit.TabIndex = 2;
-            this.btTurnusModosit.Text = "Turnus módosítása";
-            this.btTurnusModosit.UseVisualStyleBackColor = true;
-            this.btTurnusModosit.Click += new System.EventHandler(this.btTurnusModosit_Click);
+            this.btModosit.Location = new System.Drawing.Point(312, 258);
+            this.btModosit.Name = "btModosit";
+            this.btModosit.Size = new System.Drawing.Size(110, 23);
+            this.btModosit.TabIndex = 2;
+            this.btModosit.Text = "Turnus módosítása";
+            this.btModosit.UseVisualStyleBackColor = true;
+            this.btModosit.Click += new System.EventHandler(this.btModosit_Click);
             // 
             // TurnusLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 313);
-            this.Controls.Add(this.btTurnusModosit);
+            this.ClientSize = new System.Drawing.Size(434, 301);
+            this.Controls.Add(this.btModosit);
             this.Controls.Add(this.btUjTurnus);
             this.Controls.Add(this.lbTurnusok);
             this.Name = "TurnusLista";
@@ -81,6 +80,6 @@
 
         private System.Windows.Forms.ListBox lbTurnusok;
         private System.Windows.Forms.Button btUjTurnus;
-        private System.Windows.Forms.Button btTurnusModosit;
+        private System.Windows.Forms.Button btModosit;
     }
 }
