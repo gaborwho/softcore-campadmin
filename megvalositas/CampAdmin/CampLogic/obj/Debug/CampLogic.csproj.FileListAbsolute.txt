@@ -18,3 +18,4 @@ j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLog
 j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLogic\obj\Debug\CampLogic.csproj.GenerateResource.Cache
 j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLogic\obj\Debug\CampLogic.dll
 j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLogic\obj\Debug\CampLogic.pdb
+G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampLogic\obj\Debug\CampLogic.csprojResolveAssemblyReference.cache

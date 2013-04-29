@@ -68,12 +68,15 @@ namespace AdminFelulet.TaborVezeto
                 {
                     (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusLetrehozas(t);
                 }
+                
+                Close();
             }
             catch (FormatException)
             {
                 MessageBox.Show("A sorszámnak egész számnak kell lennie");
             }
-            Close();
+            
         }
+
     }
 }

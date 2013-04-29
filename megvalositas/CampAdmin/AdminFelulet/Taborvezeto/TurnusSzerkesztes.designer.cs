@@ -129,6 +129,7 @@
             this.Controls.Add(this.tbSorszam);
             this.Name = "TurnusSzerkesztes";
             this.Text = "Turnus szerkesztése";
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

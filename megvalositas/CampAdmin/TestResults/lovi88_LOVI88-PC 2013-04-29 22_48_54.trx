@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="36c92e7e-6e37-4cdf-bbaa-2272a539537a" name="lovi88@LOVI88-PC 2013-04-29 22:48:54" runUser="lovi88-PC\lovi88" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="440b09e4-2e55-454b-a7b3-bef6692f9e8e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="lovi88_LOVI88-PC 2013-04-29 22_48_54">
+      <DeploymentItem filename="G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\AdminFelulet\bin\Debug\AdminFelulet.exe" />
+      <DeploymentItem filename="G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampLogic\bin\Debug\CampLogic.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-04-29T22:48:54.6372636+02:00" queuing="2013-04-29T22:48:55.1782945+02:00" start="2013-04-29T22:48:55.2232971+02:00" finish="2013-04-29T22:48:56.0043418+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="LOVI88-PC" outcome="Warning" timestamp="2013-04-29T22:48:54.9802832+02:00">
+        <Text>Deployment is currently disabled. The deployment item 'AdminFelulet.exe' on test 'CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_AktivMégNemFutó' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AktivitásBeállítTest_AktivMégNemFutó" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="aee9758b-c740-3262-3b9b-68a3064c877d">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="13dd481e-d83c-44be-ae89-f8c70845c9ae" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktivMégNemFutó" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="aee9758b-c740-3262-3b9b-68a3064c877d" executionId="13dd481e-d83c-44be-ae89-f8c70845c9ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="13dd481e-d83c-44be-ae89-f8c70845c9ae" testId="aee9758b-c740-3262-3b9b-68a3064c877d" testName="AktivitásBeállítTest_AktivMégNemFutó" computerName="LOVI88-PC" duration="00:00:00.4721123" startTime="2013-04-29T22:48:55.2302975+02:00" endTime="2013-04-29T22:48:55.9873408+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13dd481e-d83c-44be-ae89-f8c70845c9ae">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </Message>
+          <StackTrace>   a következő helyen: CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_AktivMégNemFutó() hely: G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\TurnusListaTest.cs, sor: 96
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

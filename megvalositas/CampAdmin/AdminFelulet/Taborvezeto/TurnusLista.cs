@@ -20,23 +20,37 @@ namespace AdminFelulet.TaborVezeto
             InitializeComponent();
         }
 
+
         private void TurnusLista_Load(object sender, EventArgs e)
         {
             for (int i = 0; i < (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusListazas().Count; i++)
             {
                 Turnus t=(FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusListazas()[i];
-                if (t.Aktív == true &&  t.Befejezes < DateTime.Today )
-                {
-                    t.Aktív = false;
-                    (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusModositas(t);
-                }
-                if (t.Aktív == false && t.Befejezes > DateTime.Today && t.Kezdes < DateTime.Today)
-                {
-                    t.Aktív = true;
-                    (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusModositas(t);
-                }
+                AktivitásBeállít(t);
             }
             lbTurnusok.Items.AddRange((FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusListazas().ToArray());
+        }
+
+        private static void AktivitásBeállít(Turnus t)
+        {
+            if (t.Aktív == true && t.Befejezes < DateTime.Today)
+            {
+                t.Aktív = false;
+                (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusModositas(t);
+            }
+
+            if (t.Aktív == true && t.Kezdes > DateTime.Today)
+            {
+                t.Aktív = false;
+                (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusModositas(t);
+            }
+
+            if (t.Aktív == false && t.Befejezes >= DateTime.Today && t.Kezdes <= DateTime.Today)
+            {
+                t.Aktív = true;
+                (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusModositas(t);
+            }
+
         }
 
         private void btUjTurnus_Click(object sender, EventArgs e)
