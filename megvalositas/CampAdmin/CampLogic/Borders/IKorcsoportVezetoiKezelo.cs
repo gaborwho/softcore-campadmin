@@ -13,7 +13,7 @@ using System.Text;
 
 
 
-using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.KorcsoportVezetoFunkciok;
 using CampLogic.Borders;
 namespace CampLogic.Borders {
 	public interface IKorcsoportVezetoiKezelo : IIfjusagiVezetoiKezelo {

@@ -45,56 +45,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Borders\FeluletHozzáféro.cs" />
-    <Compile Include="Borders\IfjuságiVezetoiKezeloFelulet.cs" />
+    <Compile Include="Borders\FeluletHozzafero.cs" />
+    <Compile Include="Borders\IfjusagiVezetoiKezeloFelulet.cs" />
     <Compile Include="Borders\IIfjusagiVezetoiKezelo.cs" />
     <Compile Include="Borders\IKorcsoportVezetoiKezelo.cs" />
-    <Compile Include="Borders\ITáborvezetoiKezelo.cs" />
+    <Compile Include="Borders\ITaborVezetoiKezelo.cs" />
     <Compile Include="Borders\IVezeto.cs" />
-    <Compile Include="Borders\KorcsoportVezetoiKezeloFelület.cs" />
-    <Compile Include="Borders\TáborvezetoiKezeloFelulet.cs" />
-    <Compile Include="Borders\Vezetö.cs" />
-    <Compile Include="Borders\VezetoTípus.cs" />
+    <Compile Include="Borders\KorcsoportVezetoiKezeloFelulet.cs" />
+    <Compile Include="Borders\TaborvezetoiKezeloFelulet.cs" />
+    <Compile Include="Borders\Vezeto.cs" />
+    <Compile Include="Borders\VezetoTipus.cs" />
     <Compile Include="Db\DbConnection.cs" />
     <Compile Include="Db\VezetoModell.cs" />
-    <Compile Include="IfjusagiVezetoFunkciók\Táborozó.cs" />
-    <Compile Include="IfjusagiVezetoFunkciók\TáborozóImportKezelo.cs" />
-    <Compile Include="IfjusagiVezetoFunkciók\TáborozóKezelo.cs" />
-    <Compile Include="KorcsoportVezetoFunkciók\Csoport.cs" />
-    <Compile Include="KorcsoportVezetoFunkciók\CsoportKezelo.cs" />
-    <Compile Include="KorcsoportVezetoFunkciók\ICsoportKezelo.cs" />
-    <Compile Include="KorcsoportVezetoFunkciók\Korcsoport.cs" />
-    <Compile Include="KorcsoportVezetoFunkciók\KorcsoportKezelo.cs" />
-    <Compile Include="Migrations\201304262228372_InitialCreate.cs" />
-    <Compile Include="Migrations\201304262228372_InitialCreate.Designer.cs">
-      <DependentUpon>201304262228372_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201304301705100_vezetöRövidÖ.cs" />
-    <Compile Include="Migrations\201304301705100_vezetöRövidÖ.Designer.cs">
-      <DependentUpon>201304301705100_vezetöRövidÖ.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="IfjusagiVezetoFunkciok\Taborozo.cs" />
+    <Compile Include="IfjusagiVezetoFunkciok\TaborozoImportKezelo.cs" />
+    <Compile Include="IfjusagiVezetoFunkciok\TaborozoKezelo.cs" />
+    <Compile Include="KorcsoportVezetoFunkciok\Csoport.cs" />
+    <Compile Include="KorcsoportVezetoFunkciok\CsoportKezelo.cs" />
+    <Compile Include="KorcsoportVezetoFunkciok\ICsoportKezelo.cs" />
+    <Compile Include="KorcsoportVezetoFunkciok\Korcsoport.cs" />
+    <Compile Include="KorcsoportVezetoFunkciok\KorcsoportKezelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaborvezetoFunkciok\Ház.cs" />
-    <Compile Include="TaborvezetoFunkciok\HázKezelo.cs" />
+    <Compile Include="TaborvezetoFunkciok\Haz.cs" />
+    <Compile Include="TaborvezetoFunkciok\HazKezelo.cs" />
     <Compile Include="TaborvezetoFunkciok\Statisztika.cs" />
-    <Compile Include="TaborvezetoFunkciok\StatisztikaKazelo.cs" />
+    <Compile Include="TaborvezetoFunkciok\StatisztikaKezelo.cs" />
     <Compile Include="TaborvezetoFunkciok\Szoba.cs" />
     <Compile Include="TaborvezetoFunkciok\SzobaKezelo.cs" />
     <Compile Include="TaborvezetoFunkciok\Turnus.cs" />
-    <Compile Include="TaborvezetoFunkciok\TurnusKezelő.cs" />
+    <Compile Include="TaborvezetoFunkciok\TurnusKezelo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201304262228372_InitialCreate.resx">
-      <DependentUpon>201304262228372_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201304301705100_vezetöRövidÖ.resx">
-      <DependentUpon>201304301705100_vezetöRövidÖ.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

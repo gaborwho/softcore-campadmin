@@ -5,10 +5,10 @@ using System.Text;
 
 namespace CampLogic.Borders
 {
-    public class FeluletHozzáféro
+    public class FeluletHozzafero
     {
 
-        private FeluletHozzáféro()
+        private FeluletHozzafero()
         {
 
         }
@@ -25,39 +25,39 @@ namespace CampLogic.Borders
                     SetAsIfiVez();
                 }
 
-                return FeluletHozzáféro.instance;
+                return FeluletHozzafero.instance;
             }
         }
 
         private static void SetAsIfiVez()
         {
-            instance = new IfjuságiVezetoiKezeloFelulet();
+            instance = new IfjusagiVezetoiKezeloFelulet();
         }
 
         private static void SetAsKcsVez()
         {
-            instance = new KorcsoportVezetoiKezeloFelület();
+            instance = new KorcsoportVezetoiKezeloFelulet();
         }
 
         private static void SetAsTbVez()
         {
-            instance = new TáborvezetoiKezeloFelulet();
+            instance = new TaborvezetoiKezeloFelulet();
         }
 
 
-        public static void SetByVezető(Vezetö vezető)
+        public static void SetByVezető(Vezeto vezeto)
         {
-            switch (vezető.Tipus)
+            switch (vezeto.Tipus)
             {
-                case VezetoTípus.IfjúságiVezető:
+                case VezetoTipus.IfjusagiVezeto:
                     SetAsIfiVez();
                     break;
 
-                case VezetoTípus.KorcsoportVezető:
+                case VezetoTipus.KorcsoportVezeto:
                     SetAsKcsVez();
                     break;
 
-                case VezetoTípus.TáborVezető:
+                case VezetoTipus.TaborVezeto:
                     SetAsTbVez();
                     break;
 

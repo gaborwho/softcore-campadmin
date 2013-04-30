@@ -15,5 +15,11 @@ namespace AdminFelulet.IfjusagiVezeto
         {
             InitializeComponent();
         }
+
+        private void btTaborozok_Click(object sender, EventArgs e)
+        {
+            CamperList ablak = new CamperList();
+            ablak.ShowDialog();
+        }
     }
 }

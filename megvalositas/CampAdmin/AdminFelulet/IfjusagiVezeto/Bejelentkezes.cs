@@ -18,16 +18,15 @@ namespace AdminFelulet
         public Bejelentkezes()
         {
             InitializeComponent();
-            TesztVezetők();
+            TesztVezetok();
         }
 
+        Vezeto vezeto;
 
-        Vezetö vezető;
-
-        public Vezetö Vezető
+        public Vezeto Vezeto
         {
-            get { return vezető; }
-            private set { vezető = value; }
+            get { return vezeto; }
+            private set { vezeto = value; }
         }
 
         VezetoModell vm = new VezetoModell();
@@ -35,7 +34,7 @@ namespace AdminFelulet
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if ((vezető = vm.VezetőUserPassz(tbNev.Text, tbPass.Text)) == null)
+            if ((vezeto = vm.VezetoUserPass(tbNev.Text, tbPass.Text)) == null)
             {
                 MessageBox.Show("Rossz név vagy jelszó");
                 return;
@@ -46,41 +45,41 @@ namespace AdminFelulet
 
         //Feltételes, csak a debug verzióba fordítja a JIT
         [Conditional("DEBUG")]
-        private void TesztVezetők() {
+        private void TesztVezetok() {
 
             
-            Vezetö vIfi = new Vezetö
+            Vezeto vIfi = new Vezeto
             {
                 Nev = "IfiTeszt",
                 Jelszo = "teszt",
-                Tipus = VezetoTípus.IfjúságiVezető
+                Tipus = VezetoTipus.IfjusagiVezeto
             };
 
-            Vezetö vKcs = new Vezetö
+            Vezeto vKcs = new Vezeto
             {
                 Nev = "KcsTeszt",
                 Jelszo = "teszt",
-                Tipus = VezetoTípus.KorcsoportVezető
+                Tipus = VezetoTipus.KorcsoportVezeto
             };
 
-            Vezetö vTb = new Vezetö
+            Vezeto vTb = new Vezeto
             {
                 Nev = "TbTeszt",
                 Jelszo = "teszt",
-                Tipus = VezetoTípus.TáborVezető
+                Tipus = VezetoTipus.TaborVezeto
             };
 
-            Vezetö t = new Vezetö
+            Vezeto t = new Vezeto
             {
                 Nev = "t",
                 Jelszo = "t",
-                Tipus = VezetoTípus.TáborVezető
+                Tipus = VezetoTipus.TaborVezeto
             };
 
-            vm.TesztCreateVezetőIfDontExists(vIfi);
-            vm.TesztCreateVezetőIfDontExists(vKcs);
-            vm.TesztCreateVezetőIfDontExists(vTb);
-            vm.TesztCreateVezetőIfDontExists(t);
+            vm.TesztCreateVezetoIfDontExists(vIfi);
+            vm.TesztCreateVezetoIfDontExists(vKcs);
+            vm.TesztCreateVezetoIfDontExists(vTb);
+            vm.TesztCreateVezetoIfDontExists(t);
 
             MessageBox.Show("Tesztfelhasználók:\n IfiTeszt/teszt \n KcsTeszt/teszt \n TbTeszt/teszt");
         }

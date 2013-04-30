@@ -15,14 +15,14 @@ namespace AdminFelulet
 {
     public partial class FoMenu : Form
     {
-        private Vezetö vezető;
+        private Vezeto vezető;
 
         public FoMenu()
         {
             InitializeComponent();
         }
 
-        public FoMenu(CampLogic.Borders.Vezetö vezető) :this()
+        public FoMenu(CampLogic.Borders.Vezeto vezető) :this()
         {
             this.vezető = vezető;
             Text = "Főprogram SoftCoreCampAdmin - Üdvözöljük:" + vezető.ToString();
@@ -31,7 +31,7 @@ namespace AdminFelulet
         private void FőMenű_Load(object sender, EventArgs e)
         {
             //A hozzáférő egy olyan singleton, melyen keresztül elérik a szükséges kezelő felületet az almenűk.
-            FeluletHozzáféro.SetByVezető(vezető);
+            FeluletHozzafero.SetByVezető(vezető);
 
             IfjusagiMenu ifm;
             KorcsoportHome kcsm;

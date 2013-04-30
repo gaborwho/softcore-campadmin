@@ -24,3 +24,16 @@ j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdm
 j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.csprojResolveAssemblyReference.cache
 j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.dll
 j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.pdb
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\CampAdminTeszt.dll
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\CampAdminTeszt.pdb
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet.exe
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\CampLogic.dll
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\EntityFramework.dll
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet.pdb
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\CampLogic.pdb
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\EntityFramework.xml
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet_Accessor.exe
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet_Accessor.pdb
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\obj\Debug\ResolveAssemblyReference.cache
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.dll
+\\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.pdb

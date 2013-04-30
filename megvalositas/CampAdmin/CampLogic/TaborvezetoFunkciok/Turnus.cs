@@ -13,8 +13,8 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 
 
-using CampLogic.KorcsoportVezetõFunkciók;
-namespace CampLogic.TáborvezetõFunkciók
+using CampLogic.KorcsoportVezetoFunkciok;
+namespace CampLogic.TaborvezetoFunkciok
 {
     public class Turnus
     {

@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-
-using CampLogic.KorcsoportVezetőFunkciók;
+using CampLogic.KorcsoportVezetoFunkciok;
 using CampLogic.Borders;
 using CampLogic.Db;
 
@@ -48,11 +47,11 @@ namespace AdminFelulet.TaborVezeto
             korcs.KorosztalyFelsoKorlat = Convert.ToInt32(textBoxFelsoKor.Text);
             if (!edit)
             {
-                (FeluletHozzáféro.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
+                (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
             }
             else
             {
-                (FeluletHozzáféro.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
+                (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
             }
             conn.Dispose();
             Close();

@@ -12,9 +12,9 @@ using System.Linq;
 using System.Text;
 using System.Data.Entity;
 
-using CampLogic.KorcsoportVezetõFunkciók;
-using CampLogic.TáborvezetõFunkciók;
-using CampLogic.IfjúságiVezetõFunkciók;
+using CampLogic.KorcsoportVezetoFunkciok;
+using CampLogic.TaborvezetoFunkciok;
+using CampLogic.IfjusagiVezetoFunkciok;
 using CampLogic.Borders;
 
 
@@ -25,29 +25,23 @@ namespace CampLogic.Db
 
         public MyDbConnection()
         {
-
+// Ha megváltozik a modell, ezzel lehet újraépíteni
+//Database.SetInitializer<MyDbConnection>(new DropCreateDatabaseIfModelChanges<MyDbConnection>());
         }
-
 
         public DbSet<Csoport> Csoportok { get; set; }
 
-        public DbSet<Ház> Házak { get; set; }
+        public DbSet<Haz> Hazak { get; set; }
 
         public DbSet<Korcsoport> Korcsoportok { get; set; }
 
-        public DbSet<Szoba> Szobák { get; set; }
+        public DbSet<Szoba> Szobak { get; set; }
 
-        public DbSet<Táborozó> Táborozók { get; set; }
+        public DbSet<Taborozo> Taborozok { get; set; }
 
         public DbSet<Turnus> Turnusok { get; set; }
 
-        public DbSet<Vezetö> Vezetök { get; set; }
-
-        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Vezetõ>()
-        //        .Property
-        //}
+        public DbSet<Vezeto> Vezetok { get; set; }
 
     }//end DbConnection
 

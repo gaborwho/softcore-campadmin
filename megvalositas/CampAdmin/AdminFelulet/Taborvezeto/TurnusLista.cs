@@ -7,9 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-
 using CampLogic.Borders;
-using CampLogic.TáborvezetőFunkciók;
+using CampLogic.TaborvezetoFunkciok;
 
 namespace AdminFelulet.TaborVezeto
 {
@@ -23,12 +22,12 @@ namespace AdminFelulet.TaborVezeto
 
         private void TurnusLista_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusListazas().Count; i++)
+            for (int i = 0; i < (FeluletHozzafero.Instance as ITaborVezetoiKezelo).TurnusListazas().Count; i++)
             {
-                Turnus t=(FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusListazas()[i];
+                Turnus t=(FeluletHozzafero.Instance as ITaborVezetoiKezelo).TurnusListazas()[i];
                 AktivitásBeállít(t);
             }
-            lbTurnusok.Items.AddRange((FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusListazas().ToArray());
+            lbTurnusok.Items.AddRange((FeluletHozzafero.Instance as ITaborVezetoiKezelo).TurnusListazas().ToArray());
         }
 
         private static void AktivitásBeállít(Turnus t)
@@ -36,19 +35,19 @@ namespace AdminFelulet.TaborVezeto
             if (t.Aktív == true && t.Befejezes < DateTime.Today)
             {
                 t.Aktív = false;
-                (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusModositas(t);
+                (FeluletHozzafero.Instance as ITaborVezetoiKezelo).TurnusModositas(t);
             }
 
             if (t.Aktív == true && t.Kezdes > DateTime.Today)
             {
                 t.Aktív = false;
-                (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusModositas(t);
+                (FeluletHozzafero.Instance as ITaborVezetoiKezelo).TurnusModositas(t);
             }
 
             if (t.Aktív == false && t.Befejezes >= DateTime.Today && t.Kezdes <= DateTime.Today)
             {
                 t.Aktív = true;
-                (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusModositas(t);
+                (FeluletHozzafero.Instance as ITaborVezetoiKezelo).TurnusModositas(t);
             }
 
         }
@@ -58,7 +57,7 @@ namespace AdminFelulet.TaborVezeto
             TurnusSzerkesztes SzerkesztoAblak = new TurnusSzerkesztes();
             SzerkesztoAblak.ShowDialog();
             lbTurnusok.Items.Clear();
-            lbTurnusok.Items.AddRange((FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusListazas().ToArray());
+            lbTurnusok.Items.AddRange((FeluletHozzafero.Instance as ITaborVezetoiKezelo).TurnusListazas().ToArray());
         }
 
         private void btModosit_Click(object sender, EventArgs e)
@@ -75,7 +74,7 @@ namespace AdminFelulet.TaborVezeto
             TurnusSzerkesztes SzerkesztoAblak = new TurnusSzerkesztes(t);
             SzerkesztoAblak.ShowDialog();
             lbTurnusok.Items.Clear();
-            lbTurnusok.Items.AddRange((FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusListazas().ToArray());
+            lbTurnusok.Items.AddRange((FeluletHozzafero.Instance as ITaborVezetoiKezelo).TurnusListazas().ToArray());
         }
     }
 }

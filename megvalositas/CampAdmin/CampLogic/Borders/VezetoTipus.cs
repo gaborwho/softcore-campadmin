@@ -14,11 +14,11 @@ using System.Text;
 
 
 namespace CampLogic.Borders {
-	public enum VezetoTípus : int {
+	public enum VezetoTipus : int {
 
-		IfjúságiVezetõ,
-		KorcsoportVezetõ,
-		TáborVezetõ
+		IfjusagiVezeto,
+		KorcsoportVezeto,
+		TaborVezeto
 
 	}//end VezetõTípus
 

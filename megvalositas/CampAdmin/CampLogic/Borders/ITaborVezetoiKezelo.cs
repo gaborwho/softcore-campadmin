@@ -13,26 +13,26 @@ using System.Text;
 
 
 
-using CampLogic.TáborvezetõFunkciók;
+using CampLogic.TaborvezetoFunkciok;
 using CampLogic.Borders;
 namespace CampLogic.Borders
 {
-    public interface ITáborvezetoiKezelo : IKorcsoportVezetoiKezelo
+    public interface ITaborVezetoiKezelo : IKorcsoportVezetoiKezelo
     {
 
         /// 
         /// <param name="haz"></param>
-        bool HazLetrehozas(Ház haz);
+        bool HazLetrehozas(Haz haz);
 
-        List<Ház> HazListazas();
-
-        /// 
-        /// <param name="haz"></param>
-        bool HazModositas(Ház haz);
+        List<Haz> HazListazas();
 
         /// 
         /// <param name="haz"></param>
-        bool HazTorles(Ház haz);
+        bool HazModositas(Haz haz);
+
+        /// 
+        /// <param name="haz"></param>
+        bool HazTorles(Haz haz);
 
         Statisztika StatisztikaHanyOrszagPerTurnus();
 
@@ -41,23 +41,23 @@ namespace CampLogic.Borders
         /// 
         /// <param name="haz"></param>
         /// <param name="szoba"></param>
-        bool SzobaLetrehozas(Ház haz, Szoba szoba);
+        bool SzobaLetrehozas(Haz haz, Szoba szoba);
 
         /// 
         /// <param name="haz"></param>
-        List<Szoba> SzobaListazas(Ház haz);
+        List<Szoba> SzobaListazas(Haz haz);
 
         List<Szoba> SzobaListazas();
 
         /// 
         /// <param name="haz"></param>
         /// <param name="szoba"></param>
-        bool SzobaModositas(Ház haz, Szoba szoba);
+        bool SzobaModositas(Haz haz, Szoba szoba);
 
         /// 
         /// <param name="haz"></param>
         /// <param name="szoba"></param>
-        bool SzobaTorol(Ház haz, Szoba szoba);
+        bool SzobaTorol(Haz haz, Szoba szoba);
 
         /// 
         /// <param name="turnus"></param>

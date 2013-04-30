@@ -13,9 +13,9 @@ using System.Text;
 
 
 
-using CampLogic.TáborvezetõFunkciók;
+using CampLogic.TaborvezetoFunkciok;
 using CampLogic.Db;
-namespace CampLogic.TáborvezetõFunkciók
+namespace CampLogic.TaborvezetoFunkciok
 {
     public class SzobaKezelo
     {
@@ -31,21 +31,21 @@ namespace CampLogic.TáborvezetõFunkciók
         /// 
         /// <param name="haz"></param>
         /// <param name="szoba"></param>
-        public bool SzobaLetrehozas(Ház haz, Szoba szoba)
+        public bool SzobaLetrehozas(Haz haz, Szoba szoba)
         {
 
             /*
              *  Hibakezelés új szoba szobaszáma nem lehet azonos, egy az adott házban korábban felvett szobáéval
              */
-            if (haz.Szobák!=null && haz.Szobák.Exists(m => m.Szobaszam == szoba.Szobaszam))
+            if (haz.Szobak!=null && haz.Szobak.Exists(m => m.Szobaszam == szoba.Szobaszam))
             {
                 return false;
             }
 
            
-            szoba.Ház = conn.Házak.Find(haz.HázId);
+            szoba.Ház = conn.Hazak.Find(haz.HázId);
 
-            conn.Szobák.Add(szoba);
+            conn.Szobak.Add(szoba);
 
             conn.SaveChanges();
 
@@ -54,20 +54,20 @@ namespace CampLogic.TáborvezetõFunkciók
 
         public List<Szoba> SzobaListazas()
         {
-            return (from k in conn.Szobák select k).ToList<Szoba>();
+            return (from k in conn.Szobak select k).ToList<Szoba>();
         }
 
-        public List<Szoba> SzobaListazas(Ház haz)
+        public List<Szoba> SzobaListazas(Haz haz)
         {
-            return (from k in conn.Szobák where k.Ház == haz select k).ToList<Szoba>();
+            return (from k in conn.Szobak where k.Ház == haz select k).ToList<Szoba>();
         }
 
         /// 
         /// <param name="ház"></param>
         /// <param name="szoba"></param>
-        public bool SzobaModositas(Ház haz, Szoba szoba)
+        public bool SzobaModositas(Haz haz, Szoba szoba)
         {
-            szoba.Ház = conn.Házak.Find(haz.HázId);
+            szoba.Ház = conn.Hazak.Find(haz.HázId);
             conn.SaveChanges();
             return true;
         }
@@ -76,7 +76,7 @@ namespace CampLogic.TáborvezetõFunkciók
         /// <param name="szoba"></param>
         public bool SzobaTorles(Szoba szoba)
         {
-            conn.Szobák.Remove(szoba);
+            conn.Szobak.Remove(szoba);
             conn.SaveChanges();
 
             return true;

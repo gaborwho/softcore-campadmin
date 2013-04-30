@@ -13,32 +13,32 @@ using System.Text;
 
 
 
-using CampLogic.KorcsoportVezetõFunkciók;
-using CampLogic.IfjúságiVezetõFunkciók;
+using CampLogic.KorcsoportVezetoFunkciok;
+using CampLogic.IfjusagiVezetoFunkciok;
 namespace CampLogic.Borders {
 	public interface IIfjusagiVezetoiKezelo {
 
 		/// 
 		/// <param name="csoport"></param>
-        bool CsoporthozRendeles(Táborozó Taborozo, Csoport csoport);
+        bool CsoporthozRendeles(Taborozo Taborozo, Csoport csoport);
 
 		/// 
 		/// <param name="path"></param>
 		bool ImportFilebol(string path);
 
-		List<Táborozó> TaborozoListazas();
+		List<Taborozo> TaborozoListazas();
 
 		/// 
 		/// <param name="táborozó"></param>
-		bool TaborozoModositasa(Táborozó táborozó);
+		bool TaborozoModositasa(Taborozo táborozó);
 
 		/// 
 		/// <param name="taborozo"></param>
-		bool TaborozoTorles(Táborozó taborozo);
+		bool TaborozoTorles(Taborozo taborozo);
 
 		/// 
 		/// <param name="taborozo"></param>
-		bool UjTaborozo(Táborozó taborozo);
+		bool UjTaborozo(Taborozo taborozo);
 	}//end IIfjúságiVezetõiKezelõ
 
 }//end namespace Borders

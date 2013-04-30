@@ -13,7 +13,7 @@ using System.Text;
 
 
 
-namespace CampLogic.KorcsoportVezetõFunkciók {
+namespace CampLogic.KorcsoportVezetoFunkciok {
 	public interface ICsoportKezelõ<T> {
 
 		/// 

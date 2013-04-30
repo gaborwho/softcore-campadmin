@@ -13,117 +13,117 @@ using System.Text;
 
 
 
-using CampLogic.TáborvezetõFunkciók;
+using CampLogic.TaborvezetoFunkciok;
 using CampLogic.Borders;
 namespace CampLogic.Borders
 {
-    public class TáborvezetoiKezeloFelulet : KorcsoportVezetoiKezeloFelület, ITáborvezetoiKezelo
+    public class TaborvezetoiKezeloFelulet : KorcsoportVezetoiKezeloFelulet, ITaborVezetoiKezelo
     {
 
-        private SzobaKezelo _SzobaKezelõ;
-        private TurnusKezelõ _TurnusKezelõ;
-        private HázKezelo _HázKezelõ;
-        private StatisztikaKazelo _StatisztikaKazelõ;
+        private SzobaKezelo _SzobaKezelo;
+        private TurnusKezelo _TurnusKezelo;
+        private HazKezelo _HazKezelo;
+        private StatisztikaKezelo _StatisztikaKezelo;
 
-        public TáborvezetoiKezeloFelulet()
+        public TaborvezetoiKezeloFelulet()
         {
-            _SzobaKezelõ = new SzobaKezelo();
-            _TurnusKezelõ = new TurnusKezelõ();
-            _HázKezelõ = new HázKezelo();
-            _StatisztikaKazelõ = new StatisztikaKazelo();
+            _SzobaKezelo = new SzobaKezelo();
+            _TurnusKezelo = new TurnusKezelo();
+            _HazKezelo = new HazKezelo();
+            _StatisztikaKezelo = new StatisztikaKezelo();
         }
 
 
         /// 
         /// <param name="haz"></param>
-        public bool HazLetrehozas(Ház haz)
+        public bool HazLetrehozas(Haz haz)
         {
-            return _HázKezelõ.HázLetrehozas(haz);
+            return _HazKezelo.HázLetrehozas(haz);
         }
 
-        public List<Ház> HazListazas()
+        public List<Haz> HazListazas()
         {
-            return _HázKezelõ.HazListazas();
-        }
-
-        /// 
-        /// <param name="haz"></param>
-        public bool HazModositas(Ház haz)
-        {
-            return _HázKezelõ.HázModositas(haz);
+            return _HazKezelo.HazListazas();
         }
 
         /// 
         /// <param name="haz"></param>
-        public bool HazTorles(Ház haz)
+        public bool HazModositas(Haz haz)
         {
-            return _HázKezelõ.HazTorles(haz);
+            return _HazKezelo.HázModositas(haz);
+        }
+
+        /// 
+        /// <param name="haz"></param>
+        public bool HazTorles(Haz haz)
+        {
+            return _HazKezelo.HazTorles(haz);
         }
 
         public Statisztika StatisztikaHanyOrszagPerTurnus()
         {
-            return _StatisztikaKazelõ.HanyOrszagPerTurnus();
+            return _StatisztikaKezelo.HanyOrszagPerTurnus();
         }
 
         public Statisztika StatisztikaHanyTaborozóPerTurnus()
         {
-            return _StatisztikaKazelõ.HanyTaborozóPerTurnus();
+            return _StatisztikaKezelo.HanyTaborozóPerTurnus();
         }
 
         /// 
         /// <param name="haz"></param>
         /// <param name="szoba"></param>
-        public bool SzobaLetrehozas(Ház haz, Szoba szoba)
+        public bool SzobaLetrehozas(Haz haz, Szoba szoba)
         {
-            return _SzobaKezelõ.SzobaLetrehozas(haz, szoba);
+            return _SzobaKezelo.SzobaLetrehozas(haz, szoba);
         }
 
         /// 
         /// <param name="haz"></param>
-        public List<Szoba> SzobaListazas(Ház haz)
+        public List<Szoba> SzobaListazas(Haz haz)
         {
-            return _SzobaKezelõ.SzobaListazas(haz);
+            return _SzobaKezelo.SzobaListazas(haz);
         }
 
         public List<Szoba> SzobaListazas()
         {
-            return _SzobaKezelõ.SzobaListazas();
+            return _SzobaKezelo.SzobaListazas();
         }
 
         /// 
         /// <param name="haz"></param>
         /// <param name="szoba"></param>
-        public bool SzobaModositas(Ház haz, Szoba szoba)
+        public bool SzobaModositas(Haz haz, Szoba szoba)
         {
-            return _SzobaKezelõ.SzobaModositas(haz, szoba);
+            return _SzobaKezelo.SzobaModositas(haz, szoba);
 
         }
 
         /// 
         /// <param name="haz"></param>
         /// <param name="szoba"></param>
-        public bool SzobaTorol(Ház haz, Szoba szoba)
+        public bool SzobaTorol(Haz haz, Szoba szoba)
         {
-            return _SzobaKezelõ.SzobaTorles(szoba);
+            return _SzobaKezelo.SzobaTorles(szoba);
         }
 
         /// 
         /// <param name="turnus"></param>
         public bool TurnusLetrehozas(Turnus turnus)
         {
-            return _TurnusKezelõ.TurnusLetrehozas(turnus);
+            return _TurnusKezelo.TurnusLetrehozas(turnus);
         }
 
         public List<Turnus> TurnusListazas()
         {
-            return _TurnusKezelõ.TurnusListazas();
+            return _TurnusKezelo.TurnusListazas();
         }
 
         /// 
         /// <param name="turnus"></param>
         public bool TurnusModositas(Turnus turnus)
         {
-            return _TurnusKezelõ.TurnusModositas(turnus);
+            return _TurnusKezelo.TurnusModositas(turnus);
         }
 
     }//end TáborvezetõiKezelõFelület

@@ -13,12 +13,12 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace CampLogic.TáborvezetõFunkciók
+namespace CampLogic.TaborvezetoFunkciok
 {
-    public class Ház
+    public class Haz
     {
 
-        public Ház()
+        public Haz()
         {
 
         }
@@ -29,7 +29,7 @@ namespace CampLogic.TáborvezetõFunkciók
         [Key]
         public int HázId { get; set; }
 
-        public virtual List<Szoba> Szobák { get; set; }
+        public virtual List<Szoba> Szobak { get; set; }
 
         #endregion
 

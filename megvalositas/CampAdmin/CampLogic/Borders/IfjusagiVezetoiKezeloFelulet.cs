@@ -11,25 +11,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using CampLogic.KorcsoportVezetõFunkciók;
-using CampLogic.IfjúságiVezetõFunkciók;
-using CampLogic.TáborvezetõFunkciók;
+using CampLogic.KorcsoportVezetoFunkciok;
+using CampLogic.IfjusagiVezetoFunkciok;
+using CampLogic.TaborvezetoFunkciok;
 
 
 namespace CampLogic.Borders {
-	public class IfjuságiVezetoiKezeloFelulet : IIfjusagiVezetoiKezelo {
+	public class IfjusagiVezetoiKezeloFelulet : IIfjusagiVezetoiKezelo {
 
-		public TáborozóImportKezelo m_TáborozóImportKezelõ;
-		public TáborozóKezelo m_TáborozóKezelõ;
+		public TaborozoImportKezelo _TaborozoImportKezelo;
+		public TaborozoKezelo _TaborozoKezelo;
 
-		public IfjuságiVezetoiKezeloFelulet(){
-
+		public IfjusagiVezetoiKezeloFelulet(){
+            _TaborozoKezelo = new TaborozoKezelo();
 		}
 
 		/// 
 		/// <param name="Taborozo"></param>
 		/// <param name="csoport"></param>
-		public bool CsoporthozRendeles(Táborozó Taborozo, Csoport csoport){
+		public bool CsoporthozRendeles(Taborozo Taborozo, Csoport csoport){
 
 			return false;
 		}
@@ -41,14 +41,14 @@ namespace CampLogic.Borders {
 			return false;
 		}
 
-		public List<Táborozó> TaborozoListazas(){
+		public List<Taborozo> TaborozoListazas(){
 
 			return null;
 		}
 
 		/// 
 		/// <param name="táborozó"></param>
-		public bool TaborozoModositasa(Táborozó táborozó){
+		public bool TaborozoModositasa(Taborozo táborozó){
 
 			return false;
 		}
@@ -56,22 +56,21 @@ namespace CampLogic.Borders {
 		/// 
 		/// <param name="Táborozó"></param>
 		/// <param name="Szoba"></param>
-		public void TáborozóSzobáhozRendelés(Táborozó Táborozó, Szoba Szoba){
+		public void TaborozoSzobahozRendeles(Taborozo Táborozó, Szoba Szoba){
 
 		}
 
 		/// 
 		/// <param name="taborozo"></param>
-		public bool TaborozoTorles(Táborozó taborozo){
+		public bool TaborozoTorles(Taborozo taborozo){
 
 			return false;
 		}
 
-		/// 
+		///
 		/// <param name="taborozo"></param>
-		public bool UjTaborozo(Táborozó taborozo){
-
-			return false;
+		public bool UjTaborozo(Taborozo taborozo){
+			return _TaborozoKezelo.UjTaborozo(taborozo);
 		}
 
     }//end IfjúságiVezetõiKezelõFelület

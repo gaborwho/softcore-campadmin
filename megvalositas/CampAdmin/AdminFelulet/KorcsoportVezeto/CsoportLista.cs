@@ -10,14 +10,13 @@ using System.Windows.Forms;
 using CampLogic.Db;
 
 using CampLogic.Borders;
-using CampLogic.KorcsoportVezetőFunkciók;
+using CampLogic.KorcsoportVezetoFunkciok;
 namespace AdminFelulet.KorcsoportVezeto
 {
     public partial class CsoportLista : Form
     {
         Korcsoport korcs;
         Csoport csoport;
-
 
         int csoportid;
 
@@ -47,8 +46,8 @@ namespace AdminFelulet.KorcsoportVezeto
             csoport = new Csoport();
             csoport.Nev = textBoxNev.Text;
             //a vezető osztályom nincs meg mert nemtudom, a dani elmagyarazta. migralni kell.
-            csoport.IfiVezeto1 = (Vezetö)comboBoxIfi1.SelectedItem;
-            csoport.IfiVezeto2 = (Vezetö)comboBoxIfi2.SelectedItem;
+            csoport.IfiVezeto1 = (Vezeto)comboBoxIfi1.SelectedItem;
+            csoport.IfiVezeto2 = (Vezeto)comboBoxIfi2.SelectedItem;
             if (csoport.IfiVezeto1 == csoport.IfiVezeto2)
             {
                 MessageBox.Show("A klónozást még nem találták fel!");
@@ -68,7 +67,7 @@ namespace AdminFelulet.KorcsoportVezeto
         }
 
         void UpdateKorcs() {
-            (FeluletHozzáféro.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
+            (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
         }
 
     }

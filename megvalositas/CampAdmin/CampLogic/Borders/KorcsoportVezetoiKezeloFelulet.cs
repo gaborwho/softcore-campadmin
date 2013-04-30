@@ -13,19 +13,19 @@ using System.Text;
 
 
 
-using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.KorcsoportVezetoFunkciok;
 using CampLogic.Borders;
 namespace CampLogic.Borders {
-	public class KorcsoportVezetoiKezeloFelület : IfjuságiVezetoiKezeloFelulet, IKorcsoportVezetoiKezelo {
+	public class KorcsoportVezetoiKezeloFelulet : IfjusagiVezetoiKezeloFelulet, IKorcsoportVezetoiKezelo {
 
 		public KorcsoportKezelo m_KorcsoportKezelõ;
 		public CsoportKezelo m_CsoportKezelõ;
 
-		public KorcsoportVezetoiKezeloFelület(){
+		public KorcsoportVezetoiKezeloFelulet(){
 
 		}
 
-		~KorcsoportVezetoiKezeloFelület(){
+		~KorcsoportVezetoiKezeloFelulet(){
 
 		}
 

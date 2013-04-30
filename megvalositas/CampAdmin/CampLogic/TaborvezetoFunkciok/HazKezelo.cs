@@ -14,13 +14,13 @@ using System.Text;
 
 
 using CampLogic.Db;
-namespace CampLogic.TáborvezetõFunkciók
+namespace CampLogic.TaborvezetoFunkciok
 {
-    public class HázKezelo
+    public class HazKezelo
     {
 
 
-        public HázKezelo()
+        public HazKezelo()
         {
 
         }
@@ -29,11 +29,11 @@ namespace CampLogic.TáborvezetõFunkciók
 
         /// 
         /// <param name="ház"></param>
-        public bool HázLetrehozas(Ház ház)
+        public bool HázLetrehozas(Haz haz)
         {
 
-            int numH = (from k in conn.Házak
-                        where k.Név == ház.Név
+            int numH = (from k in conn.Hazak
+                        where k.Név == haz.Név
                         select k).Count();
 
             // ha valakinek jobban tetszik 
@@ -48,15 +48,15 @@ namespace CampLogic.TáborvezetõFunkciók
                 return false;
             }
 
-            conn.Házak.Add(ház);
+            conn.Hazak.Add(haz);
             conn.SaveChanges();
 
             return true;
         }
 
-        public List<Ház> HazListazas()
+        public List<Haz> HazListazas()
         {
-            return (from k in conn.Házak select k).ToList<Ház>();
+            return (from k in conn.Hazak select k).ToList<Haz>();
         }
 
         /// 
@@ -67,7 +67,7 @@ namespace CampLogic.TáborvezetõFunkciók
          * A ListBox-ban, a DbConnect-bõl származó Ház volt, amit módosítottak is
          * Mivel referencia típus, elvileg az eredeti is módosúlt, így elég csak menteni a módosításokat
          */
-        public bool HázModositas(Ház ház)
+        public bool HázModositas(Haz ház)
         {
             conn.SaveChanges();
 
@@ -76,7 +76,7 @@ namespace CampLogic.TáborvezetõFunkciók
 
         /// 
         /// <param name="haz"></param>
-        public bool HazTorles(Ház haz)
+        public bool HazTorles(Haz haz)
         {
 
             /*
@@ -84,20 +84,20 @@ namespace CampLogic.TáborvezetõFunkciók
              * a szobában Reference constraint van a ház-ra.
              * A szobák nem létezhetnek ház nélkül, mert szobakezelõ igényli
              */
-            for (int i = 0; i < haz.Szobák.Count; i++)
+            for (int i = 0; i < haz.Szobak.Count; i++)
             {
-                conn.Szobák.Remove(haz.Szobák[i]);
+                conn.Szobak.Remove(haz.Szobak[i]);
             }
 
             // kivételt dobna, ha egy olyan házat próbálnánk törölni, amihez még nem adtunk szobát
-            if (haz.Szobák != null)
+            if (haz.Szobak != null)
             {
-                haz.Szobák.Clear();
+                haz.Szobak.Clear();
                 conn.SaveChanges();
             }
 
 
-            conn.Házak.Remove(haz);
+            conn.Hazak.Remove(haz);
             conn.SaveChanges();
 
             return true;

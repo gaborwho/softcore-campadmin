@@ -11,11 +11,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-
-
-using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.KorcsoportVezetoFunkciok;
 using CampLogic.Db;
-namespace CampLogic.KorcsoportVezetõFunkciók
+namespace CampLogic.KorcsoportVezetoFunkciok
 {
     public class CsoportKezelo : ICsoportKezelõ<Csoport>
     {

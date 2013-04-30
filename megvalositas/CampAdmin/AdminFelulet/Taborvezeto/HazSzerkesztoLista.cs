@@ -6,9 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
 using CampLogic.Borders;
-using CampLogic.TáborvezetőFunkciók;
+using CampLogic.TaborvezetoFunkciok;
 
 namespace AdminFelulet.TaborVezeto
 {
@@ -21,18 +20,18 @@ namespace AdminFelulet.TaborVezeto
 
         private void btUj_Click(object sender, EventArgs e)
         {
-            Ház h = null;
+            Haz h = null;
 
             try
             {
-                h = new Ház
+                h = new Haz
                 {
                     MapX = int.Parse(tbMapX.Text),
                     MapY = int.Parse(tbMapY.Text),
                     Név = tbNeve.Text
                 };
 
-                if ((FeluletHozzáféro.Instance as ITáborvezetoiKezelo).HazLetrehozas(h))
+                if ((FeluletHozzafero.Instance as ITaborVezetoiKezelo).HazLetrehozas(h))
                 {
                     lbHazak.Items.Add(h);
                 }
@@ -59,7 +58,7 @@ namespace AdminFelulet.TaborVezeto
                 return;
             }
 
-            (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).HazTorles(lbHazak.SelectedItem as Ház);
+            (FeluletHozzafero.Instance as ITaborVezetoiKezelo).HazTorles(lbHazak.SelectedItem as Haz);
             lbHazak.Items.Remove(lbHazak.SelectedItem);
         }
 
@@ -73,7 +72,7 @@ namespace AdminFelulet.TaborVezeto
             }
 
 
-            Ház h = lbHazak.SelectedItem as Ház;
+            Haz h = lbHazak.SelectedItem as Haz;
 
             try
             {
@@ -85,7 +84,7 @@ namespace AdminFelulet.TaborVezeto
                 lbHazak.Items.Remove(h);
                 lbHazak.Items.Add(h);
 
-                (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).HazModositas(h);
+                (FeluletHozzafero.Instance as ITaborVezetoiKezelo).HazModositas(h);
             }
             catch (FormatException)
             {
@@ -98,7 +97,7 @@ namespace AdminFelulet.TaborVezeto
 
         private void HazSzerkesztoLista_Load(object sender, EventArgs e)
         {
-            lbHazak.Items.AddRange((FeluletHozzáféro.Instance as ITáborvezetoiKezelo).HazListazas().ToArray());
+            lbHazak.Items.AddRange((FeluletHozzafero.Instance as ITaborVezetoiKezelo).HazListazas().ToArray());
         }
 
         private void lbHazak_SelectedIndexChanged(object sender, EventArgs e)
@@ -108,9 +107,9 @@ namespace AdminFelulet.TaborVezeto
                 return;
             }
 
-            tbNeve.Text = (lbHazak.SelectedItem as Ház).Név;
-            tbMapX.Text = (lbHazak.SelectedItem as Ház).MapX.ToString();
-            tbMapY.Text = (lbHazak.SelectedItem as Ház).MapY.ToString();
+            tbNeve.Text = (lbHazak.SelectedItem as Haz).Név;
+            tbMapX.Text = (lbHazak.SelectedItem as Haz).MapX.ToString();
+            tbMapY.Text = (lbHazak.SelectedItem as Haz).MapY.ToString();
         }
     }
 }

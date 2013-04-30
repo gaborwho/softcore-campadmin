@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-
-using CampLogic.TáborvezetőFunkciók;
+using CampLogic.TaborvezetoFunkciok;
 using CampLogic.Borders;
 
 namespace AdminFelulet.TaborVezeto
@@ -62,11 +61,11 @@ namespace AdminFelulet.TaborVezeto
                 
                 if (Modosit)
                 {
-                    (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusModositas(t);
+                    (FeluletHozzafero.Instance as ITaborVezetoiKezelo).TurnusModositas(t);
                 }
                 else
                 {
-                    (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusLetrehozas(t);
+                    (FeluletHozzafero.Instance as ITaborVezetoiKezelo).TurnusLetrehozas(t);
                 }
                 
                 Close();

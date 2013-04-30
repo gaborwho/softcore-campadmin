@@ -12,16 +12,16 @@ using System.Linq;
 using System.Text;
 
 
-using CampLogic.TáborvezetõFunkciók;
+using CampLogic.TaborvezetoFunkciok;
 using CampLogic.Db;
-namespace CampLogic.TáborvezetõFunkciók
+namespace CampLogic.TaborvezetoFunkciok
 {
-    public class StatisztikaKazelo
+    public class StatisztikaKezelo
     {
 
         MyDbConnection conn = new MyDbConnection();
 
-        public StatisztikaKazelo()
+        public StatisztikaKezelo()
         {
 
         }
@@ -61,7 +61,7 @@ namespace CampLogic.TáborvezetõFunkciók
             foreach (var turnus in turnusok)
             {
 
-                int táborozószám = (from té in conn.Táborozók 
+                int táborozószám = (from té in conn.Taborozok 
                                   join cs in conn.Csoportok on té.CsoportId equals cs.CoportId
                                   join kcs in conn.Korcsoportok on cs.Korcsoport equals kcs
                                   where kcs.TurnusId == turnus.TurnusId

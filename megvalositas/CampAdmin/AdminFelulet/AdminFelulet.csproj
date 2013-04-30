@@ -13,6 +13,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -124,7 +124,6 @@
     <Compile Include="IfjusagiVezeto\Bejelentkezes.Designer.cs">
       <DependentUpon>Bejelentkezes.cs</DependentUpon>
     </Compile>
-    <Compile Include="KorcsoportVezeto\Vezeto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaborVezeto\TaborVezetoMenu.cs">
@@ -184,14 +183,14 @@
     <EmbeddedResource Include="FoMenu.resx">
       <DependentUpon>FoMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IfjusagiVezeto\CamperList.resx">
-      <DependentUpon>TaborozoSzerkesztesLista.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="IfjusagiVezeto\TaborozoCsoporthozSzobahozRendeles.resx">
       <DependentUpon>TaborozoCsoporthozSzobahozRendeles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IfjusagiVezeto\IfjusagiMenu.resx">
       <DependentUpon>IfjusagiMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IfjusagiVezeto\TaborozoSzerkesztesLista.resx">
+      <DependentUpon>TaborozoSzerkesztesLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KorcsoportVezeto\CsoportLista.resx">
       <DependentUpon>CsoportLista.cs</DependentUpon>

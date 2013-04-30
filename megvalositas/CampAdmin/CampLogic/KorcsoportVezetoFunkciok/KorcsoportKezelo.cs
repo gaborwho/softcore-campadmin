@@ -13,9 +13,9 @@ using System.Text;
 
 
 
-using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.KorcsoportVezetoFunkciok;
 using CampLogic.Db;
-namespace CampLogic.KorcsoportVezetõFunkciók
+namespace CampLogic.KorcsoportVezetoFunkciok
 {
 
     public class KorcsoportKezelo : ICsoportKezelõ<Korcsoport>

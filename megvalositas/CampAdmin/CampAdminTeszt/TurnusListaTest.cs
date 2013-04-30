@@ -1,7 +1,7 @@
 ﻿using AdminFelulet.TaborVezeto;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using CampLogic.TáborvezetőFunkciók;
+using CampLogic.TaborvezetoFunkciok;
 using CampLogic.Borders;
 
 namespace CampAdminTeszt
@@ -45,10 +45,10 @@ namespace CampAdminTeszt
         public static void MyClassInitialize(TestContext testContext)
         {
 
-            FeluletHozzáféro.SetByVezető(
-                new Vezetö
+            FeluletHozzafero.SetByVezető(
+                new Vezeto
                 {
-                    Tipus = VezetoTípus.TáborVezető
+                    Tipus = VezetoTipus.TaborVezeto
                 });
 
         }

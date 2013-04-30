@@ -14,9 +14,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 
 using CampLogic.Borders;
-using CampLogic.IfjúságiVezetõFunkciók;
+using CampLogic.IfjusagiVezetoFunkciok;
 
-namespace CampLogic.KorcsoportVezetõFunkciók {
+namespace CampLogic.KorcsoportVezetoFunkciok {
 	public class Csoport {
 
 		public Csoport(){
@@ -39,11 +39,11 @@ namespace CampLogic.KorcsoportVezetõFunkciók {
 
         
 
-		public virtual List<Táborozó> CsoportTagok{ get; set; }
+		public virtual List<Taborozo> CsoportTagok{ get; set; }
 
-		public Vezetö IfiVezeto1{ get; set; }
+		public Vezeto IfiVezeto1{ get; set; }
 
-		public Vezetö IfiVezeto2{ get; set; }
+		public Vezeto IfiVezeto2{ get; set; }
 
 		
 

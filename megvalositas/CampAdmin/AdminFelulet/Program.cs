@@ -22,16 +22,16 @@ namespace AdminFelulet
             var bej = new Bejelentkezes();
             Application.Run(bej);
 
-            Vezetö vezető = bej.Vezető;
+            Vezeto vezeto = bej.Vezeto;
 
 
-            if (vezető == null)
+            if (vezeto == null)
             {
                 MessageBox.Show("Hitelesítés meghiúsult, viszlát");
                 return;
             }
 
-            Application.Run(new FoMenu(vezető));
+            Application.Run(new FoMenu(vezeto));
 
         }
     }

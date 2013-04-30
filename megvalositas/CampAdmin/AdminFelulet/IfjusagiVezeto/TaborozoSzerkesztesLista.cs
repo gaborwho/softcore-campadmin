@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using CampLogic.Borders;
+using CampLogic.IfjusagiVezetoFunkciok;
 
 namespace AdminFelulet.IfjusagiVezeto
 {
@@ -16,14 +18,26 @@ namespace AdminFelulet.IfjusagiVezeto
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonUjTaborozo_Click(object sender, EventArgs e)
         {
+            Taborozo t = new Taborozo()
+            {
+                Nev = textBoxNev.Text,
+                SzuletesiDatum = DateTime.Parse(textBoxSzuletes.Text),
+                Orszag = comboBoxOrszag.Text,
+                Elerhetosegek = textBoxElerhetosegek.Text,
+                Betegsegek = textBoxBetegsegek.Text,
+                Megjegyzes = textBoxMegjegyzesek.Text
+            };
 
-        }
-
-        private void CamperList_Load(object sender, EventArgs e)
-        {
-
+            if ((FeluletHozzafero.Instance as IIfjusagiVezetoiKezelo).UjTaborozo(t))
+            {
+                listBoxTaborozok.Items.Add(t);
+            }
+            else
+            {
+                MessageBox.Show("Ilyen nevű táborozó már létezik");
+            }
         }
     }
 }

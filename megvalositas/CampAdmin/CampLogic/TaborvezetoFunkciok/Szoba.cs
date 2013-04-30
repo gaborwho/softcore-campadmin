@@ -13,9 +13,9 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 
 
-using CampLogic.TáborvezetõFunkciók;
-using CampLogic.IfjúságiVezetõFunkciók;
-namespace CampLogic.TáborvezetõFunkciók
+using CampLogic.TaborvezetoFunkciok;
+using CampLogic.IfjusagiVezetoFunkciok;
+namespace CampLogic.TaborvezetoFunkciok
 {
     public class Szoba
     {
@@ -31,7 +31,7 @@ namespace CampLogic.TáborvezetõFunkciók
         [Key]
         public int SzobaId { get; set; }
 
-        public virtual Ház Ház { get; set; }
+        public virtual Haz Ház { get; set; }
 
 
         #endregion
@@ -41,7 +41,7 @@ namespace CampLogic.TáborvezetõFunkciók
 
         public string Szobaszam { get; set; }
 
-        public virtual List<Táborozó> Táborozók { get; set; }
+        public virtual List<Taborozo> Táborozók { get; set; }
 
         public override string ToString()
         {

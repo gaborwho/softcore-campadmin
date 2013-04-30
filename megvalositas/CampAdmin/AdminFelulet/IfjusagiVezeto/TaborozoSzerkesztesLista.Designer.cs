@@ -28,42 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBoxOrszag = new System.Windows.Forms.ComboBox();
+            this.textBoxNev = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxSzuletes = new System.Windows.Forms.TextBox();
+            this.textBoxElerhetosegek = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxBetegsegek = new System.Windows.Forms.TextBox();
+            this.textBoxMegjegyzesek = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBoxTaborozok = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.buttonUjTaborozo = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonRendeles = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // comboBoxOrszag
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(358, 64);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 21);
-            this.comboBox1.TabIndex = 20;
+            this.comboBoxOrszag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxOrszag.FormattingEnabled = true;
+            this.comboBoxOrszag.Location = new System.Drawing.Point(358, 64);
+            this.comboBoxOrszag.Name = "comboBoxOrszag";
+            this.comboBoxOrszag.Size = new System.Drawing.Size(159, 21);
+            this.comboBoxOrszag.TabIndex = 20;
             // 
-            // textBox1
+            // textBoxNev
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(358, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 20);
-            this.textBox1.TabIndex = 19;
+            this.textBoxNev.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxNev.Location = new System.Drawing.Point(358, 12);
+            this.textBoxNev.Name = "textBoxNev";
+            this.textBoxNev.Size = new System.Drawing.Size(159, 20);
+            this.textBoxNev.TabIndex = 19;
             // 
             // label3
             // 
@@ -105,22 +105,22 @@
             this.button1.Text = "Mentés";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // textBoxSzuletes
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(358, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 20);
-            this.textBox2.TabIndex = 22;
+            this.textBoxSzuletes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSzuletes.Location = new System.Drawing.Point(358, 38);
+            this.textBoxSzuletes.Name = "textBoxSzuletes";
+            this.textBoxSzuletes.Size = new System.Drawing.Size(159, 20);
+            this.textBoxSzuletes.TabIndex = 22;
             // 
-            // textBox3
+            // textBoxElerhetosegek
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(358, 91);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(159, 61);
-            this.textBox3.TabIndex = 23;
+            this.textBoxElerhetosegek.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxElerhetosegek.Location = new System.Drawing.Point(358, 91);
+            this.textBoxElerhetosegek.Multiline = true;
+            this.textBoxElerhetosegek.Name = "textBoxElerhetosegek";
+            this.textBoxElerhetosegek.Size = new System.Drawing.Size(159, 61);
+            this.textBoxElerhetosegek.TabIndex = 23;
             // 
             // label4
             // 
@@ -132,23 +132,23 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "Elérhetőségek";
             // 
-            // textBox4
+            // textBoxBetegsegek
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(358, 158);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(159, 61);
-            this.textBox4.TabIndex = 26;
+            this.textBoxBetegsegek.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxBetegsegek.Location = new System.Drawing.Point(358, 158);
+            this.textBoxBetegsegek.Multiline = true;
+            this.textBoxBetegsegek.Name = "textBoxBetegsegek";
+            this.textBoxBetegsegek.Size = new System.Drawing.Size(159, 61);
+            this.textBoxBetegsegek.TabIndex = 26;
             // 
-            // textBox5
+            // textBoxMegjegyzesek
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(358, 225);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(159, 50);
-            this.textBox5.TabIndex = 27;
+            this.textBoxMegjegyzesek.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxMegjegyzesek.Location = new System.Drawing.Point(358, 225);
+            this.textBoxMegjegyzesek.Multiline = true;
+            this.textBoxMegjegyzesek.Name = "textBoxMegjegyzesek";
+            this.textBoxMegjegyzesek.Size = new System.Drawing.Size(159, 50);
+            this.textBoxMegjegyzesek.TabIndex = 27;
             // 
             // label5
             // 
@@ -170,17 +170,17 @@
             this.label6.TabIndex = 29;
             this.label6.Text = "Megjegyzések";
             // 
-            // listBox1
+            // listBoxTaborozok
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.IntegralHeight = false;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(259, 325);
-            this.listBox1.TabIndex = 30;
+            this.listBoxTaborozok.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBoxTaborozok.FormattingEnabled = true;
+            this.listBoxTaborozok.IntegralHeight = false;
+            this.listBoxTaborozok.Location = new System.Drawing.Point(12, 12);
+            this.listBoxTaborozok.Name = "listBoxTaborozok";
+            this.listBoxTaborozok.Size = new System.Drawing.Size(259, 325);
+            this.listBoxTaborozok.TabIndex = 30;
             // 
             // button3
             // 
@@ -211,43 +211,43 @@
             this.buttonUjTaborozo.TabIndex = 34;
             this.buttonUjTaborozo.Text = "Új";
             this.buttonUjTaborozo.UseVisualStyleBackColor = true;
+            this.buttonUjTaborozo.Click += new System.EventHandler(this.buttonUjTaborozo_Click);
             // 
-            // button4
+            // buttonRendeles
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(358, 285);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 23);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "Csoporhoz/házhoz rendelés";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonRendeles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRendeles.Location = new System.Drawing.Point(358, 285);
+            this.buttonRendeles.Name = "buttonRendeles";
+            this.buttonRendeles.Size = new System.Drawing.Size(159, 23);
+            this.buttonRendeles.TabIndex = 35;
+            this.buttonRendeles.Text = "Csoporhoz/házhoz rendelés";
+            this.buttonRendeles.UseVisualStyleBackColor = true;
             // 
             // CamperList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 349);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonRendeles);
             this.Controls.Add(this.buttonUjTaborozo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBoxTaborozok);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxMegjegyzesek);
+            this.Controls.Add(this.textBoxBetegsegek);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxElerhetosegek);
+            this.Controls.Add(this.textBoxSzuletes);
+            this.Controls.Add(this.comboBoxOrszag);
+            this.Controls.Add(this.textBoxNev);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "CamperList";
             this.Text = "Táborozók";
-            this.Load += new System.EventHandler(this.CamperList_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,24 +255,24 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBoxOrszag;
+        private System.Windows.Forms.TextBox textBoxNev;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxSzuletes;
+        private System.Windows.Forms.TextBox textBoxElerhetosegek;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxBetegsegek;
+        private System.Windows.Forms.TextBox textBoxMegjegyzesek;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxTaborozok;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonUjTaborozo;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonRendeles;
 
     }
 }

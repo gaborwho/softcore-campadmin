@@ -13,22 +13,17 @@ using System.Text;
 
 
 
-using CampLogic.IfjúságiVezetõFunkciók;
-namespace CampLogic.IfjúságiVezetõFunkciók {
-	public class TáborozóImportKezelo {
+using CampLogic.IfjusagiVezetoFunkciok;
+namespace CampLogic.IfjusagiVezetoFunkciok {
+	public class TaborozoImportKezelo {
 
-		public Táborozó m_Táborozó;
-		public TáborozóKezelo m_TáborozóKezelõ;
+		public Taborozo m_Táborozó;
+		public TaborozoKezelo m_TáborozóKezelõ;
 
-		public TáborozóImportKezelo(){
-
-		}
-
-		~TáborozóImportKezelo(){
+		public TaborozoImportKezelo(){
 
 		}
 
-		/// 
 		/// <param name="path"></param>
 		public bool ImportFilebol(string path){
 

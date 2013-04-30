@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 
 using CampLogic.Borders;
-using CampLogic.TáborvezetőFunkciók;
+using CampLogic.TaborvezetoFunkciok;
 
 namespace AdminFelulet.TaborVezeto
 {
@@ -49,7 +49,7 @@ namespace AdminFelulet.TaborVezeto
 
         private void ResetListFromDb(){
             lbSzobak.Items.Clear();
-            lbSzobak.Items.AddRange((FeluletHozzáféro.Instance as ITáborvezetoiKezelo).SzobaListazas().ToArray());
+            lbSzobak.Items.AddRange((FeluletHozzafero.Instance as ITaborVezetoiKezelo).SzobaListazas().ToArray());
         }
 
         private void SzobaLista_Load(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace AdminFelulet.TaborVezeto
                 return;
             }
 
-            (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).SzobaTorol((lbSzobak.SelectedItem as Szoba).Ház, lbSzobak.SelectedItem as Szoba);
+            (FeluletHozzafero.Instance as ITaborVezetoiKezelo).SzobaTorol((lbSzobak.SelectedItem as Szoba).Ház, lbSzobak.SelectedItem as Szoba);
             lbSzobak.Items.Remove(lbSzobak.SelectedItem);
 
         }

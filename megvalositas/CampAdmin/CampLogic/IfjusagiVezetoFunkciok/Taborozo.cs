@@ -11,15 +11,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
+using CampLogic.KorcsoportVezetoFunkciok;
+using CampLogic.TaborvezetoFunkciok;
 
 
-using CampLogic.KorcsoportVezetõFunkciók;
-using CampLogic.TáborvezetõFunkciók;
-namespace CampLogic.IfjúságiVezetõFunkciók {
-	public class Táborozó {
+namespace CampLogic.IfjusagiVezetoFunkciok {
+	public class Taborozo {
 
 
-		public Táborozó(){
+		public Taborozo(){
 
 		}
 

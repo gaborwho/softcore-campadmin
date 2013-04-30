@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-using CampLogic.TáborvezetőFunkciók;
+using CampLogic.TaborvezetoFunkciok;
 using CampLogic.Borders;
 
 namespace AdminFelulet.TaborVezeto
@@ -20,7 +20,7 @@ namespace AdminFelulet.TaborVezeto
         {
             InitializeComponent();
             sz = new Szoba();
-            cbHazak.Items.AddRange((FeluletHozzáféro.Instance as ITáborvezetoiKezelo).HazListazas().ToArray());
+            cbHazak.Items.AddRange((FeluletHozzafero.Instance as ITaborVezetoiKezelo).HazListazas().ToArray());
             Modosit = false;
         }
 
@@ -30,7 +30,7 @@ namespace AdminFelulet.TaborVezeto
             InitializeComponent();
             tbSzobaSzam.Text = sz.Szobaszam;
             tbFerohely.Text = sz.Ferohely.ToString();
-            cbHazak.Items.AddRange((FeluletHozzáféro.Instance as ITáborvezetoiKezelo).HazListazas().ToArray());
+            cbHazak.Items.AddRange((FeluletHozzafero.Instance as ITaborVezetoiKezelo).HazListazas().ToArray());
             cbHazak.Text = sz.Ház.ToString();
             Modosit = true;
         }
@@ -46,11 +46,11 @@ namespace AdminFelulet.TaborVezeto
 
                     if (Modosit)
                     {
-                        (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).SzobaModositas(cbHazak.SelectedItem as Ház, sz);
+                        (FeluletHozzafero.Instance as ITaborVezetoiKezelo).SzobaModositas(cbHazak.SelectedItem as Haz, sz);
                     }
                     else
                     {
-                        (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).SzobaLetrehozas(cbHazak.SelectedItem as Ház, sz);
+                        (FeluletHozzafero.Instance as ITaborVezetoiKezelo).SzobaLetrehozas(cbHazak.SelectedItem as Haz, sz);
                     }
 
                     Close();
