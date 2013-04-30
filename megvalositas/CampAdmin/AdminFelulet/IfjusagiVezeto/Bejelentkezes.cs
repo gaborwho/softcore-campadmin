@@ -22,9 +22,9 @@ namespace AdminFelulet
         }
 
 
-        Vezető vezető;
+        Vezetö vezető;
 
-        public Vezető Vezető
+        public Vezetö Vezető
         {
             get { return vezető; }
             private set { vezető = value; }
@@ -49,28 +49,28 @@ namespace AdminFelulet
         private void TesztVezetők() {
 
             
-            Vezető vIfi = new Vezető
+            Vezetö vIfi = new Vezetö
             {
                 Nev = "IfiTeszt",
                 Jelszo = "teszt",
                 Tipus = VezetoTípus.IfjúságiVezető
             };
 
-            Vezető vKcs = new Vezető
+            Vezetö vKcs = new Vezetö
             {
                 Nev = "KcsTeszt",
                 Jelszo = "teszt",
                 Tipus = VezetoTípus.KorcsoportVezető
             };
 
-            Vezető vTb = new Vezető
+            Vezetö vTb = new Vezetö
             {
                 Nev = "TbTeszt",
                 Jelszo = "teszt",
                 Tipus = VezetoTípus.TáborVezető
             };
 
-            Vezető t = new Vezető
+            Vezetö t = new Vezetö
             {
                 Nev = "t",
                 Jelszo = "t",

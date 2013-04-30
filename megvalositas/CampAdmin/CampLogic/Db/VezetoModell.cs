@@ -8,16 +8,16 @@ namespace CampLogic.Db
 {
     public class VezetoModell
     {
-        MyDbConnection conn = new MyDbConnection();
+        static MyDbConnection conn = new MyDbConnection();
 
-        public Vezető VezetőUserPassz(string user, string pass)
+        public Vezetö VezetőUserPassz(string user, string pass)
         {
             return (from v in conn.Vezetök where (v.Nev.ToUpper() == user.ToUpper()) && (v.Jelszo == pass) select v).FirstOrDefault();
         }
 
 
         [Conditional("DEBUG")]
-        public void TesztCreateVezetőIfDontExists(Vezető vezető)
+        public void TesztCreateVezetőIfDontExists(Vezetö vezető)
         {
 
             var vez = (from v in conn.Vezetök 
@@ -30,6 +30,14 @@ namespace CampLogic.Db
                 conn.SaveChanges();
             }
 
+        }
+
+        public static Vezetö[] GetIfiVezetok()
+        {
+            
+            var vez = from v in conn.Vezetök where v.TipusSzam == 0 select v;
+
+            return vez.ToArray<Vezetö>();
         }
     }
 }

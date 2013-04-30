@@ -8,30 +8,37 @@ using System.Text;
 using System.Windows.Forms;
 
 using CampLogic.Db;
-using CampLogic.KorcsoportVezetõFunkciók;
-using CampLogic.IfjúságiVezetõFunkciók;
+
 using CampLogic.Borders;
+using CampLogic.KorcsoportVezetőFunkciók;
 namespace AdminFelulet.KorcsoportVezeto
 {
     public partial class CsoportLista : Form
     {
-        MyDbConnection conn;
         Korcsoport korcs;
         Csoport csoport;
 
 
         int csoportid;
 
-        public CsoportLista(Korcsoport korcs)
+        public CsoportLista()
+        {
+            InitializeComponent();
+        }
+
+        public CsoportLista(Korcsoport korcs):this()
         {
             this.korcs = korcs;
             LoadGui();
         }
+
+
+
         void LoadGui()
         {
             //ha rendbeszabtuk az adatbazist akkor utana: getifivezetok List<Vezeto> Ő nélkül!
-            comboBoxIfi1.Items.AddRange(conn.Vezetök.GetIfiVezetok().toArray());
-            comboBoxIfi2.Items.AddRange(conn.Vezetök.GetIfiVezetok().toArray());
+            comboBoxIfi1.Items.AddRange(VezetoModell.GetIfiVezetok());
+            comboBoxIfi2.Items.AddRange(VezetoModell.GetIfiVezetok());
             listBox1.DataSource = korcs.Csoportok;
         }
 
@@ -40,8 +47,8 @@ namespace AdminFelulet.KorcsoportVezeto
             csoport = new Csoport();
             csoport.Nev = textBoxNev.Text;
             //a vezető osztályom nincs meg mert nemtudom, a dani elmagyarazta. migralni kell.
-            csoport.IfiVezeto1 = (Vezeto)comboBoxIfi1.SelectedItem;
-            csoport.IfiVezeto2 = (Vezeto)comboBoxIfi2.SelectedItem;
+            csoport.IfiVezeto1 = (Vezetö)comboBoxIfi1.SelectedItem;
+            csoport.IfiVezeto2 = (Vezetö)comboBoxIfi2.SelectedItem;
             if (csoport.IfiVezeto1 == csoport.IfiVezeto2)
             {
                 MessageBox.Show("A klónozást még nem találták fel!");

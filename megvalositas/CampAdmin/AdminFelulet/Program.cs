@@ -22,7 +22,7 @@ namespace AdminFelulet
             var bej = new Bejelentkezes();
             Application.Run(bej);
 
-            Vezető vezető = bej.Vezető;
+            Vezetö vezető = bej.Vezető;
 
 
             if (vezető == null)

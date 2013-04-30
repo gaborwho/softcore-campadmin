@@ -15,14 +15,14 @@ namespace AdminFelulet
 {
     public partial class FoMenu : Form
     {
-        private Vezető vezető;
+        private Vezetö vezető;
 
         public FoMenu()
         {
             InitializeComponent();
         }
 
-        public FoMenu(CampLogic.Borders.Vezető vezető) :this()
+        public FoMenu(CampLogic.Borders.Vezetö vezető) :this()
         {
             this.vezető = vezető;
             Text = "Főprogram SoftCoreCampAdmin - Üdvözöljük:" + vezető.ToString();

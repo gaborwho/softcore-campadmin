@@ -53,7 +53,7 @@
     <Compile Include="Borders\IVezeto.cs" />
     <Compile Include="Borders\KorcsoportVezetoiKezeloFelület.cs" />
     <Compile Include="Borders\TáborvezetoiKezeloFelulet.cs" />
-    <Compile Include="Borders\Vezető.cs" />
+    <Compile Include="Borders\Vezetö.cs" />
     <Compile Include="Borders\VezetoTípus.cs" />
     <Compile Include="Db\DbConnection.cs" />
     <Compile Include="Db\VezetoModell.cs" />
@@ -69,9 +69,9 @@
     <Compile Include="Migrations\201304262228372_InitialCreate.Designer.cs">
       <DependentUpon>201304262228372_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201304272220560_vezeto1.cs" />
-    <Compile Include="Migrations\201304272220560_vezeto1.Designer.cs">
-      <DependentUpon>201304272220560_vezeto1.cs</DependentUpon>
+    <Compile Include="Migrations\201304301705100_vezetöRövidÖ.cs" />
+    <Compile Include="Migrations\201304301705100_vezetöRövidÖ.Designer.cs">
+      <DependentUpon>201304301705100_vezetöRövidÖ.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,8 +92,8 @@
     <EmbeddedResource Include="Migrations\201304262228372_InitialCreate.resx">
       <DependentUpon>201304262228372_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201304272220560_vezeto1.resx">
-      <DependentUpon>201304272220560_vezeto1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201304301705100_vezetöRövidÖ.resx">
+      <DependentUpon>201304301705100_vezetöRövidÖ.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

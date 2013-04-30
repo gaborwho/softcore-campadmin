@@ -45,7 +45,7 @@ namespace CampLogic.Borders
         }
 
 
-        public static void SetByVezető(Vezető vezető)
+        public static void SetByVezető(Vezetö vezető)
         {
             switch (vezető.Tipus)
             {

@@ -41,7 +41,7 @@ namespace CampLogic.Db
 
         public DbSet<Turnus> Turnusok { get; set; }
 
-        public DbSet<Vezetõ> Vezetök { get; set; }
+        public DbSet<Vezetö> Vezetök { get; set; }
 
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{

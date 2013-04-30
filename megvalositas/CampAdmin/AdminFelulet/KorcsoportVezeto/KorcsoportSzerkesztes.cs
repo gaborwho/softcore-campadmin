@@ -8,9 +8,10 @@ using System.Text;
 using System.Windows.Forms;
 
 
-using CampLogic.KorcsoportVezetõFunkciók;
+using CampLogic.KorcsoportVezetőFunkciók;
 using CampLogic.Borders;
 using CampLogic.Db;
+
 
 namespace AdminFelulet.TaborVezeto
 {

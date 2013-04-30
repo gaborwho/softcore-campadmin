@@ -41,9 +41,9 @@ namespace CampLogic.KorcsoportVezetõFunkciók {
 
 		public virtual List<Táborozó> CsoportTagok{ get; set; }
 
-		public Vezetõ IfiVezeto1{ get; set; }
+		public Vezetö IfiVezeto1{ get; set; }
 
-		public Vezetõ IfiVezeto2{ get; set; }
+		public Vezetö IfiVezeto2{ get; set; }
 
 		
 

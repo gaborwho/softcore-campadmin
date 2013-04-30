@@ -17,10 +17,10 @@ using CampLogic.Borders;
 using System.ComponentModel.DataAnnotations;
 namespace CampLogic.Borders
 {
-    public class Vezetõ : IVezeto
+    public class Vezetö : IVezeto
     {
 
-        public Vezetõ()
+        public Vezetö()
         {
 
         }

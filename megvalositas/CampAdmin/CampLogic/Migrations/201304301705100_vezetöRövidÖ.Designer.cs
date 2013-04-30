@@ -5,13 +5,13 @@ namespace CampLogic.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class vezeto1 : IMigrationMetadata
+    public sealed partial class vezetöRövidÖ : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(vezeto1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(vezetöRövidÖ));
         
         string IMigrationMetadata.Id
         {
-            get { return "201304272220560_vezeto1"; }
+            get { return "201304301705100_vezetöRövidÖ"; }
         }
         
         string IMigrationMetadata.Source
