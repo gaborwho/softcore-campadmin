@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8d9f1768-0e5f-452c-a664-80988584fc6e" name="lovi88@LOVI88-PC 2013-04-30 19:52:39" runUser="lovi88-PC\lovi88" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="440b09e4-2e55-454b-a7b3-bef6692f9e8e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="lovi88_LOVI88-PC 2013-04-30 19_52_39">
+      <DeploymentItem filename="G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\AdminFelulet\bin\Debug\AdminFelulet.exe" />
+      <DeploymentItem filename="G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampLogic\bin\Debug\CampLogic.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-04-30T19:52:39.3598300+02:00" queuing="2013-04-30T19:52:39.5768424+02:00" start="2013-04-30T19:52:39.6058440+02:00" finish="2013-04-30T19:52:40.2288797+02:00" />
+  <ResultSummary outcome="Warning">
+    <Counters total="12" executed="12" passed="12" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="LOVI88-PC" outcome="Warning" timestamp="2013-04-30T19:52:39.4678361+02:00">
+        <Text>Deployment is currently disabled. The deployment item 'AdminFelulet.exe' on test 'CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_AktívMaMa' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AktivitásBeállítTest_AktívMaMa" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="f4118de4-24b7-cadf-27d5-d2711de5a64e">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="74ab1c93-2261-4c8e-a2c3-a95871ab743f" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktívMaMa" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_AktivMégNemFutó" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="aee9758b-c740-3262-3b9b-68a3064c877d">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="0487a89a-ee26-49be-aa9e-39a90ff8e32f" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktivMégNemFutó" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_AktívMaIndulóTurnus" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="d94ac702-1b75-8ae3-4cb0-af2af364176e">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="ebbc41c9-fc39-4595-a2ac-46e4f9868682" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktívMaIndulóTurnus" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_AktívLejárt" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="b091c020-4399-df5e-e87e-b995f945913b">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="714ec592-e926-4f57-bdc9-e4a34d592df3" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktívLejárt" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívMégNemFutó" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="c4d3db90-e527-a145-e259-90653145517b">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="87efe33c-01c8-49e2-ad82-a861f0bd4cb2" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívMégNemFutó" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívMaLejáró" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="39340abe-f4b6-6e93-947d-24cad9d258e7">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="435355a1-4e54-43f0-8181-8ec0985c2ba4" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívMaLejáró" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_AktívFutóTurnus" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="23c27583-a149-39e2-dae6-aa4216bd4f3f">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="2ef1ce12-17fa-4c75-8014-fed0213bc362" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktívFutóTurnus" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_AktívMaLejáró" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="14e2a3ab-4569-f18c-eca9-baff039e39d9">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="34f3a06d-2915-45bb-9b60-717ecb772515" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktívMaLejáró" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívMaMa" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="ad32d829-e4cc-2ff9-70c2-364f8225c1e7">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="4ea57c44-16ce-45b0-acb0-d843c6a7f99a" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívMaMa" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívLejárt" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="db03c6b4-b39d-a7aa-7fc8-fa6b0d36941e">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="80285d37-32bb-4212-9d87-e40230693636" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívLejárt" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívMaIndulóTurnus" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="ccea5072-1f0a-4a5f-3e5b-6e7183adb217">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="cf727467-9a6f-4ea3-a910-56fd4eb4252d" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívMaIndulóTurnus" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívFutóTurnus" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="0eac9f4d-1cdf-3089-cdcf-068ca9b3dfda">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="1e4aaa1e-026a-436e-bda8-92b964f5f8bb" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívFutóTurnus" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0eac9f4d-1cdf-3089-cdcf-068ca9b3dfda" executionId="1e4aaa1e-026a-436e-bda8-92b964f5f8bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14e2a3ab-4569-f18c-eca9-baff039e39d9" executionId="34f3a06d-2915-45bb-9b60-717ecb772515" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23c27583-a149-39e2-dae6-aa4216bd4f3f" executionId="2ef1ce12-17fa-4c75-8014-fed0213bc362" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39340abe-f4b6-6e93-947d-24cad9d258e7" executionId="435355a1-4e54-43f0-8181-8ec0985c2ba4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad32d829-e4cc-2ff9-70c2-364f8225c1e7" executionId="4ea57c44-16ce-45b0-acb0-d843c6a7f99a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aee9758b-c740-3262-3b9b-68a3064c877d" executionId="0487a89a-ee26-49be-aa9e-39a90ff8e32f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b091c020-4399-df5e-e87e-b995f945913b" executionId="714ec592-e926-4f57-bdc9-e4a34d592df3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4d3db90-e527-a145-e259-90653145517b" executionId="87efe33c-01c8-49e2-ad82-a861f0bd4cb2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ccea5072-1f0a-4a5f-3e5b-6e7183adb217" executionId="cf727467-9a6f-4ea3-a910-56fd4eb4252d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d94ac702-1b75-8ae3-4cb0-af2af364176e" executionId="ebbc41c9-fc39-4595-a2ac-46e4f9868682" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db03c6b4-b39d-a7aa-7fc8-fa6b0d36941e" executionId="80285d37-32bb-4212-9d87-e40230693636" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4118de4-24b7-cadf-27d5-d2711de5a64e" executionId="74ab1c93-2261-4c8e-a2c3-a95871ab743f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1e4aaa1e-026a-436e-bda8-92b964f5f8bb" testId="0eac9f4d-1cdf-3089-cdcf-068ca9b3dfda" testName="AktivitásBeállítTest_InaktívFutóTurnus" computerName="LOVI88-PC" duration="00:00:00.1734862" startTime="2013-04-30T19:52:39.6118444+02:00" endTime="2013-04-30T19:52:40.1858772+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e4aaa1e-026a-436e-bda8-92b964f5f8bb">
+    </UnitTestResult>
+    <UnitTestResult executionId="34f3a06d-2915-45bb-9b60-717ecb772515" testId="14e2a3ab-4569-f18c-eca9-baff039e39d9" testName="AktivitásBeállítTest_AktívMaLejáró" computerName="LOVI88-PC" duration="00:00:00.0002540" startTime="2013-04-30T19:52:40.1868773+02:00" endTime="2013-04-30T19:52:40.1888774+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34f3a06d-2915-45bb-9b60-717ecb772515">
+    </UnitTestResult>
+    <UnitTestResult executionId="2ef1ce12-17fa-4c75-8014-fed0213bc362" testId="23c27583-a149-39e2-dae6-aa4216bd4f3f" testName="AktivitásBeállítTest_AktívFutóTurnus" computerName="LOVI88-PC" duration="00:00:00.0002475" startTime="2013-04-30T19:52:40.1898774+02:00" endTime="2013-04-30T19:52:40.1918776+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ef1ce12-17fa-4c75-8014-fed0213bc362">
+    </UnitTestResult>
+    <UnitTestResult executionId="435355a1-4e54-43f0-8181-8ec0985c2ba4" testId="39340abe-f4b6-6e93-947d-24cad9d258e7" testName="AktivitásBeállítTest_InaktívMaLejáró" computerName="LOVI88-PC" duration="00:00:00.0001991" startTime="2013-04-30T19:52:40.1918776+02:00" endTime="2013-04-30T19:52:40.1938777+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="435355a1-4e54-43f0-8181-8ec0985c2ba4">
+    </UnitTestResult>
+    <UnitTestResult executionId="4ea57c44-16ce-45b0-acb0-d843c6a7f99a" testId="ad32d829-e4cc-2ff9-70c2-364f8225c1e7" testName="AktivitásBeállítTest_InaktívMaMa" computerName="LOVI88-PC" duration="00:00:00.0002093" startTime="2013-04-30T19:52:40.1948777+02:00" endTime="2013-04-30T19:52:40.1968778+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ea57c44-16ce-45b0-acb0-d843c6a7f99a">
+    </UnitTestResult>
+    <UnitTestResult executionId="0487a89a-ee26-49be-aa9e-39a90ff8e32f" testId="aee9758b-c740-3262-3b9b-68a3064c877d" testName="AktivitásBeállítTest_AktivMégNemFutó" computerName="LOVI88-PC" duration="00:00:00.0002315" startTime="2013-04-30T19:52:40.1978779+02:00" endTime="2013-04-30T19:52:40.1998780+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0487a89a-ee26-49be-aa9e-39a90ff8e32f">
+    </UnitTestResult>
+    <UnitTestResult executionId="714ec592-e926-4f57-bdc9-e4a34d592df3" testId="b091c020-4399-df5e-e87e-b995f945913b" testName="AktivitásBeállítTest_AktívLejárt" computerName="LOVI88-PC" duration="00:00:00.0002045" startTime="2013-04-30T19:52:40.1998780+02:00" endTime="2013-04-30T19:52:40.2018781+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="714ec592-e926-4f57-bdc9-e4a34d592df3">
+    </UnitTestResult>
+    <UnitTestResult executionId="87efe33c-01c8-49e2-ad82-a861f0bd4cb2" testId="c4d3db90-e527-a145-e259-90653145517b" testName="AktivitásBeállítTest_InaktívMégNemFutó" computerName="LOVI88-PC" duration="00:00:00.0002071" startTime="2013-04-30T19:52:40.2028782+02:00" endTime="2013-04-30T19:52:40.2048783+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87efe33c-01c8-49e2-ad82-a861f0bd4cb2">
+    </UnitTestResult>
+    <UnitTestResult executionId="cf727467-9a6f-4ea3-a910-56fd4eb4252d" testId="ccea5072-1f0a-4a5f-3e5b-6e7183adb217" testName="AktivitásBeállítTest_InaktívMaIndulóTurnus" computerName="LOVI88-PC" duration="00:00:00.0002595" startTime="2013-04-30T19:52:40.2058784+02:00" endTime="2013-04-30T19:52:40.2078785+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf727467-9a6f-4ea3-a910-56fd4eb4252d">
+    </UnitTestResult>
+    <UnitTestResult executionId="ebbc41c9-fc39-4595-a2ac-46e4f9868682" testId="d94ac702-1b75-8ae3-4cb0-af2af364176e" testName="AktivitásBeállítTest_AktívMaIndulóTurnus" computerName="LOVI88-PC" duration="00:00:00.0001823" startTime="2013-04-30T19:52:40.2088785+02:00" endTime="2013-04-30T19:52:40.2108786+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ebbc41c9-fc39-4595-a2ac-46e4f9868682">
+    </UnitTestResult>
+    <UnitTestResult executionId="80285d37-32bb-4212-9d87-e40230693636" testId="db03c6b4-b39d-a7aa-7fc8-fa6b0d36941e" testName="AktivitásBeállítTest_InaktívLejárt" computerName="LOVI88-PC" duration="00:00:00.0002104" startTime="2013-04-30T19:52:40.2108786+02:00" endTime="2013-04-30T19:52:40.2128788+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80285d37-32bb-4212-9d87-e40230693636">
+    </UnitTestResult>
+    <UnitTestResult executionId="74ab1c93-2261-4c8e-a2c3-a95871ab743f" testId="f4118de4-24b7-cadf-27d5-d2711de5a64e" testName="AktivitásBeállítTest_AktívMaMa" computerName="LOVI88-PC" duration="00:00:00.0002373" startTime="2013-04-30T19:52:40.2138788+02:00" endTime="2013-04-30T19:52:40.2158789+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74ab1c93-2261-4c8e-a2c3-a95871ab743f">
+    </UnitTestResult>
+  </Results>
+</TestRun>

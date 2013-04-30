@@ -12,7 +12,17 @@ namespace CampLogic.Db
 
         public Vezetö VezetőUserPassz(string user, string pass)
         {
-            return (from v in conn.Vezetök where (v.Nev.ToUpper() == user.ToUpper()) && (v.Jelszo == pass) select v).FirstOrDefault();
+            var vez  = (from v in conn.Vezetök where (v.Nev.ToUpper() == user.ToUpper()) && (v.Jelszo == pass) select v).FirstOrDefault();
+
+            if (vez!=null)
+            {
+                if (vez.Jelszo != pass)
+                {
+                    return null;
+                }
+            }
+
+            return vez;
         }
 
 

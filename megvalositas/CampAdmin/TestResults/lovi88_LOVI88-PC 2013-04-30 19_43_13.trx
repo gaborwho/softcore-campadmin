@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c5eccdc7-a461-4083-9c71-d97b7a650c45" name="lovi88@LOVI88-PC 2013-04-30 19:43:13" runUser="lovi88-PC\lovi88" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="440b09e4-2e55-454b-a7b3-bef6692f9e8e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="lovi88_LOVI88-PC 2013-04-30 19_43_13">
+      <DeploymentItem filename="G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\AdminFelulet\bin\Debug\AdminFelulet.exe" />
+      <DeploymentItem filename="G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+      <DeploymentItem filename="G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampLogic\bin\Debug\CampLogic.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-04-30T19:43:13.1824465+02:00" queuing="2013-04-30T19:43:14.1665028+02:00" start="2013-04-30T19:43:14.2145055+02:00" finish="2013-04-30T19:43:14.7775377+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="12" executed="12" passed="6" error="0" failed="6" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="LOVI88-PC" outcome="Warning" timestamp="2013-04-30T19:43:14.0244946+02:00">
+        <Text>Deployment is currently disabled. The deployment item 'AdminFelulet.exe' on test 'CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_AktívMaMa' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AktivitásBeállítTest_AktívMaMa" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="f4118de4-24b7-cadf-27d5-d2711de5a64e">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="6c4e5179-7459-4feb-8cce-a3b9bf5cc5cc" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktívMaMa" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_AktivMégNemFutó" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="aee9758b-c740-3262-3b9b-68a3064c877d">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="9dc47bd1-eb4d-4c63-8dca-86359617fbd4" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktivMégNemFutó" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_AktívMaIndulóTurnus" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="d94ac702-1b75-8ae3-4cb0-af2af364176e">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="9f4fc7b7-9599-494c-8fd8-8773c413deb9" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktívMaIndulóTurnus" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_AktívLejárt" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="b091c020-4399-df5e-e87e-b995f945913b">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="07f5e723-7d6f-4d67-8289-bf64e9c22f88" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktívLejárt" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívMégNemFutó" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="c4d3db90-e527-a145-e259-90653145517b">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="001d5989-3b6c-4c29-9cf7-3b7148981084" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívMégNemFutó" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívMaLejáró" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="39340abe-f4b6-6e93-947d-24cad9d258e7">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="37df342a-2b84-4a95-9794-249aade31e61" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívMaLejáró" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_AktívFutóTurnus" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="23c27583-a149-39e2-dae6-aa4216bd4f3f">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="61809ee4-bda3-4e76-96d5-5403bc9cb8b1" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktívFutóTurnus" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_AktívMaLejáró" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="14e2a3ab-4569-f18c-eca9-baff039e39d9">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="9869b69e-e9b8-4b8e-a0db-3b61054cd9c6" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_AktívMaLejáró" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívMaMa" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="ad32d829-e4cc-2ff9-70c2-364f8225c1e7">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="ab982d29-e64f-49f6-891b-b880bc7afb09" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívMaMa" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívLejárt" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="db03c6b4-b39d-a7aa-7fc8-fa6b0d36941e">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="05b8837a-53ee-44d4-ba93-9192976f6812" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívLejárt" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívMaIndulóTurnus" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="ccea5072-1f0a-4a5f-3e5b-6e7183adb217">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="5764e9bf-0ec9-440b-a1fd-3ce9f0e586a4" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívMaIndulóTurnus" />
+    </UnitTest>
+    <UnitTest name="AktivitásBeállítTest_InaktívFutóTurnus" storage="g:\aa_nik\4. félév\sztt gyak\softcore-campadmin\megvalositas\campadmin\campadminteszt\bin\debug\campadminteszt.dll" id="0eac9f4d-1cdf-3089-cdcf-068ca9b3dfda">
+      <DeploymentItems>
+        <DeploymentItem filename="AdminFelulet.exe" />
+      </DeploymentItems>
+      <Execution id="6822afca-5d81-45ce-ba9f-0a079a774e13" />
+      <TestMethod codeBase="G:/AA_NIK/4. FÉLÉV/SzTT Gyak/softcore-campadmin/megvalositas/CampAdmin/CampAdminTeszt/bin/Debug/CampAdminTeszt.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CampAdminTeszt.TurnusListaTest, CampAdminTeszt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AktivitásBeállítTest_InaktívFutóTurnus" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0eac9f4d-1cdf-3089-cdcf-068ca9b3dfda" executionId="6822afca-5d81-45ce-ba9f-0a079a774e13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14e2a3ab-4569-f18c-eca9-baff039e39d9" executionId="9869b69e-e9b8-4b8e-a0db-3b61054cd9c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23c27583-a149-39e2-dae6-aa4216bd4f3f" executionId="61809ee4-bda3-4e76-96d5-5403bc9cb8b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39340abe-f4b6-6e93-947d-24cad9d258e7" executionId="37df342a-2b84-4a95-9794-249aade31e61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad32d829-e4cc-2ff9-70c2-364f8225c1e7" executionId="ab982d29-e64f-49f6-891b-b880bc7afb09" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aee9758b-c740-3262-3b9b-68a3064c877d" executionId="9dc47bd1-eb4d-4c63-8dca-86359617fbd4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b091c020-4399-df5e-e87e-b995f945913b" executionId="07f5e723-7d6f-4d67-8289-bf64e9c22f88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4d3db90-e527-a145-e259-90653145517b" executionId="001d5989-3b6c-4c29-9cf7-3b7148981084" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ccea5072-1f0a-4a5f-3e5b-6e7183adb217" executionId="5764e9bf-0ec9-440b-a1fd-3ce9f0e586a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d94ac702-1b75-8ae3-4cb0-af2af364176e" executionId="9f4fc7b7-9599-494c-8fd8-8773c413deb9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db03c6b4-b39d-a7aa-7fc8-fa6b0d36941e" executionId="05b8837a-53ee-44d4-ba93-9192976f6812" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4118de4-24b7-cadf-27d5-d2711de5a64e" executionId="6c4e5179-7459-4feb-8cce-a3b9bf5cc5cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6822afca-5d81-45ce-ba9f-0a079a774e13" testId="0eac9f4d-1cdf-3089-cdcf-068ca9b3dfda" testName="AktivitásBeállítTest_InaktívFutóTurnus" computerName="LOVI88-PC" duration="00:00:00.2093905" startTime="2013-04-30T19:43:14.2285063+02:00" endTime="2013-04-30T19:43:14.7195344+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6822afca-5d81-45ce-ba9f-0a079a774e13">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_InaktívFutóTurnus threw exception: 
+System.NullReferenceException: Az objektumhivatkozás nincs beállítva semmilyen objektumpéldányra.</Message>
+          <StackTrace>   a következő helyen: AdminFelulet.TaborVezeto.TurnusLista_Accessor.AktivitásBeállít(Turnus t)
+   a következő helyen: CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_InaktívFutóTurnus() hely: G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\TurnusListaTest.cs, sor: 209
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9869b69e-e9b8-4b8e-a0db-3b61054cd9c6" testId="14e2a3ab-4569-f18c-eca9-baff039e39d9" testName="AktivitásBeállítTest_AktívMaLejáró" computerName="LOVI88-PC" duration="00:00:00.0010615" startTime="2013-04-30T19:43:14.7195344+02:00" endTime="2013-04-30T19:43:14.7235346+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9869b69e-e9b8-4b8e-a0db-3b61054cd9c6">
+    </UnitTestResult>
+    <UnitTestResult executionId="61809ee4-bda3-4e76-96d5-5403bc9cb8b1" testId="23c27583-a149-39e2-dae6-aa4216bd4f3f" testName="AktivitásBeállítTest_AktívFutóTurnus" computerName="LOVI88-PC" duration="00:00:00.0002766" startTime="2013-04-30T19:43:14.7245347+02:00" endTime="2013-04-30T19:43:14.7265348+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61809ee4-bda3-4e76-96d5-5403bc9cb8b1">
+    </UnitTestResult>
+    <UnitTestResult executionId="37df342a-2b84-4a95-9794-249aade31e61" testId="39340abe-f4b6-6e93-947d-24cad9d258e7" testName="AktivitásBeállítTest_InaktívMaLejáró" computerName="LOVI88-PC" duration="00:00:00.0028653" startTime="2013-04-30T19:43:14.7275348+02:00" endTime="2013-04-30T19:43:14.7315351+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37df342a-2b84-4a95-9794-249aade31e61">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_InaktívMaLejáró threw exception: 
+System.NullReferenceException: Az objektumhivatkozás nincs beállítva semmilyen objektumpéldányra.</Message>
+          <StackTrace>   a következő helyen: AdminFelulet.TaborVezeto.TurnusLista_Accessor.AktivitásBeállít(Turnus t)
+   a következő helyen: CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_InaktívMaLejáró() hely: G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\TurnusListaTest.cs, sor: 226
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ab982d29-e64f-49f6-891b-b880bc7afb09" testId="ad32d829-e4cc-2ff9-70c2-364f8225c1e7" testName="AktivitásBeállítTest_InaktívMaMa" computerName="LOVI88-PC" duration="00:00:00.0027928" startTime="2013-04-30T19:43:14.7325351+02:00" endTime="2013-04-30T19:43:14.7365354+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab982d29-e64f-49f6-891b-b880bc7afb09">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_InaktívMaMa threw exception: 
+System.NullReferenceException: Az objektumhivatkozás nincs beállítva semmilyen objektumpéldányra.</Message>
+          <StackTrace>   a következő helyen: AdminFelulet.TaborVezeto.TurnusLista_Accessor.AktivitásBeállít(Turnus t)
+   a következő helyen: CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_InaktívMaMa() hely: G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\TurnusListaTest.cs, sor: 276
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9dc47bd1-eb4d-4c63-8dca-86359617fbd4" testId="aee9758b-c740-3262-3b9b-68a3064c877d" testName="AktivitásBeállítTest_AktivMégNemFutó" computerName="LOVI88-PC" duration="00:00:00.0029082" startTime="2013-04-30T19:43:14.7375354+02:00" endTime="2013-04-30T19:43:14.7425357+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9dc47bd1-eb4d-4c63-8dca-86359617fbd4">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_AktivMégNemFutó threw exception: 
+System.NullReferenceException: Az objektumhivatkozás nincs beállítva semmilyen objektumpéldányra.</Message>
+          <StackTrace>   a következő helyen: AdminFelulet.TaborVezeto.TurnusLista_Accessor.AktivitásBeállít(Turnus t)
+   a következő helyen: CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_AktivMégNemFutó() hely: G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\TurnusListaTest.cs, sor: 91
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="07f5e723-7d6f-4d67-8289-bf64e9c22f88" testId="b091c020-4399-df5e-e87e-b995f945913b" testName="AktivitásBeállítTest_AktívLejárt" computerName="LOVI88-PC" duration="00:00:00.0030160" startTime="2013-04-30T19:43:14.7425357+02:00" endTime="2013-04-30T19:43:14.7475360+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07f5e723-7d6f-4d67-8289-bf64e9c22f88">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_AktívLejárt threw exception: 
+System.NullReferenceException: Az objektumhivatkozás nincs beállítva semmilyen objektumpéldányra.</Message>
+          <StackTrace>   a következő helyen: AdminFelulet.TaborVezeto.TurnusLista_Accessor.AktivitásBeállít(Turnus t)
+   a következő helyen: CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_AktívLejárt() hely: G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\TurnusListaTest.cs, sor: 157
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="001d5989-3b6c-4c29-9cf7-3b7148981084" testId="c4d3db90-e527-a145-e259-90653145517b" testName="AktivitásBeállítTest_InaktívMégNemFutó" computerName="LOVI88-PC" duration="00:00:00.0002602" startTime="2013-04-30T19:43:14.7485360+02:00" endTime="2013-04-30T19:43:14.7505362+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="001d5989-3b6c-4c29-9cf7-3b7148981084">
+    </UnitTestResult>
+    <UnitTestResult executionId="5764e9bf-0ec9-440b-a1fd-3ce9f0e586a4" testId="ccea5072-1f0a-4a5f-3e5b-6e7183adb217" testName="AktivitásBeállítTest_InaktívMaIndulóTurnus" computerName="LOVI88-PC" duration="00:00:00.0029854" startTime="2013-04-30T19:43:14.7515362+02:00" endTime="2013-04-30T19:43:14.7565365+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5764e9bf-0ec9-440b-a1fd-3ce9f0e586a4">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_InaktívMaIndulóTurnus threw exception: 
+System.NullReferenceException: Az objektumhivatkozás nincs beállítva semmilyen objektumpéldányra.</Message>
+          <StackTrace>   a következő helyen: AdminFelulet.TaborVezeto.TurnusLista_Accessor.AktivitásBeállít(Turnus t)
+   a következő helyen: CampAdminTeszt.TurnusListaTest.AktivitásBeállítTest_InaktívMaIndulóTurnus() hely: G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\TurnusListaTest.cs, sor: 192
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9f4fc7b7-9599-494c-8fd8-8773c413deb9" testId="d94ac702-1b75-8ae3-4cb0-af2af364176e" testName="AktivitásBeállítTest_AktívMaIndulóTurnus" computerName="LOVI88-PC" duration="00:00:00.0002497" startTime="2013-04-30T19:43:14.7565365+02:00" endTime="2013-04-30T19:43:14.7585366+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f4fc7b7-9599-494c-8fd8-8773c413deb9">
+    </UnitTestResult>
+    <UnitTestResult executionId="05b8837a-53ee-44d4-ba93-9192976f6812" testId="db03c6b4-b39d-a7aa-7fc8-fa6b0d36941e" testName="AktivitásBeállítTest_InaktívLejárt" computerName="LOVI88-PC" duration="00:00:00.0002380" startTime="2013-04-30T19:43:14.7595367+02:00" endTime="2013-04-30T19:43:14.7615368+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="05b8837a-53ee-44d4-ba93-9192976f6812">
+    </UnitTestResult>
+    <UnitTestResult executionId="6c4e5179-7459-4feb-8cce-a3b9bf5cc5cc" testId="f4118de4-24b7-cadf-27d5-d2711de5a64e" testName="AktivitásBeállítTest_AktívMaMa" computerName="LOVI88-PC" duration="00:00:00.0002064" startTime="2013-04-30T19:43:14.7625368+02:00" endTime="2013-04-30T19:43:14.7645370+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6c4e5179-7459-4feb-8cce-a3b9bf5cc5cc">
+    </UnitTestResult>
+  </Results>
+</TestRun>

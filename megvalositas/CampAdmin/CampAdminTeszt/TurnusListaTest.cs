@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using CampLogic.TáborvezetőFunkciók;
+using CampLogic.Borders;
 
 namespace CampAdminTeszt
 {
@@ -39,10 +40,19 @@ namespace CampAdminTeszt
         //You can use the following additional attributes as you write your tests:
         //
         //Use ClassInitialize to run code before running the first test in the class
-        //[ClassInitialize()]
-        //public static void MyClassInitialize(TestContext testContext)
-        //{
-        //}
+
+        [ClassInitialize()]
+        public static void MyClassInitialize(TestContext testContext)
+        {
+
+            FeluletHozzáféro.SetByVezető(
+                new Vezetö
+                {
+                    Tipus = VezetoTípus.TáborVezető
+                });
+
+        }
+
         //
         //Use ClassCleanup to run code after all tests in a class have run
         //[ClassCleanup()]
@@ -81,7 +91,6 @@ namespace CampAdminTeszt
 
 
 
-        //TODO: Mind Ilyenné
 
         [TestMethod()]
         [DeploymentItem("AdminFelulet.exe")]
@@ -103,7 +112,7 @@ namespace CampAdminTeszt
         public void AktivitásBeállítTest_AktívMaIndulóTurnus()
         {
             Turnus t = new Turnus { Aktív = true, Kezdes = Most, Befejezes = MostUtán };
-            bool elvárt = false;
+            bool elvárt = true;
 
             //tesztelendő
             TurnusLista_Accessor.AktivitásBeállít(t);
@@ -111,7 +120,7 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
 
@@ -120,7 +129,7 @@ namespace CampAdminTeszt
         public void AktivitásBeállítTest_AktívFutóTurnus()
         {
             Turnus t = new Turnus { Aktív = true, Kezdes = Most, Befejezes = MostUtán };
-            bool elvárt = false;
+            bool elvárt = true;
 
             //tesztelendő
             TurnusLista_Accessor.AktivitásBeállít(t);
@@ -128,7 +137,7 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
 
@@ -137,7 +146,7 @@ namespace CampAdminTeszt
         public void AktivitásBeállítTest_AktívMaLejáró()
         {
             Turnus t = new Turnus { Aktív = true, Kezdes = MostElött, Befejezes = Most };
-            bool elvárt = false;
+            bool elvárt = true;
 
             //tesztelendő
             TurnusLista_Accessor.AktivitásBeállít(t);
@@ -145,7 +154,7 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
 
@@ -162,7 +171,7 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
         //------------------
@@ -180,7 +189,7 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
 
@@ -189,7 +198,7 @@ namespace CampAdminTeszt
         public void AktivitásBeállítTest_InaktívMaIndulóTurnus()
         {
             Turnus t = new Turnus { Aktív = false, Kezdes = Most, Befejezes = MostUtán };
-            bool elvárt = false;
+            bool elvárt = true;
 
             //tesztelendő
             TurnusLista_Accessor.AktivitásBeállít(t);
@@ -197,7 +206,7 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
 
@@ -205,8 +214,8 @@ namespace CampAdminTeszt
         [DeploymentItem("AdminFelulet.exe")]
         public void AktivitásBeállítTest_InaktívFutóTurnus()
         {
-            Turnus t = new Turnus { Aktív = false, Kezdes = Most, Befejezes = MostUtán };
-            bool elvárt = false;
+            Turnus t = new Turnus { Aktív = false, Kezdes = MostElött, Befejezes = MostUtán };
+            bool elvárt = true;
 
             //tesztelendő
             TurnusLista_Accessor.AktivitásBeállít(t);
@@ -214,7 +223,7 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
 
@@ -223,7 +232,7 @@ namespace CampAdminTeszt
         public void AktivitásBeállítTest_InaktívMaLejáró()
         {
             Turnus t = new Turnus { Aktív = false, Kezdes = MostElött, Befejezes = Most };
-            bool elvárt = false;
+            bool elvárt = true;
 
             //tesztelendő
             TurnusLista_Accessor.AktivitásBeállít(t);
@@ -231,7 +240,7 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
 
@@ -248,16 +257,16 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
 
         [TestMethod()]
         [DeploymentItem("AdminFelulet.exe")]
-        public void AktivitásBeállítTest_AktívEMaMa()
+        public void AktivitásBeállítTest_AktívMaMa()
         {
             Turnus t = new Turnus { Aktív = true, Kezdes = Most, Befejezes = Most };
-            bool elvárt = false;
+            bool elvárt = true;
 
             //tesztelendő
             TurnusLista_Accessor.AktivitásBeállít(t);
@@ -265,7 +274,7 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
         [TestMethod()]
@@ -273,7 +282,7 @@ namespace CampAdminTeszt
         public void AktivitásBeállítTest_InaktívMaMa()
         {
             Turnus t = new Turnus { Aktív = false, Kezdes = Most, Befejezes = Most };
-            bool elvárt = false;
+            bool elvárt = true;
 
             //tesztelendő
             TurnusLista_Accessor.AktivitásBeállít(t);
@@ -281,7 +290,7 @@ namespace CampAdminTeszt
             //tesztelés
             Assert.AreEqual(elvárt, t.Aktív);
 
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+
         }
 
     }
