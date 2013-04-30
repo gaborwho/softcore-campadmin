@@ -70,11 +70,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FőMenű.cs">
+    <Compile Include="FoMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FőMenű.Designer.cs">
-      <DependentUpon>FőMenű.cs</DependentUpon>
+    <Compile Include="FoMenu.Designer.cs">
+      <DependentUpon>FoMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="IfjusagiVezeto\TaborozoSzerkesztesLista.cs">
       <SubType>Form</SubType>
@@ -180,8 +180,8 @@
     <Compile Include="KorcsoportVezeto\KorcsoportSzerkesztes.designer.cs">
       <DependentUpon>KorcsoportSzerkesztes.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FőMenű.resx">
-      <DependentUpon>FőMenű.cs</DependentUpon>
+    <EmbeddedResource Include="FoMenu.resx">
+      <DependentUpon>FoMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IfjusagiVezeto\CamperList.resx">
       <DependentUpon>TaborozoSzerkesztesLista.cs</DependentUpon>

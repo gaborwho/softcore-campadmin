@@ -30,7 +30,7 @@ namespace AdminFelulet
             private set { vezető = value; }
         }
 
-        VezetőModell vm = new VezetőModell();
+        VezetoModell vm = new VezetoModell();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -53,28 +53,28 @@ namespace AdminFelulet
             {
                 Nev = "IfiTeszt",
                 Jelszo = "teszt",
-                Tipus = VezetőTípus.IfjúságiVezető
+                Tipus = VezetoTípus.IfjúságiVezető
             };
 
             Vezető vKcs = new Vezető
             {
                 Nev = "KcsTeszt",
                 Jelszo = "teszt",
-                Tipus = VezetőTípus.KorcsoportVezető
+                Tipus = VezetoTípus.KorcsoportVezető
             };
 
             Vezető vTb = new Vezető
             {
                 Nev = "TbTeszt",
                 Jelszo = "teszt",
-                Tipus = VezetőTípus.TáborVezető
+                Tipus = VezetoTípus.TáborVezető
             };
 
             Vezető t = new Vezető
             {
                 Nev = "t",
                 Jelszo = "t",
-                Tipus = VezetőTípus.TáborVezető
+                Tipus = VezetoTípus.TáborVezető
             };
 
             vm.TesztCreateVezetőIfDontExists(vIfi);

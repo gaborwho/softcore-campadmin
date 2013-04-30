@@ -16,12 +16,12 @@ using CampLogic.TáborvezetõFunkciók;
 using CampLogic.Db;
 namespace CampLogic.TáborvezetõFunkciók
 {
-    public class StatisztikaKazelõ
+    public class StatisztikaKazelo
     {
 
         MyDbConnection conn = new MyDbConnection();
 
-        public StatisztikaKazelõ()
+        public StatisztikaKazelo()
         {
 
         }

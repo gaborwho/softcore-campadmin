@@ -49,7 +49,7 @@ namespace AdminFelulet.TaborVezeto
 
         private void ResetListFromDb(){
             lbSzobak.Items.Clear();
-            lbSzobak.Items.AddRange((FelületHozzáférő.Instance as ITáborvezetőiKezelő).SzobaListazas().ToArray());
+            lbSzobak.Items.AddRange((FeluletHozzáféro.Instance as ITáborvezetoiKezelo).SzobaListazas().ToArray());
         }
 
         private void SzobaLista_Load(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace AdminFelulet.TaborVezeto
                 return;
             }
 
-            (FelületHozzáférő.Instance as ITáborvezetőiKezelő).SzobaTorol((lbSzobak.SelectedItem as Szoba).Ház, lbSzobak.SelectedItem as Szoba);
+            (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).SzobaTorol((lbSzobak.SelectedItem as Szoba).Ház, lbSzobak.SelectedItem as Szoba);
             lbSzobak.Items.Remove(lbSzobak.SelectedItem);
 
         }

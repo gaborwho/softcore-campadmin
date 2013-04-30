@@ -45,26 +45,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Borders\FelületHozzáférő.cs" />
-    <Compile Include="Borders\IfjúságiVezetőiKezelőFelület.cs" />
-    <Compile Include="Borders\IIfjúságiVezetőiKezelő.cs" />
-    <Compile Include="Borders\IKorcsoportVezetőiKezelő.cs" />
-    <Compile Include="Borders\ITáborvezetőiKezelő.cs" />
-    <Compile Include="Borders\IVezető.cs" />
-    <Compile Include="Borders\KorcsoportVezetőiKezelőFelület.cs" />
-    <Compile Include="Borders\TáborvezetőiKezelőFelület.cs" />
+    <Compile Include="Borders\FeluletHozzáféro.cs" />
+    <Compile Include="Borders\IfjuságiVezetoiKezeloFelulet.cs" />
+    <Compile Include="Borders\IIfjusagiVezetoiKezelo.cs" />
+    <Compile Include="Borders\IKorcsoportVezetoiKezelo.cs" />
+    <Compile Include="Borders\ITáborvezetoiKezelo.cs" />
+    <Compile Include="Borders\IVezeto.cs" />
+    <Compile Include="Borders\KorcsoportVezetoiKezeloFelület.cs" />
+    <Compile Include="Borders\TáborvezetoiKezeloFelulet.cs" />
     <Compile Include="Borders\Vezető.cs" />
-    <Compile Include="Borders\VezetőTípus.cs" />
+    <Compile Include="Borders\VezetoTípus.cs" />
     <Compile Include="Db\DbConnection.cs" />
-    <Compile Include="Db\VezetőModell.cs" />
-    <Compile Include="IfjúságiVezetőFunkciók\Táborozó.cs" />
-    <Compile Include="IfjúságiVezetőFunkciók\TáborozóImportKezelő.cs" />
-    <Compile Include="IfjúságiVezetőFunkciók\TáborozóKezelő.cs" />
-    <Compile Include="KorcsoportVezetőFunkciók\Csoport.cs" />
-    <Compile Include="KorcsoportVezetőFunkciók\CsoportKezelő.cs" />
-    <Compile Include="KorcsoportVezetőFunkciók\ICsoportKezelő.cs" />
-    <Compile Include="KorcsoportVezetőFunkciók\Korcsoport.cs" />
-    <Compile Include="KorcsoportVezetőFunkciók\KorcsoportKezelő.cs" />
+    <Compile Include="Db\VezetoModell.cs" />
+    <Compile Include="IfjusagiVezetoFunkciók\Táborozó.cs" />
+    <Compile Include="IfjusagiVezetoFunkciók\TáborozóImportKezelo.cs" />
+    <Compile Include="IfjusagiVezetoFunkciók\TáborozóKezelo.cs" />
+    <Compile Include="KorcsoportVezetoFunkciók\Csoport.cs" />
+    <Compile Include="KorcsoportVezetoFunkciók\CsoportKezelo.cs" />
+    <Compile Include="KorcsoportVezetoFunkciók\ICsoportKezelo.cs" />
+    <Compile Include="KorcsoportVezetoFunkciók\Korcsoport.cs" />
+    <Compile Include="KorcsoportVezetoFunkciók\KorcsoportKezelo.cs" />
     <Compile Include="Migrations\201304262228372_InitialCreate.cs" />
     <Compile Include="Migrations\201304262228372_InitialCreate.Designer.cs">
       <DependentUpon>201304262228372_InitialCreate.cs</DependentUpon>
@@ -75,14 +75,14 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TáborvezetőFunkciók\Ház.cs" />
-    <Compile Include="TáborvezetőFunkciók\HázKezelő.cs" />
-    <Compile Include="TáborvezetőFunkciók\Statisztika.cs" />
-    <Compile Include="TáborvezetőFunkciók\StatisztikaKazelő.cs" />
-    <Compile Include="TáborvezetőFunkciók\Szoba.cs" />
-    <Compile Include="TáborvezetőFunkciók\SzobaKezelő.cs" />
-    <Compile Include="TáborvezetőFunkciók\Turnus.cs" />
-    <Compile Include="TáborvezetőFunkciók\TurnusKezelő.cs" />
+    <Compile Include="TaborvezetoFunkciok\Ház.cs" />
+    <Compile Include="TaborvezetoFunkciok\HázKezelo.cs" />
+    <Compile Include="TaborvezetoFunkciok\Statisztika.cs" />
+    <Compile Include="TaborvezetoFunkciok\StatisztikaKazelo.cs" />
+    <Compile Include="TaborvezetoFunkciok\Szoba.cs" />
+    <Compile Include="TaborvezetoFunkciok\SzobaKezelo.cs" />
+    <Compile Include="TaborvezetoFunkciok\Turnus.cs" />
+    <Compile Include="TaborvezetoFunkciok\TurnusKezelő.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -17,12 +17,12 @@ using CampLogic.TáborvezetõFunkciók;
 using CampLogic.Db;
 namespace CampLogic.TáborvezetõFunkciók
 {
-    public class SzobaKezelõ
+    public class SzobaKezelo
     {
 
         MyDbConnection conn = new MyDbConnection();
 
-        public SzobaKezelõ()
+        public SzobaKezelo()
         {
 
         }

@@ -62,11 +62,11 @@ namespace AdminFelulet.TaborVezeto
                 
                 if (Modosit)
                 {
-                    (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusModositas(t);
+                    (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusModositas(t);
                 }
                 else
                 {
-                    (FelületHozzáférő.Instance as ITáborvezetőiKezelő).TurnusLetrehozas(t);
+                    (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).TurnusLetrehozas(t);
                 }
                 
                 Close();

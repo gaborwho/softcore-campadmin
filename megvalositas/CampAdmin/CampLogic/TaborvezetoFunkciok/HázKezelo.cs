@@ -16,11 +16,11 @@ using System.Text;
 using CampLogic.Db;
 namespace CampLogic.TáborvezetõFunkciók
 {
-    public class HázKezelõ
+    public class HázKezelo
     {
 
 
-        public HázKezelõ()
+        public HázKezelo()
         {
 
         }

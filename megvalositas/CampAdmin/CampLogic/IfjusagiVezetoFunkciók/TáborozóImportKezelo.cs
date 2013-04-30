@@ -15,16 +15,16 @@ using System.Text;
 
 using CampLogic.IfjúságiVezetõFunkciók;
 namespace CampLogic.IfjúságiVezetõFunkciók {
-	public class TáborozóImportKezelõ {
+	public class TáborozóImportKezelo {
 
 		public Táborozó m_Táborozó;
-		public TáborozóKezelõ m_TáborozóKezelõ;
+		public TáborozóKezelo m_TáborozóKezelõ;
 
-		public TáborozóImportKezelõ(){
+		public TáborozóImportKezelo(){
 
 		}
 
-		~TáborozóImportKezelõ(){
+		~TáborozóImportKezelo(){
 
 		}
 

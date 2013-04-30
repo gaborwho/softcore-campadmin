@@ -17,7 +17,7 @@ using CampLogic.Borders;
 using System.ComponentModel.DataAnnotations;
 namespace CampLogic.Borders
 {
-    public class Vezetõ : IVezetõ
+    public class Vezetõ : IVezeto
     {
 
         public Vezetõ()
@@ -41,11 +41,11 @@ namespace CampLogic.Borders
 
         public int TipusSzam { get; set; }
 
-        public VezetõTípus Tipus
+        public VezetoTípus Tipus
         {
             get
             {
-                return (VezetõTípus)TipusSzam;
+                return (VezetoTípus)TipusSzam;
             }
             set
             {

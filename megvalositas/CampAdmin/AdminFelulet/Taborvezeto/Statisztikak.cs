@@ -27,7 +27,7 @@ namespace AdminFelulet.TaborVezeto
 
             if (comboStatisztikaTipus.SelectedItem.ToString() == "HanyOrszagPerTurnus")
             {
-                var stat = (FelületHozzáférő.Instance as ITáborvezetőiKezelő).StatisztikaHanyOrszagPerTurnus();
+                var stat = (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).StatisztikaHanyOrszagPerTurnus();
 
 
                 dataGridViewEredmeny.ColumnCount = stat.Oszlopnevek.Count;
@@ -46,7 +46,7 @@ namespace AdminFelulet.TaborVezeto
             }
             else if (comboStatisztikaTipus.SelectedItem.ToString() == "HanyTaborozóPerTurnus")
             {
-                var stat = (FelületHozzáférő.Instance as ITáborvezetőiKezelő).StatisztikaHanyTaborozóPerTurnus();
+                var stat = (FeluletHozzáféro.Instance as ITáborvezetoiKezelo).StatisztikaHanyTaborozóPerTurnus();
             }
 
 

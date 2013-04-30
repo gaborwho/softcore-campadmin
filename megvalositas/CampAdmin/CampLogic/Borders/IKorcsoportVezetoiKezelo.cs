@@ -16,7 +16,7 @@ using System.Text;
 using CampLogic.KorcsoportVezetõFunkciók;
 using CampLogic.Borders;
 namespace CampLogic.Borders {
-	public interface IKorcsoportVezetõiKezelõ : IIfjúságiVezetõiKezelõ {
+	public interface IKorcsoportVezetoiKezelo : IIfjusagiVezetoiKezelo {
 
 		/// 
 		/// <param name="csoport"></param>

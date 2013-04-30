@@ -17,7 +17,7 @@ using CampLogic.TáborvezetõFunkciók;
 using CampLogic.Borders;
 namespace CampLogic.Borders
 {
-    public interface ITáborvezetõiKezelõ : IKorcsoportVezetõiKezelõ
+    public interface ITáborvezetoiKezelo : IKorcsoportVezetoiKezelo
     {
 
         /// 

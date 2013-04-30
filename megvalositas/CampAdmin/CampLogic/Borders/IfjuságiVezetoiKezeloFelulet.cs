@@ -17,12 +17,12 @@ using CampLogic.TáborvezetõFunkciók;
 
 
 namespace CampLogic.Borders {
-	public class IfjúságiVezetõiKezelõFelület : IIfjúságiVezetõiKezelõ {
+	public class IfjuságiVezetoiKezeloFelulet : IIfjusagiVezetoiKezelo {
 
-		public TáborozóImportKezelõ m_TáborozóImportKezelõ;
-		public TáborozóKezelõ m_TáborozóKezelõ;
+		public TáborozóImportKezelo m_TáborozóImportKezelõ;
+		public TáborozóKezelo m_TáborozóKezelõ;
 
-		public IfjúságiVezetõiKezelõFelület(){
+		public IfjuságiVezetoiKezeloFelulet(){
 
 		}
 

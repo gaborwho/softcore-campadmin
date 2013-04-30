@@ -17,12 +17,12 @@ using CampLogic.KorcsoportVezetõFunkciók;
 using CampLogic.Db;
 namespace CampLogic.KorcsoportVezetõFunkciók
 {
-    public class CsoportKezelõ : ICsoportKezelõ<Csoport>
+    public class CsoportKezelo : ICsoportKezelõ<Csoport>
     {
 
         public MyDbConnection conn;
 
-        public CsoportKezelõ()
+        public CsoportKezelo()
         {
 
         }

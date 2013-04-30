@@ -18,15 +18,15 @@ using CampLogic.TáborvezetõFunkciók;
 using CampLogic.IfjúságiVezetõFunkciók;
 using CampLogic.Db;
 namespace CampLogic.IfjúságiVezetõFunkciók {
-	public class TáborozóKezelõ {
+	public class TáborozóKezelo {
 
 		public MyDbConnection conn = new MyDbConnection();
 
-		public TáborozóKezelõ(){
+		public TáborozóKezelo(){
 
 		}
 
-		~TáborozóKezelõ(){
+		~TáborozóKezelo(){
 
 		}
 

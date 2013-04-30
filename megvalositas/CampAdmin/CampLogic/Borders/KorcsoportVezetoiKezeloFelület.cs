@@ -16,16 +16,16 @@ using System.Text;
 using CampLogic.KorcsoportVezetõFunkciók;
 using CampLogic.Borders;
 namespace CampLogic.Borders {
-	public class KorcsoportVezetõiKezelõFelület : IfjúságiVezetõiKezelõFelület, IKorcsoportVezetõiKezelõ {
+	public class KorcsoportVezetoiKezeloFelület : IfjuságiVezetoiKezeloFelulet, IKorcsoportVezetoiKezelo {
 
 		public KorcsoportKezelo m_KorcsoportKezelõ;
-		public CsoportKezelõ m_CsoportKezelõ;
+		public CsoportKezelo m_CsoportKezelõ;
 
-		public KorcsoportVezetõiKezelõFelület(){
+		public KorcsoportVezetoiKezeloFelület(){
 
 		}
 
-		~KorcsoportVezetõiKezelõFelület(){
+		~KorcsoportVezetoiKezeloFelület(){
 
 		}
 

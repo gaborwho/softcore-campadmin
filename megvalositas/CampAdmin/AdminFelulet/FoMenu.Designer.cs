@@ -1,6 +1,6 @@
 ﻿namespace AdminFelulet
 {
-    partial class FőMenű
+    partial class FoMenu
     {
         /// <summary>
         /// Required designer variable.

@@ -31,7 +31,7 @@ namespace AdminFelulet
                 return;
             }
 
-            Application.Run(new FőMenű(vezető));
+            Application.Run(new FoMenu(vezető));
 
         }
     }

@@ -17,20 +17,20 @@ using CampLogic.TáborvezetõFunkciók;
 using CampLogic.Borders;
 namespace CampLogic.Borders
 {
-    public class TáborvezetõiKezelõFelület : KorcsoportVezetõiKezelõFelület, ITáborvezetõiKezelõ
+    public class TáborvezetoiKezeloFelulet : KorcsoportVezetoiKezeloFelület, ITáborvezetoiKezelo
     {
 
-        private SzobaKezelõ _SzobaKezelõ;
+        private SzobaKezelo _SzobaKezelõ;
         private TurnusKezelõ _TurnusKezelõ;
-        private HázKezelõ _HázKezelõ;
-        private StatisztikaKazelõ _StatisztikaKazelõ;
+        private HázKezelo _HázKezelõ;
+        private StatisztikaKazelo _StatisztikaKazelõ;
 
-        public TáborvezetõiKezelõFelület()
+        public TáborvezetoiKezeloFelulet()
         {
-            _SzobaKezelõ = new SzobaKezelõ();
+            _SzobaKezelõ = new SzobaKezelo();
             _TurnusKezelõ = new TurnusKezelõ();
-            _HázKezelõ = new HázKezelõ();
-            _StatisztikaKazelõ = new StatisztikaKazelõ();
+            _HázKezelõ = new HázKezelo();
+            _StatisztikaKazelõ = new StatisztikaKazelo();
         }
 
 
