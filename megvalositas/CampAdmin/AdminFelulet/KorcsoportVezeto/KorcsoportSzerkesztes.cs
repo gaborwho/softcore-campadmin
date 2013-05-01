@@ -16,9 +16,9 @@ namespace AdminFelulet.TaborVezeto
 {
     public partial class UnitDetails : Form
     {
-        CampLogic.Db.MyDbConnection conn = new MyDbConnection();
+       
         
-        public Korcsoport korcs = new Korcsoport();
+        private Korcsoport korcs = new Korcsoport();
         bool edit = false;
         public UnitDetails()
         {
@@ -45,15 +45,15 @@ namespace AdminFelulet.TaborVezeto
             korcs.Orszag = textBoxOrszag.Text;
             korcs.KorosztalyAlsoKorlat = Convert.ToInt32(textBoxAlsoKor.Text);
             korcs.KorosztalyFelsoKorlat = Convert.ToInt32(textBoxFelsoKor.Text);
-            if (!edit)
+            if (edit)
             {
                 (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
             }
             else
             {
-                (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
+                (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportLetrehozas(korcs);
             }
-            conn.Dispose();
+
             Close();
         }
 

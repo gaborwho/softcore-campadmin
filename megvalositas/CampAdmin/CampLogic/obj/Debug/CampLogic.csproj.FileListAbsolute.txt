@@ -16,10 +16,3 @@ G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampLog
 \\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampLogic\obj\Debug\ResolveAssemblyReference.cache
 \\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampLogic\obj\Debug\CampLogic.dll
 \\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampLogic\obj\Debug\CampLogic.pdb
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLogic\bin\Debug\CampLogic.dll.config
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLogic\bin\Debug\CampLogic.dll
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLogic\bin\Debug\CampLogic.pdb
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLogic\bin\Debug\EntityFramework.dll
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLogic\bin\Debug\EntityFramework.xml
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLogic\obj\Debug\CampLogic.dll
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampLogic\obj\Debug\CampLogic.pdb

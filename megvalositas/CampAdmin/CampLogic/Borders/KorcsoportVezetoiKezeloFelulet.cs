@@ -18,8 +18,8 @@ using CampLogic.Borders;
 namespace CampLogic.Borders {
 	public class KorcsoportVezetoiKezeloFelulet : IfjusagiVezetoiKezeloFelulet, IKorcsoportVezetoiKezelo {
 
-		public KorcsoportKezelo m_KorcsoportKezelõ;
-		public CsoportKezelo m_CsoportKezelõ;
+		public KorcsoportKezelo m_KorcsoportKezelo=new KorcsoportKezelo();
+		public CsoportKezelo m_CsoportKezelo=new CsoportKezelo();
 
 		public KorcsoportVezetoiKezeloFelulet(){
 
@@ -33,44 +33,54 @@ namespace CampLogic.Borders {
 		/// <param name="csoport"></param>
 		public bool CsoportLetrehozas(Csoport csoport){
 
-			return false;
+            return m_CsoportKezelo.Letrehoz(csoport); ;
 		}
 
 		/// 
 		/// <param name="csoport"></param>
 		public bool CsoportModositas(Csoport csoport){
 
-			return false;
+			return m_CsoportKezelo.Modosit(csoport);
 		}
 
 		/// 
 		/// <param name="csoport"></param>
 		public bool CsoportTorles(Csoport csoport){
 
-			return false;
+			return m_CsoportKezelo.Torol(csoport);
 		}
 
 		/// 
 		/// <param name="korcsoport"></param>
 		public bool KorcsoportLetrehozas(Korcsoport korcsoport){
 
-			return false;
+			return m_KorcsoportKezelo.Letrehoz(korcsoport);
 		}
 
 		/// 
 		/// <param name="korcsoport"></param>
 		public bool KorcsoportModositas(Korcsoport korcsoport){
 
-			return false;
+			return m_KorcsoportKezelo.Modosit(korcsoport);
 		}
 
 		/// 
 		/// <param name="korcsoport"></param>
 		public bool KorcsoportTorles(Korcsoport korcsoport){
 
-			return false;
+			return m_KorcsoportKezelo.Torol(korcsoport);
 		}
 
-	}//end KorcsoportVezetõiKezelõFelület
+
+        public List<Korcsoport> KorcsoportListazas()
+        {
+            return m_KorcsoportKezelo.Listaz();
+        }
+
+        public List<Csoport> CsoportListazas()
+        {
+            return m_CsoportKezelo.Listaz();
+        }
+    }//end KorcsoportVezetõiKezelõFelület
 
 }//end namespace Borders

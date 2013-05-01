@@ -34,6 +34,7 @@
             this.buttonKorcsSzerk = new System.Windows.Forms.Button();
             this.buttonKorcsFeltolt = new System.Windows.Forms.Button();
             this.buttonUjKorcs = new System.Windows.Forms.Button();
+            this.buttonTorles = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -58,14 +59,9 @@
             // listBoxKorcsoportlista
             // 
             this.listBoxKorcsoportlista.FormattingEnabled = true;
-            this.listBoxKorcsoportlista.Items.AddRange(new object[] {
-            "2008/1 - HU - Kicsik",
-            "2008/2 - HU - Közepes",
-            "2009/3 - SK - Nagyok",
-            "2012/1- US - Nagyok"});
             this.listBoxKorcsoportlista.Location = new System.Drawing.Point(17, 50);
             this.listBoxKorcsoportlista.Name = "listBoxKorcsoportlista";
-            this.listBoxKorcsoportlista.Size = new System.Drawing.Size(316, 264);
+            this.listBoxKorcsoportlista.Size = new System.Drawing.Size(406, 264);
             this.listBoxKorcsoportlista.TabIndex = 2;
             // 
             // buttonKorcsSzerk
@@ -90,7 +86,6 @@
             // 
             // buttonUjKorcs
             // 
-            this.buttonUjKorcs.Enabled = false;
             this.buttonUjKorcs.Location = new System.Drawing.Point(249, 320);
             this.buttonUjKorcs.Name = "buttonUjKorcs";
             this.buttonUjKorcs.Size = new System.Drawing.Size(84, 43);
@@ -99,11 +94,22 @@
             this.buttonUjKorcs.UseVisualStyleBackColor = true;
             this.buttonUjKorcs.Click += new System.EventHandler(this.buttonUjKorcs_Click);
             // 
+            // buttonTorles
+            // 
+            this.buttonTorles.Location = new System.Drawing.Point(339, 320);
+            this.buttonTorles.Name = "buttonTorles";
+            this.buttonTorles.Size = new System.Drawing.Size(84, 43);
+            this.buttonTorles.TabIndex = 7;
+            this.buttonTorles.Text = "Korcsoport törlése";
+            this.buttonTorles.UseVisualStyleBackColor = true;
+            this.buttonTorles.Click += new System.EventHandler(this.buttonTorles_Click);
+            // 
             // KorcsoportLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 375);
+            this.ClientSize = new System.Drawing.Size(433, 375);
+            this.Controls.Add(this.buttonTorles);
             this.Controls.Add(this.buttonUjKorcs);
             this.Controls.Add(this.buttonKorcsFeltolt);
             this.Controls.Add(this.buttonKorcsSzerk);
@@ -112,6 +118,7 @@
             this.Controls.Add(this.label1);
             this.Name = "KorcsoportLista";
             this.Text = "Korsoportok Listája";
+            this.Load += new System.EventHandler(this.KorcsoportLista_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,6 +132,7 @@
         private System.Windows.Forms.Button buttonKorcsSzerk;
         private System.Windows.Forms.Button buttonKorcsFeltolt;
         private System.Windows.Forms.Button buttonUjKorcs;
+        private System.Windows.Forms.Button buttonTorles;
     }
 }
 

@@ -26,6 +26,9 @@ namespace CampLogic.Borders {
 		/// <param name="csoport"></param>
 		bool CsoportModositas(Csoport csoport);
 
+        List<Korcsoport> KorcsoportListazas();
+        List<Csoport> CsoportListazas();
+
 		/// 
 		/// <param name="csoport"></param>
 		bool CsoportTorles(Csoport csoport);
