@@ -32,7 +32,7 @@ namespace CampLogic.KorcsoportVezetoFunkciok
         [Key]
         public int KorcsoportId { get; set; }
 
-        public int TurnusId { get; set; }
+        public int? TurnusId { get; set; }
         public virtual Turnus Turnus { get; set; }
 
         #endregion
