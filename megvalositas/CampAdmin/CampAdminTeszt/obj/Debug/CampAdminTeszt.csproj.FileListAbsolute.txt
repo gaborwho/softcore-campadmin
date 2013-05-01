@@ -11,19 +11,6 @@ G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdm
 G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.csprojResolveAssemblyReference.cache
 G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.dll
 G:\AA_NIK\4. FÉLÉV\SzTT Gyak\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.pdb
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\CampAdminTeszt.dll
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\CampAdminTeszt.pdb
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet.exe
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\CampLogic.dll
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\EntityFramework.dll
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet.pdb
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\CampLogic.pdb
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\EntityFramework.xml
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet_Accessor.exe
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet_Accessor.pdb
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.csprojResolveAssemblyReference.cache
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.dll
-j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.pdb
 \\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\CampAdminTeszt.dll
 \\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\CampAdminTeszt.pdb
 \\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet.exe
@@ -37,3 +24,16 @@ j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdm
 \\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\obj\Debug\ResolveAssemblyReference.cache
 \\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.dll
 \\10.0.2.2\oe\4\sztt\softcore-campadmin\megvalositas\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.pdb
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\CampAdminTeszt.dll
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\CampAdminTeszt.pdb
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet.exe
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\CampLogic.dll
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\EntityFramework.dll
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet.pdb
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\CampLogic.pdb
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\EntityFramework.xml
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet_Accessor.exe
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\bin\Debug\AdminFelulet_Accessor.pdb
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.csprojResolveAssemblyReference.cache
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.dll
+j:\unziped\Dani\Egyetem\Szoftvertechnológia Gyakorlat\Program\CampAdmin\CampAdminTeszt\obj\Debug\CampAdminTeszt.pdb

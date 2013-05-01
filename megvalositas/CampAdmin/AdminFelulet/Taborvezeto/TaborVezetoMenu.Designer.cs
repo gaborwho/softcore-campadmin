@@ -36,7 +36,7 @@
             // 
             // btHázak
             // 
-            this.btHázak.Location = new System.Drawing.Point(21, 12);
+            this.btHázak.Location = new System.Drawing.Point(21, 64);
             this.btHázak.Name = "btHázak";
             this.btHázak.Size = new System.Drawing.Size(168, 46);
             this.btHázak.TabIndex = 4;
@@ -46,7 +46,7 @@
             // 
             // btSzobák
             // 
-            this.btSzobák.Location = new System.Drawing.Point(21, 64);
+            this.btSzobák.Location = new System.Drawing.Point(21, 116);
             this.btSzobák.Name = "btSzobák";
             this.btSzobák.Size = new System.Drawing.Size(168, 46);
             this.btSzobák.TabIndex = 5;
@@ -56,7 +56,7 @@
             // 
             // btTurnusok
             // 
-            this.btTurnusok.Location = new System.Drawing.Point(21, 116);
+            this.btTurnusok.Location = new System.Drawing.Point(21, 12);
             this.btTurnusok.Name = "btTurnusok";
             this.btTurnusok.Size = new System.Drawing.Size(168, 46);
             this.btTurnusok.TabIndex = 6;

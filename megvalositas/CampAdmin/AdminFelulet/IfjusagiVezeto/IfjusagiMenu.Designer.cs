@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(192, 74);
             this.Controls.Add(this.btTaborozok);
             this.Name = "IfjusagiMenu";
-            this.Text = "Indítás";
+            this.Text = "Ifjúsági vezetés";
             this.ResumeLayout(false);
 
         }

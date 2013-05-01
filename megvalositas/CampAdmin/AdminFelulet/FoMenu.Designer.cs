@@ -30,14 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // FőMenű
+            // FoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 0);
-            this.Name = "FőMenű";
+            this.ClientSize = new System.Drawing.Size(657, 304);
+            this.Name = "FoMenu";
             this.Text = "FőMenű";
             this.Load += new System.EventHandler(this.FőMenű_Load);
+            this.Resize += new System.EventHandler(this.FoMenu_Resize);
             this.ResumeLayout(false);
 
         }

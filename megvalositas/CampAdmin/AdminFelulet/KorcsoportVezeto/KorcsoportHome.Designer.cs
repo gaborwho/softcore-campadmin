@@ -72,7 +72,7 @@
             this.Controls.Add(this.btCsoportok);
             this.Controls.Add(this.btTCsRendel);
             this.Name = "KorcsoportHome";
-            this.Text = "Indítás";
+            this.Text = "Korcsoportvezetés";
             this.ResumeLayout(false);
 
         }

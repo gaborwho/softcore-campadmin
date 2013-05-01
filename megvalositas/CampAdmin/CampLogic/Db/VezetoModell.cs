@@ -29,6 +29,9 @@ namespace CampLogic.Db
         [Conditional("DEBUG")]
         public void TesztCreateVezetoIfDontExists(Vezeto vezeto)
         {
+            //Ha megváltozott az adatbázis, és emitatt elszáll, ezzel tötölheted és újra létrehozheto (nem fog a program elindulni, de ha újra kikommenteled működni fog)
+            //conn.Database.Delete();
+            //conn.Database.CreateIfNotExists();
 
             var vez = (from v in conn.Vezetok 
                        where (v.Nev.ToUpper() == vezeto.Nev.ToUpper()) && (v.Jelszo == vezeto.Jelszo) 

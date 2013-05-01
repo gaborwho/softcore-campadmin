@@ -70,7 +70,7 @@
             this.Controls.Add(this.btUjTurnus);
             this.Controls.Add(this.lbTurnusok);
             this.Name = "TurnusLista";
-            this.Text = "Turnusok Listája";
+            this.Text = "Turnusok listája";
             this.Load += new System.EventHandler(this.TurnusLista_Load);
             this.ResumeLayout(false);
 
