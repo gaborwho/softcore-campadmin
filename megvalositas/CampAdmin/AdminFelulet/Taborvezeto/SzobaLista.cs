@@ -66,7 +66,7 @@ namespace AdminFelulet.TaborVezeto
                 return;
             }
 
-            (FeluletHozzafero.Instance as ITaborVezetoiKezelo).SzobaTorol((lbSzobak.SelectedItem as Szoba).Ház, lbSzobak.SelectedItem as Szoba);
+            (FeluletHozzafero.Instance as ITaborVezetoiKezelo).SzobaTorol((lbSzobak.SelectedItem as Szoba).Haz, lbSzobak.SelectedItem as Szoba);
             lbSzobak.Items.Remove(lbSzobak.SelectedItem);
 
         }

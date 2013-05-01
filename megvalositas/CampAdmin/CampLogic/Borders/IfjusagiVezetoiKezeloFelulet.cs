@@ -41,16 +41,15 @@ namespace CampLogic.Borders {
 			return false;
 		}
 
-		public List<Taborozo> TaborozoListazas(){
-
-			return null;
+        public List<Taborozo> TaborozoListazas()
+        {
+            return _TaborozoKezelo.TaborozoListazas();
 		}
 
 		/// 
 		/// <param name="táborozó"></param>
-		public bool TaborozoModositasa(Taborozo táborozó){
-
-			return false;
+		public bool TaborozoModositasa(Taborozo taborozo){
+            return _TaborozoKezelo.TaborozoModositasa(taborozo);
 		}
 
 		/// 

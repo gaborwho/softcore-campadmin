@@ -31,7 +31,7 @@ namespace AdminFelulet.TaborVezeto
             tbSzobaSzam.Text = sz.Szobaszam;
             tbFerohely.Text = sz.Ferohely.ToString();
             cbHazak.Items.AddRange((FeluletHozzafero.Instance as ITaborVezetoiKezelo).HazListazas().ToArray());
-            cbHazak.Text = sz.Ház.ToString();
+            cbHazak.Text = sz.Haz.ToString();
             Modosit = true;
         }
 

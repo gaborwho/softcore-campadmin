@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelNev = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,14 +46,14 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Név";
             // 
-            // label1
+            // labelNev
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(226, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Kiss Géza";
+            this.labelNev.AutoSize = true;
+            this.labelNev.Location = new System.Drawing.Point(280, 9);
+            this.labelNev.Name = "labelNev";
+            this.labelNev.Size = new System.Drawing.Size(0, 13);
+            this.labelNev.TabIndex = 20;
+            this.labelNev.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // comboBox2
             // 
@@ -98,7 +98,7 @@
             this.button1.Text = "Mentés";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // CamperGroup
+            // TaborozoCsoporthozSzobahozRendeles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,9 +108,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelNev);
             this.Controls.Add(this.label3);
-            this.Name = "CamperGroup";
+            this.Name = "TaborozoCsoporthozSzobahozRendeles";
             this.Text = "Csoporthoz rendelés";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,7 +120,7 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelNev;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;

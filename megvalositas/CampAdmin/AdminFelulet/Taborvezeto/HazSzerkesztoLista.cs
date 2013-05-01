@@ -28,7 +28,7 @@ namespace AdminFelulet.TaborVezeto
                 {
                     MapX = int.Parse(tbMapX.Text),
                     MapY = int.Parse(tbMapY.Text),
-                    Név = tbNeve.Text
+                    Nev = tbNeve.Text
                 };
 
                 if ((FeluletHozzafero.Instance as ITaborVezetoiKezelo).HazLetrehozas(h))
@@ -79,7 +79,7 @@ namespace AdminFelulet.TaborVezeto
 
                 h.MapX = int.Parse(tbMapX.Text);
                 h.MapY = int.Parse(tbMapY.Text);
-                h.Név = tbNeve.Text;
+                h.Nev = tbNeve.Text;
 
                 lbHazak.Items.Remove(h);
                 lbHazak.Items.Add(h);
@@ -107,7 +107,7 @@ namespace AdminFelulet.TaborVezeto
                 return;
             }
 
-            tbNeve.Text = (lbHazak.SelectedItem as Haz).Név;
+            tbNeve.Text = (lbHazak.SelectedItem as Haz).Nev;
             tbMapX.Text = (lbHazak.SelectedItem as Haz).MapX.ToString();
             tbMapY.Text = (lbHazak.SelectedItem as Haz).MapY.ToString();
         }

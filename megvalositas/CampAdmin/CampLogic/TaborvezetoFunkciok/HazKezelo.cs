@@ -11,15 +11,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-
-
 using CampLogic.Db;
+
 namespace CampLogic.TaborvezetoFunkciok
 {
     public class HazKezelo
     {
-
-
         public HazKezelo()
         {
 
@@ -28,16 +25,16 @@ namespace CampLogic.TaborvezetoFunkciok
         MyDbConnection conn = new MyDbConnection();
 
         /// 
-        /// <param name="ház"></param>
+        /// <param name="haz"></param>
         public bool HázLetrehozas(Haz haz)
         {
 
             int numH = (from k in conn.Hazak
-                        where k.Név == haz.Név
+                        where k.Nev == haz.Nev
                         select k).Count();
 
             // ha valakinek jobban tetszik 
-            //int numH = conn.Házak.Count(m => m.Név == ház.Név);
+            // int numH = conn.Hazak.Count(m => m.Nev == ház.Nev);
 
 
             /*
@@ -60,14 +57,14 @@ namespace CampLogic.TaborvezetoFunkciok
         }
 
         /// 
-        /// <param name="ház"></param>
+        /// <param name="haz"></param>
         /// 
 
         /*
          * A ListBox-ban, a DbConnect-bõl származó Ház volt, amit módosítottak is
          * Mivel referencia típus, elvileg az eredeti is módosúlt, így elég csak menteni a módosításokat
          */
-        public bool HázModositas(Haz ház)
+        public bool HazModositas(Haz haz)
         {
             conn.SaveChanges();
 

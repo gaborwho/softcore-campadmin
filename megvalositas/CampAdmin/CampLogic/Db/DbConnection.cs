@@ -25,8 +25,8 @@ namespace CampLogic.Db
 
         public MyDbConnection()
         {
-// Ha megváltozik a modell, ezzel lehet újraépíteni
-//Database.SetInitializer<MyDbConnection>(new DropCreateDatabaseIfModelChanges<MyDbConnection>());
+            // Ha megváltozik a modell, ezzel magától eldobja az adatbét
+            Database.SetInitializer<MyDbConnection>(new DropCreateDatabaseIfModelChanges<MyDbConnection>());
         }
 
         public DbSet<Csoport> Csoportok { get; set; }

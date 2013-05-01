@@ -32,7 +32,7 @@ namespace CampLogic.IfjusagiVezetoFunkciok {
 		public bool CsoporthozRendeles(Taborozo taborozo, Csoport csoport){
             conn.Taborozok.Find(taborozo).Csoport = csoport;
             conn.SaveChanges();
-			return false;
+			return true;
 		}
 
 		public List<Taborozo> TaborozoListazas(){
@@ -42,8 +42,8 @@ namespace CampLogic.IfjusagiVezetoFunkciok {
 		/// 
 		/// <param name="taborozo"></param>
 		public bool TaborozoModositasa(Taborozo taborozo){
-
-			return false;
+            conn.SaveChanges();
+            return true;
 		}
 
 		/// 
@@ -65,7 +65,7 @@ namespace CampLogic.IfjusagiVezetoFunkciok {
 		public bool UjTaborozo(Taborozo ujTaborozo){
             conn.Taborozok.Add(ujTaborozo);
             conn.SaveChanges();
-			return false;
+			return true;
 		}
 
 	}//end TáborozóKezelõ

@@ -50,7 +50,7 @@ namespace CampLogic.Borders
         /// <param name="haz"></param>
         public bool HazModositas(Haz haz)
         {
-            return _HazKezelo.HázModositas(haz);
+            return _HazKezelo.HazModositas(haz);
         }
 
         /// 

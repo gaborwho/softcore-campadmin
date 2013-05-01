@@ -33,7 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonMentes = new System.Windows.Forms.Button();
             this.textBoxSzuletes = new System.Windows.Forms.TextBox();
             this.textBoxElerhetosegek = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -95,15 +95,16 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Ország";
             // 
-            // button1
+            // buttonMentes
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(439, 314);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Mentés";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonMentes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonMentes.Location = new System.Drawing.Point(439, 314);
+            this.buttonMentes.Name = "buttonMentes";
+            this.buttonMentes.Size = new System.Drawing.Size(78, 23);
+            this.buttonMentes.TabIndex = 15;
+            this.buttonMentes.Text = "Mentés";
+            this.buttonMentes.UseVisualStyleBackColor = true;
+            this.buttonMentes.Click += new System.EventHandler(this.buttonMentes_Click);
             // 
             // textBoxSzuletes
             // 
@@ -181,6 +182,7 @@
             this.listBoxTaborozok.Name = "listBoxTaborozok";
             this.listBoxTaborozok.Size = new System.Drawing.Size(259, 325);
             this.listBoxTaborozok.TabIndex = 30;
+            this.listBoxTaborozok.SelectedIndexChanged += new System.EventHandler(this.listBoxTaborozok_SelectedIndexChanged);
             // 
             // button3
             // 
@@ -222,6 +224,7 @@
             this.buttonRendeles.TabIndex = 35;
             this.buttonRendeles.Text = "Csoporhoz/házhoz rendelés";
             this.buttonRendeles.UseVisualStyleBackColor = true;
+            this.buttonRendeles.Click += new System.EventHandler(this.buttonRendeles_Click);
             // 
             // CamperList
             // 
@@ -245,7 +248,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonMentes);
             this.Name = "CamperList";
             this.Text = "Táborozók";
             this.ResumeLayout(false);
@@ -260,7 +263,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonMentes;
         private System.Windows.Forms.TextBox textBoxSzuletes;
         private System.Windows.Forms.TextBox textBoxElerhetosegek;
         private System.Windows.Forms.Label label4;

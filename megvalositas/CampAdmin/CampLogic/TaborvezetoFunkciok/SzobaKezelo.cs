@@ -11,10 +11,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-
-
 using CampLogic.TaborvezetoFunkciok;
 using CampLogic.Db;
+
 namespace CampLogic.TaborvezetoFunkciok
 {
     public class SzobaKezelo
@@ -43,7 +42,7 @@ namespace CampLogic.TaborvezetoFunkciok
             }
 
            
-            szoba.Ház = conn.Hazak.Find(haz.HázId);
+            szoba.Haz = conn.Hazak.Find(haz.HazId);
 
             conn.Szobak.Add(szoba);
 
@@ -59,7 +58,7 @@ namespace CampLogic.TaborvezetoFunkciok
 
         public List<Szoba> SzobaListazas(Haz haz)
         {
-            return (from k in conn.Szobak where k.Ház == haz select k).ToList<Szoba>();
+            return (from k in conn.Szobak where k.Haz == haz select k).ToList<Szoba>();
         }
 
         /// 
@@ -67,7 +66,7 @@ namespace CampLogic.TaborvezetoFunkciok
         /// <param name="szoba"></param>
         public bool SzobaModositas(Haz haz, Szoba szoba)
         {
-            szoba.Ház = conn.Hazak.Find(haz.HázId);
+            szoba.Haz = conn.Hazak.Find(haz.HazId);
             conn.SaveChanges();
             return true;
         }

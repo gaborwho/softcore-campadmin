@@ -31,7 +31,7 @@ namespace CampLogic.TaborvezetoFunkciok
         [Key]
         public int SzobaId { get; set; }
 
-        public virtual Haz Ház { get; set; }
+        public virtual Haz Haz { get; set; }
 
 
         #endregion
@@ -41,11 +41,11 @@ namespace CampLogic.TaborvezetoFunkciok
 
         public string Szobaszam { get; set; }
 
-        public virtual List<Taborozo> Táborozók { get; set; }
+        public virtual List<Taborozo> Taborozok { get; set; }
 
         public override string ToString()
         {
-            return Szobaszam + " ( " + Ferohely + " ) Ház: "+ Ház.Név;
+            return Szobaszam + " ( " + Ferohely + " ) Ház: "+ Haz.Nev;
         }
 
     }//end Szoba

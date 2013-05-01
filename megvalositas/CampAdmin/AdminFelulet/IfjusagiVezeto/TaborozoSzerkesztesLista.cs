@@ -13,31 +13,72 @@ namespace AdminFelulet.IfjusagiVezeto
 {
     public partial class CamperList : Form
     {
+        Taborozo aktiv;
+
         public CamperList()
         {
             InitializeComponent();
+
+            listBoxTaborozok.Items.AddRange(
+                (FeluletHozzafero.Instance as IIfjusagiVezetoiKezelo).TaborozoListazas().ToArray());
         }
 
         private void buttonUjTaborozo_Click(object sender, EventArgs e)
         {
-            Taborozo t = new Taborozo()
+            try
             {
-                Nev = textBoxNev.Text,
-                SzuletesiDatum = DateTime.Parse(textBoxSzuletes.Text),
-                Orszag = comboBoxOrszag.Text,
-                Elerhetosegek = textBoxElerhetosegek.Text,
-                Betegsegek = textBoxBetegsegek.Text,
-                Megjegyzes = textBoxMegjegyzesek.Text
-            };
+                Taborozo t = new Taborozo()
+                {
+                    Nev = textBoxNev.Text,
+                    SzuletesiDatum = DateTime.Parse(textBoxSzuletes.Text),
+                    Orszag = comboBoxOrszag.Text,
+                    Elerhetosegek = textBoxElerhetosegek.Text,
+                    Betegsegek = textBoxBetegsegek.Text,
+                    Megjegyzes = textBoxMegjegyzesek.Text
+                };
 
-            if ((FeluletHozzafero.Instance as IIfjusagiVezetoiKezelo).UjTaborozo(t))
-            {
-                listBoxTaborozok.Items.Add(t);
+                if ((FeluletHozzafero.Instance as IIfjusagiVezetoiKezelo).UjTaborozo(t))
+                {
+                    listBoxTaborozok.Items.Add(t);
+                }
+                else
+                {
+                    MessageBox.Show("Ilyen nevű táborozó már létezik");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Ilyen nevű táborozó már létezik");
+                if (ex is System.FormatException)
+                {
+                    MessageBox.Show("Érvénytelen dátum!");
+                    return;
+                }
+
+                MessageBox.Show("Hiba történt!");
             }
+        }
+
+        private void buttonRendeles_Click(object sender, EventArgs e)
+        {
+            TaborozoCsoporthozSzobahozRendeles ablak =
+                new TaborozoCsoporthozSzobahozRendeles(aktiv);
+            ablak.ShowDialog();
+        }
+
+        private void listBoxTaborozok_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxTaborozok.SelectedIndex > 0)
+            {
+                aktiv = (Taborozo)listBoxTaborozok.SelectedItem;
+                textBoxNev.Text = aktiv.Nev;
+            }
+        }
+
+        private void buttonMentes_Click(object sender, EventArgs e)
+        {
+            aktiv.Nev = textBoxNev.Text;
+            listBoxTaborozok.Items[listBoxTaborozok.SelectedIndex] = aktiv;
+            (FeluletHozzafero.Instance as IIfjusagiVezetoiKezelo).TaborozoModositasa(aktiv);
         }
     }
 }

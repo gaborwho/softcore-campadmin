@@ -27,7 +27,7 @@ namespace CampLogic.TaborvezetoFunkciok
         #region Adat kapcsolati tulajdonságok
 
         [Key]
-        public int HázId { get; set; }
+        public int HazId { get; set; }
 
         public virtual List<Szoba> Szobak { get; set; }
 
@@ -38,11 +38,11 @@ namespace CampLogic.TaborvezetoFunkciok
 
         public int MapY { get; set; }
 
-        public string Név { get; set; }
+        public string Nev { get; set; }
 
         public override string ToString()
         {
-            return Név + " { " + MapX + "; " + MapY + " } (" + HázId + ")";
+            return Nev + " { " + MapX + "; " + MapY + " } (" + HazId + ")";
         }
 
     }//end Ház
