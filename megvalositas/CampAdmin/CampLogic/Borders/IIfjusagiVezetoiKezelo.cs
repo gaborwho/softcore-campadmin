@@ -11,16 +11,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-
-
 using CampLogic.KorcsoportVezetoFunkciok;
 using CampLogic.IfjusagiVezetoFunkciok;
+using CampLogic.TaborvezetoFunkciok;
 namespace CampLogic.Borders {
 	public interface IIfjusagiVezetoiKezelo {
 
 		/// 
 		/// <param name="csoport"></param>
         bool CsoporthozRendeles(Taborozo Taborozo, Csoport csoport);
+
+        bool SzobahozRendeles(Taborozo Taborozo, Szoba szoba);
 
 		/// 
 		/// <param name="path"></param>
