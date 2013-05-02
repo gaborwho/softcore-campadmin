@@ -23,7 +23,7 @@ namespace CampLogic.Borders {
 		/// <param name="csoport"></param>
         bool TáborozóCsoporthozRendeles(Taborozo Taborozo, Csoport csoport);
 
-        bool TáborozóSzobáhozRendelés(Taborozo Táborozó, Szoba Szoba);
+        void TaborozoSzobahozRendeles(Taborozo Táborozó, Szoba Szoba);
 
 		/// 
 		/// <param name="path"></param>

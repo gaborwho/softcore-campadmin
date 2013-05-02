@@ -30,7 +30,7 @@ namespace CampLogic.IfjusagiVezetoFunkciok {
 		/// <param name="Taborozo"></param>
 		/// <param name="csoport"></param>
 		public bool CsoporthozRendeles(Taborozo taborozo, Csoport csoport){
-            conn.Taborozok.Find(taborozo).Csoport = csoport;
+            taborozo.Csoport = csoport;
             conn.SaveChanges();
 			return true;
 		}

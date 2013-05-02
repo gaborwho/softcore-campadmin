@@ -19,6 +19,12 @@ namespace AdminFelulet.IfjusagiVezeto
         {
             InitializeComponent();
 
+            ResetFromDb();
+        }
+
+        private void ResetFromDb() {
+            listBoxTaborozok.Items.Clear();
+
             listBoxTaborozok.Items.AddRange(
                 (FeluletHozzafero.Instance as IIfjusagiVezetoiKezelo).TaborozoListazas().ToArray());
         }
@@ -45,6 +51,8 @@ namespace AdminFelulet.IfjusagiVezeto
                 {
                     MessageBox.Show("Ilyen nevű táborozó már létezik");
                 }
+
+                ResetFromDb();
             }
             catch (Exception)
             {
@@ -123,8 +131,17 @@ namespace AdminFelulet.IfjusagiVezeto
 
             if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                FeluletHozzafero.Instance.ImportFilebol(fd.FileName);
-            } 
+                if (FeluletHozzafero.Instance.ImportFilebol(fd.FileName))
+                {
+                    ResetFromDb();
+
+                    MessageBox.Show("Sikeres import");
+                }
+                else
+                {
+                    MessageBox.Show("Import meghiúsult");
+                }
+            }
 
         }
     }

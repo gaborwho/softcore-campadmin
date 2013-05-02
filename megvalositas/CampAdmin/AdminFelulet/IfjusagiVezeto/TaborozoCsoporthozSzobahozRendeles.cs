@@ -44,7 +44,7 @@ namespace AdminFelulet.IfjusagiVezeto
 
             if (sz!=null)
             {
-                FeluletHozzafero.Instance.
+                FeluletHozzafero.Instance.TaborozoSzobahozRendeles(táborozó, sz);
             }
         }
     }
