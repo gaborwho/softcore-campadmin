@@ -14,20 +14,42 @@ using System.Text;
 
 
 using CampLogic.IfjusagiVezetoFunkciok;
+using System.IO;
+using CampLogic.Db;
 namespace CampLogic.IfjusagiVezetoFunkciok {
 	public class TaborozoImportKezelo {
 
-		public Taborozo m_Táborozó;
-		public TaborozoKezelo m_TáborozóKezelõ;
+		public Taborozo _Taborozo;
+        public TaborozoKezelo _TaborozoKezelo;
+
+        MyDbConnection conn = new MyDbConnection();
 
 		public TaborozoImportKezelo(){
 
 		}
 
 		/// <param name="path"></param>
+        /// sor minta:
+        /// Kiss Géza,1991. január 1.,nincs,06-1-123-4567,szereti a kakaót,Magyarország
 		public bool ImportFilebol(string path){
-
-			return false;
+            StreamReader sr = new StreamReader(path);
+            String[] t;
+            while (sr.Peek() >= 0)
+            {
+                t = sr.ReadLine().Split(',');
+                conn.Taborozok.Add(
+                new Taborozo()
+                {
+                    Nev = t[0],
+                    SzuletesiDatum = DateTime.Parse(t[1]),
+                    Betegsegek = t[2],
+                    Elerhetosegek = t[3],
+                    Megjegyzes = t[4],
+                    Orszag = t[5]
+                }
+                );
+            }
+			return true;
 		}
 
 	}//end TáborozóImportKezelõ
