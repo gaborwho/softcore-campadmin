@@ -49,6 +49,11 @@ namespace CampLogic.KorcsoportVezetoFunkciok {
 
 		public string Nev{ get; set; }
 
+        public override string ToString()
+        {
+            return this.Nev+"( "+this.IfiVezeto1+", "+this.IfiVezeto2+" )";
+        }
+
 	}//end Csoport
 
 }//end namespace KorcsoportVezetõFunkciók

@@ -106,12 +106,6 @@
     <Compile Include="KorcsoportVezeto\KorcsoportHome.Designer.cs">
       <DependentUpon>KorcsoportMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="KorcsoportVezeto\KorcsoporthozCsoportRendeles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KorcsoportVezeto\KorcsoporthozCsoportRendeles.designer.cs">
-      <DependentUpon>KorcsoporthozCsoportRendeles.cs</DependentUpon>
-    </Compile>
     <Compile Include="KorcsoportVezeto\KorcsoportLista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,9 +188,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KorcsoportVezeto\CsoportLista.resx">
       <DependentUpon>CsoportLista.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KorcsoportVezeto\KorcsoporthozCsoportRendeles.resx">
-      <DependentUpon>KorcsoporthozCsoportRendeles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KorcsoportVezeto\KorcsoportLista.resx">
       <DependentUpon>KorcsoportLista.cs</DependentUpon>

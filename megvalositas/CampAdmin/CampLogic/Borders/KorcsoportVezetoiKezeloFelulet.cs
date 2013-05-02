@@ -36,12 +36,24 @@ namespace CampLogic.Borders {
             return m_CsoportKezelo.Letrehoz(csoport); ;
 		}
 
+        public bool CsoportLetrehozas(Csoport csoport, Korcsoport korcsoport)
+        {
+
+            return m_CsoportKezelo.Letrehoz(csoport, korcsoport); ;
+        }
+
 		/// 
 		/// <param name="csoport"></param>
 		public bool CsoportModositas(Csoport csoport){
 
 			return m_CsoportKezelo.Modosit(csoport);
 		}
+
+        public bool CsoportModositas(Csoport csoport, Korcsoport korcsoport)
+        {
+
+            return m_CsoportKezelo.Modosit(csoport, korcsoport);
+        }
 
 		/// 
 		/// <param name="csoport"></param>
@@ -57,12 +69,19 @@ namespace CampLogic.Borders {
 			return m_KorcsoportKezelo.Letrehoz(korcsoport);
 		}
 
+
 		/// 
 		/// <param name="korcsoport"></param>
 		public bool KorcsoportModositas(Korcsoport korcsoport){
 
 			return m_KorcsoportKezelo.Modosit(korcsoport);
 		}
+
+        public bool KorcsoportModositas(Korcsoport korcsoport, Csoport csoport)
+        {
+
+            return m_KorcsoportKezelo.Modosit(korcsoport,csoport);
+        }
 
 		/// 
 		/// <param name="korcsoport"></param>

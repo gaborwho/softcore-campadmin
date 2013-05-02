@@ -62,7 +62,7 @@
     <Compile Include="IfjusagiVezetoFunkciok\TaborozoKezelo.cs" />
     <Compile Include="KorcsoportVezetoFunkciok\Csoport.cs" />
     <Compile Include="KorcsoportVezetoFunkciok\CsoportKezelo.cs" />
-    <Compile Include="KorcsoportVezetoFunkciok\ICsoportKezelo.cs" />
+    <Compile Include="Borders\ICsoportKezelo.cs" />
     <Compile Include="KorcsoportVezetoFunkciok\Korcsoport.cs" />
     <Compile Include="KorcsoportVezetoFunkciok\KorcsoportKezelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

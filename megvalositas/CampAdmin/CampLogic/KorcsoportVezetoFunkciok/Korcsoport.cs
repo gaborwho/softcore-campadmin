@@ -34,11 +34,12 @@ namespace CampLogic.KorcsoportVezetoFunkciok
 
         public int? TurnusId { get; set; }
         public virtual Turnus Turnus { get; set; }
+        public virtual List<Csoport> Csoportok { get; set; }
 
         #endregion
 
 
-        public List<Csoport> Csoportok { get; set; }
+        
 
         public int KorosztalyAlsoKorlat { get; set; }
 
