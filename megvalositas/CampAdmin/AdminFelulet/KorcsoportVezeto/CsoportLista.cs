@@ -85,5 +85,34 @@ namespace AdminFelulet.KorcsoportVezeto
             LoadGui();
         }
 
+        private void btModosit_Click(object sender, EventArgs e)
+        {
+            if (lbcsoportok.SelectedItem == null)
+            {
+                return;
+            }
+
+            csoport = lbcsoportok.SelectedItem as Csoport;
+            if (csoport != null)
+            {
+                csoport.Nev = textBoxNev.Text;
+                csoport.IfiVezeto1 = (Vezeto)comboBoxIfi1.SelectedItem;
+                csoport.IfiVezeto2 = (Vezeto)comboBoxIfi2.SelectedItem;
+                korcsoport = (Korcsoport)cbKorcsoport.SelectedItem;
+
+                if (csoport.IfiVezeto1 == csoport.IfiVezeto2)
+                {
+                    MessageBox.Show("Két különböző ifjúsági vezetzőt kell a csoporthoz rendelni!");
+                    return;
+                }
+
+
+                (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).CsoportModositas(csoport);
+                UpdateKorcs();
+            }
+
+            LoadGui();
+        }
+
     }
 }

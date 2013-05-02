@@ -39,6 +39,7 @@
             this.buttonTorles = new System.Windows.Forms.Button();
             this.cbKorcsoport = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btModosit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonMentes
@@ -148,11 +149,22 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Korcsoport";
             // 
+            // btModosit
+            // 
+            this.btModosit.Location = new System.Drawing.Point(255, 205);
+            this.btModosit.Name = "btModosit";
+            this.btModosit.Size = new System.Drawing.Size(82, 23);
+            this.btModosit.TabIndex = 19;
+            this.btModosit.Text = "Modosítás";
+            this.btModosit.UseVisualStyleBackColor = true;
+            this.btModosit.Click += new System.EventHandler(this.btModosit_Click);
+            // 
             // CsoportLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 239);
+            this.Controls.Add(this.btModosit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbKorcsoport);
             this.Controls.Add(this.buttonTorles);
@@ -185,5 +197,6 @@
         private System.Windows.Forms.Button buttonTorles;
         private System.Windows.Forms.ComboBox cbKorcsoport;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btModosit;
     }
 }
