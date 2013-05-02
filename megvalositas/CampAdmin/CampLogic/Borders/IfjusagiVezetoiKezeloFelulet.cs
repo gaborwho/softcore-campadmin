@@ -29,20 +29,17 @@ namespace CampLogic.Borders {
 		/// 
 		/// <param name="Taborozo"></param>
 		/// <param name="csoport"></param>
-		public bool CsoporthozRendeles(Taborozo Taborozo, Csoport csoport){
-
-			return false;
+		public bool CsoporthozRendeles(Taborozo taborozo, Csoport csoport){
+            return _TaborozoKezelo.CsoporthozRendeles(taborozo, csoport);
 		}
 
 		/// 
 		/// <param name="path"></param>
 		public bool ImportFilebol(string path){
-
-			return false;
+            return _TaborozoImportKezelo.ImportFilebol(path);
 		}
 
-        public List<Taborozo> TaborozoListazas()
-        {
+        public List<Taborozo> TaborozoListazas() {
             return _TaborozoKezelo.TaborozoListazas();
 		}
 
@@ -55,15 +52,14 @@ namespace CampLogic.Borders {
 		/// 
 		/// <param name="Táborozó"></param>
 		/// <param name="Szoba"></param>
-		public void TaborozoSzobahozRendeles(Taborozo Táborozó, Szoba Szoba){
-
+		public void TaborozoSzobahozRendeles(Taborozo taborozo, Szoba szoba){
+            _TaborozoKezelo.TaborozoSzobahozRendeles(taborozo, szoba);
 		}
 
 		/// 
 		/// <param name="taborozo"></param>
 		public bool TaborozoTorles(Taborozo taborozo){
-
-			return false;
+            return _TaborozoKezelo.TaborozoTorles(taborozo);
 		}
 
 		///
