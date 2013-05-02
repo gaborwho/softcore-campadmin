@@ -29,25 +29,26 @@ namespace CampLogic.Borders {
 		/// 
 		/// <param name="Taborozo"></param>
 		/// <param name="csoport"></param>
-		public bool CsoporthozRendeles(Taborozo taborozo, Csoport csoport){
-            return _TaborozoKezelo.CsoporthozRendeles(taborozo, csoport);
+		public bool TáborozóCsoporthozRendeles(Taborozo Taborozo, Csoport csoport){
+
+			return false;
 		}
 
-        /// 
-        /// <param name="Táborozó"></param>
-        /// <param name="Szoba"></param>
-        public void TaborozoSzobahozRendeles(Taborozo taborozo, Szoba szoba)
+        public bool TáborozóSzobáhozRendelés(Taborozo Táborozó, Szoba Szoba)
         {
-            _TaborozoKezelo.TaborozoSzobahozRendeles(taborozo, szoba);
+            throw new NotImplementedException();
         }
+
 
 		/// 
 		/// <param name="path"></param>
 		public bool ImportFilebol(string path){
-            return _TaborozoImportKezelo.ImportFilebol(path);
+
+			return false;
 		}
 
-        public List<Taborozo> TaborozoListazas() {
+        public List<Taborozo> TaborozoListazas()
+        {
             return _TaborozoKezelo.TaborozoListazas();
 		}
 
@@ -58,9 +59,17 @@ namespace CampLogic.Borders {
 		}
 
 		/// 
+		/// <param name="Táborozó"></param>
+		/// <param name="Szoba"></param>
+		public void TaborozoSzobahozRendeles(Taborozo Táborozó, Szoba Szoba){
+
+		}
+
+		/// 
 		/// <param name="taborozo"></param>
 		public bool TaborozoTorles(Taborozo taborozo){
-            return _TaborozoKezelo.TaborozoTorles(taborozo);
+
+			return false;
 		}
 
 		///
@@ -68,6 +77,8 @@ namespace CampLogic.Borders {
 		public bool UjTaborozo(Taborozo taborozo){
 			return _TaborozoKezelo.UjTaborozo(taborozo);
 		}
+
+
 
     }//end IfjúságiVezetõiKezelõFelület
 

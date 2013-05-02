@@ -11,6 +11,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
+
 using CampLogic.KorcsoportVezetoFunkciok;
 using CampLogic.IfjusagiVezetoFunkciok;
 using CampLogic.TaborvezetoFunkciok;
@@ -19,9 +21,9 @@ namespace CampLogic.Borders {
 
 		/// 
 		/// <param name="csoport"></param>
-        bool CsoporthozRendeles(Taborozo Taborozo, Csoport csoport);
+        bool TáborozóCsoporthozRendeles(Taborozo Taborozo, Csoport csoport);
 
-        bool SzobahozRendeles(Taborozo Taborozo, Szoba szoba);
+        bool TáborozóSzobáhozRendelés(Taborozo Táborozó, Szoba Szoba);
 
 		/// 
 		/// <param name="path"></param>

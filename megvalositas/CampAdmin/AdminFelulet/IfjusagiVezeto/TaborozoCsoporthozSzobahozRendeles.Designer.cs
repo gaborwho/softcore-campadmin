@@ -30,11 +30,11 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.labelNev = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboCsoportok = new System.Windows.Forms.ComboBox();
+            this.comboSzobak = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btMent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -55,21 +55,23 @@
             this.labelNev.TabIndex = 20;
             this.labelNev.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // comboBox2
+            // comboCsoportok
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(121, 32);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(159, 21);
-            this.comboBox2.TabIndex = 23;
+            this.comboCsoportok.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboCsoportok.FormattingEnabled = true;
+            this.comboCsoportok.Location = new System.Drawing.Point(121, 32);
+            this.comboCsoportok.Name = "comboCsoportok";
+            this.comboCsoportok.Size = new System.Drawing.Size(203, 21);
+            this.comboCsoportok.TabIndex = 23;
             // 
-            // comboBox3
+            // comboSzobak
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(121, 59);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(159, 21);
-            this.comboBox3.TabIndex = 24;
+            this.comboSzobak.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboSzobak.FormattingEnabled = true;
+            this.comboSzobak.Location = new System.Drawing.Point(121, 59);
+            this.comboSzobak.Name = "comboSzobak";
+            this.comboSzobak.Size = new System.Drawing.Size(203, 21);
+            this.comboSzobak.TabIndex = 24;
             // 
             // label4
             // 
@@ -89,29 +91,30 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "Szoba";
             // 
-            // button1
+            // btMent
             // 
-            this.button1.Location = new System.Drawing.Point(205, 88);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Mentés";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btMent.Location = new System.Drawing.Point(205, 88);
+            this.btMent.Name = "btMent";
+            this.btMent.Size = new System.Drawing.Size(119, 23);
+            this.btMent.TabIndex = 27;
+            this.btMent.Text = "Mentés";
+            this.btMent.UseVisualStyleBackColor = true;
+            this.btMent.Click += new System.EventHandler(this.btMent_Click);
             // 
             // TaborozoCsoporthozSzobahozRendeles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 124);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(336, 124);
+            this.Controls.Add(this.btMent);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboSzobak);
+            this.Controls.Add(this.comboCsoportok);
             this.Controls.Add(this.labelNev);
             this.Controls.Add(this.label3);
             this.Name = "TaborozoCsoporthozSzobahozRendeles";
-            this.Text = "Csoporthoz rendelés";
+            this.Text = "Csoporthoz, illetve Szobához rendelés";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,10 +124,10 @@
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelNev;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboCsoportok;
+        private System.Windows.Forms.ComboBox comboSzobak;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btMent;
     }
 }

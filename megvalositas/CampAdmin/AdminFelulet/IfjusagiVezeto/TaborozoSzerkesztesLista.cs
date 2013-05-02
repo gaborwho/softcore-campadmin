@@ -30,8 +30,8 @@ namespace AdminFelulet.IfjusagiVezeto
                 Taborozo t = new Taborozo()
                 {
                     Nev = textBoxNev.Text,
-                    SzuletesiDatum = DateTime.Parse(textBoxSzuletes.Text),
-                    Orszag = comboBoxOrszag.Text,
+                    SzuletesiDatum = dtpSzul.Value,
+                    Orszag = tbOrszag.Text,
                     Elerhetosegek = textBoxElerhetosegek.Text,
                     Betegsegek = textBoxBetegsegek.Text,
                     Megjegyzes = textBoxMegjegyzesek.Text
@@ -46,18 +46,21 @@ namespace AdminFelulet.IfjusagiVezeto
                     MessageBox.Show("Ilyen nevű táborozó már létezik");
                 }
             }
-            catch (FormatException ex)
-            {
-                MessageBox.Show("Érvénytelen dátum!");
-            }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Hiba történt!");
             }
+
         }
 
         private void buttonRendeles_Click(object sender, EventArgs e)
         {
+            if (aktiv==null)
+            {
+                MessageBox.Show("Valaszon ki a listából egy táborozót.");
+                return;
+            }
+
             TaborozoCsoporthozSzobahozRendeles ablak =
                 new TaborozoCsoporthozSzobahozRendeles(aktiv);
             ablak.ShowDialog();
@@ -65,18 +68,64 @@ namespace AdminFelulet.IfjusagiVezeto
 
         private void listBoxTaborozok_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxTaborozok.SelectedIndex > 0)
+            if (listBoxTaborozok.SelectedItem != null)
             {
                 aktiv = (Taborozo)listBoxTaborozok.SelectedItem;
+
                 textBoxNev.Text = aktiv.Nev;
+                dtpSzul.Value = aktiv.SzuletesiDatum;
+                tbOrszag.Text = aktiv.Orszag;
+
+                textBoxElerhetosegek.Text = aktiv.Elerhetosegek;
+                textBoxBetegsegek.Text = aktiv.Betegsegek;
+                textBoxMegjegyzesek.Text = aktiv.Megjegyzes;
+
+
             }
+
         }
 
         private void buttonMentes_Click(object sender, EventArgs e)
         {
+            if (aktiv == null)
+            {
+                aktiv = new Taborozo();
+            }
+
             aktiv.Nev = textBoxNev.Text;
-            listBoxTaborozok.Items[listBoxTaborozok.SelectedIndex] = aktiv;
+            aktiv.SzuletesiDatum = dtpSzul.Value;
+            aktiv.Orszag = tbOrszag.Text;
+
+            aktiv.Elerhetosegek = textBoxElerhetosegek.Text;
+            aktiv.Betegsegek = textBoxBetegsegek.Text;
+            aktiv.Megjegyzes = textBoxMegjegyzesek.Text;
+
             (FeluletHozzafero.Instance as IIfjusagiVezetoiKezelo).TaborozoModositasa(aktiv);
+
+            listBoxTaborozok.Items[listBoxTaborozok.SelectedIndex] = aktiv;
+        }
+
+        private void tbTörlés_Click(object sender, EventArgs e)
+        {
+            if (listBoxTaborozok.SelectedItem==null)
+            {
+                MessageBox.Show("Táborozó törléséhez válasszon ki egyet a listából");
+            }
+            else
+            {
+                FeluletHozzafero.Instance.TaborozoTorles(listBoxTaborozok.SelectedItem as Taborozo);
+            }
+        }
+
+        private void btImport_Click(object sender, EventArgs e)
+        {
+            FileDialog fd = new OpenFileDialog();
+
+            if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                FeluletHozzafero.Instance.ImportFilebol(fd.FileName);
+            } 
+
         }
     }
 }

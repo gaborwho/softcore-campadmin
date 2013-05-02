@@ -58,7 +58,7 @@ namespace AdminFelulet
                 ifm.Left = this.Left;
 
                 ifm.TopLevel = false;
-                ifm.FormBorderStyle = FormBorderStyle.Fixed3D;
+                ifm.FormBorderStyle = FormBorderStyle.None;
                 ifm.Dock = DockStyle.Left;
                 ifm.Visible = true;
                 this.Controls.Add(ifm);
@@ -70,7 +70,7 @@ namespace AdminFelulet
             {
                 kcsm.TopLevel = false;
                 this.Controls.Add(kcsm);
-                kcsm.FormBorderStyle = FormBorderStyle.Fixed3D;
+                kcsm.FormBorderStyle = FormBorderStyle.None;
                 kcsm.Width = alMenuWidth;
                 kcsm.Top = ifm.Top;
 
@@ -99,7 +99,7 @@ namespace AdminFelulet
                 tvm.Left = this.Left + alMenuWidth * 2;
 
                 tvm.TopLevel = false;
-                tvm.FormBorderStyle = FormBorderStyle.Fixed3D;
+                tvm.FormBorderStyle = FormBorderStyle.None;
                 tvm.Dock = DockStyle.Right;
                 tvm.Visible = true;
                 this.Controls.Add(tvm);
