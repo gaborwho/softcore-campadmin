@@ -28,20 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btTCsRendel = new System.Windows.Forms.Button();
             this.btCsoportok = new System.Windows.Forms.Button();
             this.btKorcsoportok = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btTCsRendel
-            // 
-            this.btTCsRendel.Location = new System.Drawing.Point(12, 12);
-            this.btTCsRendel.Name = "btTCsRendel";
-            this.btTCsRendel.Size = new System.Drawing.Size(168, 46);
-            this.btTCsRendel.TabIndex = 1;
-            this.btTCsRendel.Text = "Táborozó csoporthoz rendelése";
-            this.btTCsRendel.UseVisualStyleBackColor = true;
-            this.btTCsRendel.Click += new System.EventHandler(this.btTCsRendel_Click);
             // 
             // btCsoportok
             // 
@@ -55,7 +44,7 @@
             // 
             // btKorcsoportok
             // 
-            this.btKorcsoportok.Location = new System.Drawing.Point(12, 116);
+            this.btKorcsoportok.Location = new System.Drawing.Point(12, 12);
             this.btKorcsoportok.Name = "btKorcsoportok";
             this.btKorcsoportok.Size = new System.Drawing.Size(168, 46);
             this.btKorcsoportok.TabIndex = 3;
@@ -70,7 +59,6 @@
             this.ClientSize = new System.Drawing.Size(192, 172);
             this.Controls.Add(this.btKorcsoportok);
             this.Controls.Add(this.btCsoportok);
-            this.Controls.Add(this.btTCsRendel);
             this.Name = "KorcsoportHome";
             this.Text = "Korcsoportvezetés";
             this.ResumeLayout(false);
@@ -79,7 +67,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btTCsRendel;
         private System.Windows.Forms.Button btCsoportok;
         private System.Windows.Forms.Button btKorcsoportok;
     }

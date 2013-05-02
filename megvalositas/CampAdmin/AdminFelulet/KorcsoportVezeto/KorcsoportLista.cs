@@ -23,19 +23,19 @@ namespace AdminFelulet.KorcsoportVezeto
         public KorcsoportLista()
         {
             InitializeComponent();
-            listBoxKorcsoportlista.DataSource = korcsKezelo.Listaz();
         }
 
         public void UpdateViews()
         {
-            listBoxKorcsoportlista.Invalidate();
-            
+            listBoxKorcsoportlista.Items.Clear();
+            listBoxKorcsoportlista.Items.AddRange((FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportListazas().ToArray());
         }
 
         private void buttonUjKorcs_Click(object sender, EventArgs e)
         {
             korcsSzerkeszto = new UnitDetails();
             korcsSzerkeszto.ShowDialog();
+            UpdateViews();
         }
 
         private void buttonKorcsSzerk_Click(object sender, EventArgs e)
@@ -50,21 +50,11 @@ namespace AdminFelulet.KorcsoportVezeto
             UpdateViews();
         }
 
-        private void buttonKorcsFeltolt_Click(object sender, EventArgs e)
-        {
-            Korcsoport korcs = (Korcsoport)listBoxKorcsoportlista.SelectedItem;
-            if (korcs == null) MessageBox.Show("Válassz!");
-            else
-            {
-                CsoportLista csoportSzerkeszto = new CsoportLista(korcs);
-                csoportSzerkeszto.ShowDialog();
-
-            }
-        }
+       
 
         private void KorcsoportLista_Load(object sender, EventArgs e)
         {
-            //listBoxKorcsoportlista.Items.AddRange((FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportListazas().ToArray());
+            listBoxKorcsoportlista.Items.AddRange((FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportListazas().ToArray());
         }
 
         private void buttonTorles_Click(object sender, EventArgs e)
@@ -78,6 +68,14 @@ namespace AdminFelulet.KorcsoportVezeto
 
             (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportTorles(listBoxKorcsoportlista.SelectedItem as Korcsoport);
             listBoxKorcsoportlista.Items.Remove(listBoxKorcsoportlista.SelectedItem);
+        }
+
+        private void listBoxKorcsoportlista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxKorcsoportlista.SelectedItem != null)
+            {
+                lbNev.Text = (listBoxKorcsoportlista.SelectedItem as Korcsoport).Nev;
+            }
         }
     }
 }

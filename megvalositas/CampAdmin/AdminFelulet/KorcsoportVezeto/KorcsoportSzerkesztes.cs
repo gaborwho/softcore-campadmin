@@ -16,7 +16,6 @@ namespace AdminFelulet.TaborVezeto
 {
     public partial class UnitDetails : Form
     {
-       
         
         private Korcsoport korcs = new Korcsoport();
         bool edit = false;
@@ -29,9 +28,10 @@ namespace AdminFelulet.TaborVezeto
             InitializeComponent();
             this.korcs = korcs;
             edit = true;
+            UpdateView();
         }
 
-        public void UpdateView()
+        private void UpdateView()
         {
             textBoxNev.Text = korcs.Nev;
             textBoxOrszag.Text = korcs.Orszag;
@@ -43,18 +43,35 @@ namespace AdminFelulet.TaborVezeto
         {
             korcs.Nev = textBoxNev.Text;
             korcs.Orszag = textBoxOrszag.Text;
-            korcs.KorosztalyAlsoKorlat = Convert.ToInt32(textBoxAlsoKor.Text);
-            korcs.KorosztalyFelsoKorlat = Convert.ToInt32(textBoxFelsoKor.Text);
-            if (edit)
+            try
             {
-                (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
-            }
-            else
-            {
-                (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportLetrehozas(korcs);
-            }
+                korcs.KorosztalyAlsoKorlat = Convert.ToInt32(textBoxAlsoKor.Text);
+                korcs.KorosztalyFelsoKorlat = Convert.ToInt32(textBoxFelsoKor.Text);
+                if (korcs.KorosztalyAlsoKorlat > korcs.KorosztalyFelsoKorlat)
+                {
+                    MessageBox.Show("A alsó korhatár nem lehet nagyobb a felső korhatárnál");
+                    return;
+                }
 
-            Close();
+                if (edit)
+                {
+                    (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
+                }
+                else
+                {
+                    (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportLetrehozas(korcs);
+                }
+                Close();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("A korhatároknak számoknak kell lenniük");
+            }
+        }
+
+        private void UnitDetails_Load(object sender, EventArgs e)
+        {
+
         }
 
 

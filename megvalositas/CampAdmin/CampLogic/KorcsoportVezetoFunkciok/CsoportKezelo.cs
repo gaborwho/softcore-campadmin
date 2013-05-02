@@ -18,15 +18,22 @@ namespace CampLogic.KorcsoportVezetoFunkciok
     public class CsoportKezelo : ICsoportKezelõ<Csoport>
     {
 
-        public MyDbConnection conn;
+        public MyDbConnection conn=new MyDbConnection();
 
         public CsoportKezelo()
         {
-            conn = new MyDbConnection();
-        }
 
+        }
         public bool Letrehoz(Csoport csoport)
         {
+            conn.Csoportok.Add(csoport);
+            conn.SaveChanges();
+            return true;
+        }
+
+        public bool Letrehoz(Csoport csoport, Korcsoport korcsoport)
+        {
+            csoport.Korcsoport = conn.Korcsoportok.Find(korcsoport.KorcsoportId);
             conn.Csoportok.Add(csoport);
             conn.SaveChanges();
             return true;
@@ -38,6 +45,12 @@ namespace CampLogic.KorcsoportVezetoFunkciok
         }
 
         public bool Modosit(Csoport csoport)
+        {
+            conn.SaveChanges();
+            return true;
+        }
+
+        public bool Modosit(Csoport csoport, Korcsoport korcsoport)
         {
             conn.SaveChanges();
             return true;

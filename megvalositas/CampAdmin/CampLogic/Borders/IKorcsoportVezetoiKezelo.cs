@@ -22,9 +22,17 @@ namespace CampLogic.Borders {
 		/// <param name="csoport"></param>
 		bool CsoportLetrehozas(Csoport csoport);
 
+        /// 
+        /// <param name="csoport"></param>
+        bool CsoportLetrehozas(Csoport csoport, Korcsoport korcsoport);
+
 		/// 
 		/// <param name="csoport"></param>
 		bool CsoportModositas(Csoport csoport);
+
+        /// 
+        /// <param name="csoport"></param>
+        bool CsoportModositas(Csoport csoport, Korcsoport korcsoport);
 
         List<Korcsoport> KorcsoportListazas();
         List<Csoport> CsoportListazas();
@@ -40,6 +48,10 @@ namespace CampLogic.Borders {
 		/// 
 		/// <param name="korcsoport"></param>
 		bool KorcsoportModositas(Korcsoport korcsoport);
+
+        /// 
+        /// <param name="korcsoport"></param>
+        bool KorcsoportModositas(Korcsoport korcsoport, Csoport csoport);
 
 		/// 
 		/// <param name="korcsoport"></param>

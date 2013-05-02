@@ -29,9 +29,10 @@ namespace CampLogic.KorcsoportVezetoFunkciok
         }
 
 
-        public bool Letrehoz(Korcsoport csoport)
+        public bool Letrehoz(Korcsoport korcsoport)
         {
-            conn.Korcsoportok.Add(csoport);
+           
+            conn.Korcsoportok.Add(korcsoport);
             conn.SaveChanges();
 
             return true;
@@ -45,6 +46,13 @@ namespace CampLogic.KorcsoportVezetoFunkciok
         }
 
         public bool Modosit(Korcsoport csoport)
+        {
+
+            conn.SaveChanges();
+            return true;
+        }
+
+        public bool Modosit(Korcsoport korcsoport, Csoport csoport)
         {
             conn.SaveChanges();
             return true;

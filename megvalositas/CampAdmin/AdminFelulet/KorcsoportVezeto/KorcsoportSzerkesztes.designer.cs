@@ -42,7 +42,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 39);
+            this.label1.Location = new System.Drawing.Point(9, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 0;
@@ -71,14 +71,14 @@
             this.textBoxNev.Location = new System.Drawing.Point(116, 6);
             this.textBoxNev.Name = "textBoxNev";
             this.textBoxNev.Size = new System.Drawing.Size(159, 20);
-            this.textBoxNev.TabIndex = 3;
+            this.textBoxNev.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(12, 121);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Mentés";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -97,21 +97,21 @@
             this.textBoxAlsoKor.Location = new System.Drawing.Point(116, 59);
             this.textBoxAlsoKor.Name = "textBoxAlsoKor";
             this.textBoxAlsoKor.Size = new System.Drawing.Size(159, 20);
-            this.textBoxAlsoKor.TabIndex = 14;
+            this.textBoxAlsoKor.TabIndex = 3;
             // 
             // textBoxFelsoKor
             // 
             this.textBoxFelsoKor.Location = new System.Drawing.Point(116, 85);
             this.textBoxFelsoKor.Name = "textBoxFelsoKor";
             this.textBoxFelsoKor.Size = new System.Drawing.Size(159, 20);
-            this.textBoxFelsoKor.TabIndex = 15;
+            this.textBoxFelsoKor.TabIndex = 4;
             // 
             // textBoxOrszag
             // 
             this.textBoxOrszag.Location = new System.Drawing.Point(116, 32);
             this.textBoxOrszag.Name = "textBoxOrszag";
             this.textBoxOrszag.Size = new System.Drawing.Size(159, 20);
-            this.textBoxOrszag.TabIndex = 16;
+            this.textBoxOrszag.TabIndex = 2;
             // 
             // UnitDetails
             // 
@@ -129,6 +129,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UnitDetails";
             this.Text = "Korcsoport - Szerkesztés";
+            this.Load += new System.EventHandler(this.UnitDetails_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -15,59 +15,74 @@ namespace AdminFelulet.KorcsoportVezeto
 {
     public partial class CsoportLista : Form
     {
-        Korcsoport korcs;
         Csoport csoport;
-
-        int csoportid;
+        Korcsoport korcsoport;
 
         public CsoportLista()
         {
             InitializeComponent();
         }
 
-        public CsoportLista(Korcsoport korcs):this()
-        {
-            this.korcs = korcs;
-            LoadGui();
-        }
-
-
 
         void LoadGui()
         {
-            //ha rendbeszabtuk az adatbazist akkor utana: getifivezetok List<Vezeto> Ő nélkül!
+            comboBoxIfi1.Items.Clear();
             comboBoxIfi1.Items.AddRange(VezetoModell.GetIfiVezetok());
+
+            comboBoxIfi2.Items.Clear();
             comboBoxIfi2.Items.AddRange(VezetoModell.GetIfiVezetok());
-            listBox1.DataSource = korcs.Csoportok;
+
+            cbKorcsoport.Items.Clear();
+            cbKorcsoport.Items.AddRange((FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportListazas().ToArray());
+
+            lbcsoportok.Items.Clear();
+            lbcsoportok.Items.AddRange((FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).CsoportListazas().ToArray());
+
         }
 
         private void buttonMentes_Click(object sender, EventArgs e)
         {
             csoport = new Csoport();
             csoport.Nev = textBoxNev.Text;
-            //a vezető osztályom nincs meg mert nemtudom, a dani elmagyarazta. migralni kell.
             csoport.IfiVezeto1 = (Vezeto)comboBoxIfi1.SelectedItem;
             csoport.IfiVezeto2 = (Vezeto)comboBoxIfi2.SelectedItem;
+            korcsoport= (Korcsoport)cbKorcsoport.SelectedItem;
+            
             if (csoport.IfiVezeto1 == csoport.IfiVezeto2)
             {
-                MessageBox.Show("A klónozást még nem találták fel!");
+                MessageBox.Show("Két különböző ifjúsági vezetzőt kell a csoporthoz rendelni!");
                 return;
             }
-            csoport.CoportId = (int)(korcs.Csoportok.Max(x => x.CoportId)) + 1;
-            csoport.Korcsoport = korcs;
-            korcs.Csoportok.Add(csoport);
-            UpdateKorcs();
+            
+
+            (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).CsoportLetrehozas(csoport, korcsoport);
+
+            Close();
             
         }
 
         private void buttonTorles_Click(object sender, EventArgs e)
         {
-            korcs.Csoportok.Remove((Csoport)listBox1.SelectedItem);
-            UpdateKorcs();
+           
+            csoport = lbcsoportok.SelectedItem as Csoport;
+            if (csoport!=null)
+            {
+                (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).CsoportTorles(csoport);
+                UpdateKorcs();
+            }
+
+            LoadGui();
+           
         }
 
         void UpdateKorcs() {
-            (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcs);
+            (FeluletHozzafero.Instance as IKorcsoportVezetoiKezelo).KorcsoportModositas(korcsoport,csoport);
+            
+        }
+
+        private void CsoportLista_Load(object sender, EventArgs e)
+        {
+            LoadGui();
         }
 
     }
