@@ -49,15 +49,17 @@ namespace CampLogic.IfjusagiVezetoFunkciok {
 		/// 
 		/// <param name="Táborozó"></param>
 		/// <param name="Szoba"></param>
-		public void TaborozoSzobahozRendeles(Taborozo Taboroza, Szoba Szoba){
-
+		public void TaborozoSzobahozRendeles(Taborozo Taborozo, Szoba Szoba){
+            Taborozo.Szoba = Szoba;
+            conn.SaveChanges();
 		}
 
 		/// 
 		/// <param name="taborozo"></param>
 		public bool TaborozoTorles(Taborozo taborozo){
-
-			return false;
+            conn.Taborozok.Remove(taborozo);
+            conn.SaveChanges();
+            return true;
 		}
 
 		/// 

@@ -46,14 +46,12 @@ namespace AdminFelulet.IfjusagiVezeto
                     MessageBox.Show("Ilyen nevű táborozó már létezik");
                 }
             }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Érvénytelen dátum!");
+            }
             catch (Exception ex)
             {
-                if (ex is System.FormatException)
-                {
-                    MessageBox.Show("Érvénytelen dátum!");
-                    return;
-                }
-
                 MessageBox.Show("Hiba történt!");
             }
         }
