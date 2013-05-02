@@ -49,6 +49,7 @@ namespace CampLogic.IfjusagiVezetoFunkciok {
                 }
                 );
             }
+            conn.SaveChanges();
 			return true;
 		}
 
