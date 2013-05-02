@@ -26,7 +26,7 @@ namespace CampLogic.Db
         }
 
 
-        [Conditional("DEBUG")]
+        //[Conditional("DEBUG")]
         public void TesztCreateVezetoIfDontExists(Vezeto vezeto)
         {
             //Ha megváltozott az adatbázis, és emitatt elszáll, ezzel tötölheted és újra létrehozheto (nem fog a program elindulni, de ha újra kikommenteled működni fog)

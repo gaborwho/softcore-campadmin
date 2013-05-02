@@ -29,10 +29,16 @@ namespace CampLogic.Borders {
 		/// 
 		/// <param name="Taborozo"></param>
 		/// <param name="csoport"></param>
-		public bool CsoporthozRendeles(Taborozo Taborozo, Csoport csoport){
+		public bool TáborozóCsoporthozRendeles(Taborozo Taborozo, Csoport csoport){
 
 			return false;
 		}
+
+        public bool TáborozóSzobáhozRendelés(Taborozo Táborozó, Szoba Szoba)
+        {
+            throw new NotImplementedException();
+        }
+
 
 		/// 
 		/// <param name="path"></param>
@@ -71,6 +77,8 @@ namespace CampLogic.Borders {
 		public bool UjTaborozo(Taborozo taborozo){
 			return _TaborozoKezelo.UjTaborozo(taborozo);
 		}
+
+
 
     }//end IfjúságiVezetõiKezelõFelület
 

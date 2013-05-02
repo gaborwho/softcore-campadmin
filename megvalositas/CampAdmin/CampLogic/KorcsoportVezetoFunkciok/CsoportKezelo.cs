@@ -22,8 +22,9 @@ namespace CampLogic.KorcsoportVezetoFunkciok
 
         public CsoportKezelo()
         {
-
+            conn = new MyDbConnection();
         }
+
         public bool Letrehoz(Csoport csoport)
         {
             conn.Csoportok.Add(csoport);

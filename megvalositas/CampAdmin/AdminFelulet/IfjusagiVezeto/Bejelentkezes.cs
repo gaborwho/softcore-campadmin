@@ -44,7 +44,7 @@ namespace AdminFelulet
         }
 
         //Feltételes, csak a debug verzióba fordítja a JIT
-        [Conditional("DEBUG")]
+        //[Conditional("DEBUG")]
         private void TesztVezetok() {
 
             
@@ -69,19 +69,12 @@ namespace AdminFelulet
                 Tipus = VezetoTipus.TaborVezeto
             };
 
-            Vezeto t = new Vezeto
-            {
-                Nev = "t",
-                Jelszo = "t",
-                Tipus = VezetoTipus.TaborVezeto
-            };
 
             vm.TesztCreateVezetoIfDontExists(vIfi);
             vm.TesztCreateVezetoIfDontExists(vKcs);
             vm.TesztCreateVezetoIfDontExists(vTb);
-            vm.TesztCreateVezetoIfDontExists(t);
 
-            MessageBox.Show("Tesztfelhasználók:\n IfiTeszt/teszt \n KcsTeszt/teszt \n TbTeszt/teszt");
+            //MessageBox.Show("Tesztfelhasználók:\n IfiTeszt/teszt \n KcsTeszt/teszt \n TbTeszt/teszt");
         }
 
     }
