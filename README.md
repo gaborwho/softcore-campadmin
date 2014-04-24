@@ -5,8 +5,8 @@ A szoftver célja egy táborhely térkihasználtságának adminisztrálása, val
 A tábor hierarchiájában a gyerekek 3 szintre vannak osztva.  
 - A legmagasabb szint az ország szerinti csoportosítás.  
 - A második szint a korcsoport szerinti csoportosítás. 
-- A harmadik szint, a túl nagy csoportok optimális méretre (12 fő) való darabolása.  
-- 
+- A harmadik szint, a túl nagy csoportok optimális méretre (12 fő) való darabolása.
+
 Ez a feloszlás minden turnusban változik, ezért a rendszernek kezelnie kell, a turnusok közötti változást. 
 
 A táborban a férőhelyek dinamikusan változnak. Szükség esetén pótágyakkal, lakókocsikkal bővíthető a telep befogadóképessége. A rendszernek lehetőséget kell biztosítani, hogy újabb szobák, férőhelyek hozzáadásának, módosításának kezelésére.
